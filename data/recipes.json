@@ -163,6 +163,32 @@
       ]
     },
     {
+      "output": "elunium_1",
+      "ingredients": [
+        {
+          "id": "rough_elunium_1",
+          "quantity": 8
+        },
+        {
+          "id": "coal_ore_1",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "output": "elunium_2",
+      "ingredients": [
+        {
+          "id": "rough_elunium_2",
+          "quantity": 7
+        },
+        {
+          "id": "starlight_snail",
+          "quantity": 9
+        }
+      ]
+    },
+    {
       "output": "rough_bradium_2",
       "ingredients": [
         {
@@ -177,6 +203,71 @@
         {
           "id": "rough_bradium_2",
           "quantity": 3
+        }
+      ]
+    },
+    {
+      "output": "bradium_1",
+      "ingredients": [
+        {
+          "id": "rough_bradium_1",
+          "quantity": 8
+        },
+        {
+          "id": "coal_ore_1",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "output": "bradium_2",
+      "ingredients": [
+        {
+          "id": "rough_bradium_2",
+          "quantity": 7
+        },
+        {
+          "id": "night_pearl",
+          "quantity": 9
+        }
+      ]
+    },
+    {
+      "output": "weapon_protec_stone_1",
+      "ingredients": [
+        {
+          "id": "protected_ore_1",
+          "quantity": 7
+        },
+        {
+          "id": "stol_nut",
+          "quantity": 9
+        }
+      ]
+    },
+    {
+      "output": "armor_protec_stone_1",
+      "ingredients": [
+        {
+          "id": "protected_ore_1",
+          "quantity": 7
+        },
+        {
+          "id": "nitraria_seed",
+          "quantity": 9
+        }
+      ]
+    },
+    {
+      "output": "acc_protec_stone_1",
+      "ingredients": [
+        {
+          "id": "protected_ore_1",
+          "quantity": 7
+        },
+        {
+          "id": "desert_welwitschia",
+          "quantity": 9
         }
       ]
     }

@@ -78,26 +78,28 @@ const Calculator = {
     getFlatPurchaseList(calcResult) {
         const purchases = {};
 
-        const traverse = (node, multiplier = 1) => {
+        const traverse = (node, multiplier) => {
+            // Если мы решили купить этот предмет или это базовый ресурс без рецепта
             if (node.decision === 'buy' || !node.breakdown) {
-                const qty = (node.quantity || 1) * multiplier;
                 const id = node.resourceId;
                 if (!purchases[id]) {
                     purchases[id] = {
                         resource: node.resource,
                         quantity: 0,
-                        unitCost: node.optimalCost
+                        // Используем cost (из вариантов) или optimalCost (из основного расчета)
+                        unitCost: node.cost !== undefined ? node.cost : (node.optimalCost !== undefined ? node.optimalCost : node.marketPrice)
                     };
                 }
-                purchases[id].quantity += qty;
+                purchases[id].quantity += multiplier;
             } else if (node.breakdown) {
+                // Если мы крафтим, идем вглубь по ингредиентам
                 for (const child of node.breakdown) {
-                    traverse(child, multiplier);
+                    traverse(child, multiplier * (child.quantity || 1));
                 }
             }
         };
 
-        traverse(calcResult);
+        traverse(calcResult, 1);
 
         return Object.entries(purchases).map(([id, data]) => ({
             resourceId: id,

@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-02-09T12:00:00Z",
   "prices": {
-    "upgrade_metal_1": 46,
+    "upgrade_metal_1": 48,
     "upgrade_metal_2": 158,
     "upgrade_metal_3": 370,
     "rough_oridecon_1": 583,
@@ -20,12 +20,12 @@
     "carnium_2": 4310,
     "carnium_3": 8070,
     "bascyx_1": 2080,
-    "bascyx_2": 4580,
+    "bascyx_2": 4440,
     "bascyx_3": 8560,
     "oridecon_1": 6370,
     "oridecon_2": 20200,
     "elunium_1": 4440,
-    "elunium_2": 18200,
+    "elunium_2": 16900,
     "bradium_1": 7170,
     "bradium_2": 21200,
     "shell": 743,
@@ -36,7 +36,15 @@
     "hardshell_crab": 1040,
     "butterfly_crowie": 946,
     "glowfish": 1070,
+    "weapon_protec_stone_1": 12500,
+    "armor_protec_stone_1": 13100,
+    "acc_protec_stone_1": 13400,
     "coal_ore_1": 260,
-    "kek": 300
+    "protected_ore_1": 563,
+    "stol_nut": 694,
+    "nitraria_seed": 769,
+    "desert_welwitschia": 718,
+    "starlight_snail": 1100,
+    "night_pearl": 1130
   }
 }

@@ -289,6 +289,78 @@
       "image": "images/resources/bradium_3.png"
     },
     {
+      "id": "weapon_protec_stone_1",
+      "name": "Weapon Protection Stone Lv1",
+      "type": "crafting",
+      "subtype": "weapon_protec_stone",
+      "tier": 1,
+      "image": "images/resources/weapon_protec_stone.png"
+    },
+    {
+      "id": "weapon_protec_stone_2",
+      "name": "Weapon Protection Stone Lv2",
+      "type": "crafting",
+      "subtype": "weapon_protec_stone",
+      "tier": 2,
+      "image": "images/resources/weapon_protec_stone_2.png"
+    },
+    {
+      "id": "weapon_protec_stone_3",
+      "name": "Weapon Protection Stone Lv3",
+      "type": "crafting",
+      "subtype": "weapon_protec_stone",
+      "tier": 3,
+      "image": "images/resources/weapon_protec_stone_3.png"
+    },
+    {
+      "id": "armor_protec_stone_1",
+      "name": "Armor Protection Stone Lv1",
+      "type": "crafting",
+      "subtype": "armor_protec_stone",
+      "tier": 1,
+      "image": "images/resources/armor_protec_stone.png"
+    },
+    {
+      "id": "armor_protec_stone_2",
+      "name": "Armor Protection Stone Lv2",
+      "type": "crafting",
+      "subtype": "armor_protec_stone",
+      "tier": 2,
+      "image": "images/resources/armor_protec_stone_2.png"
+    },
+    {
+      "id": "armor_protec_stone_3",
+      "name": "Armor Protection Stone Lv3",
+      "type": "crafting",
+      "subtype": "armor_protec_stone",
+      "tier": 3,
+      "image": "images/resources/armor_protec_stone_3.png"
+    },
+    {
+      "id": "acc_protec_stone_1",
+      "name": "Accessory Protection Stone Lv1",
+      "type": "crafting",
+      "subtype": "acc_protec_stone",
+      "tier": 1,
+      "image": "images/resources/acc_protec_stone.png"
+    },
+    {
+      "id": "acc_protec_stone_2",
+      "name": "Accessory Protection Stone Lv2",
+      "type": "crafting",
+      "subtype": "acc_protec_stone",
+      "tier": 2,
+      "image": "images/resources/acc_protec_stone_2.png"
+    },
+    {
+      "id": "acc_protec_stone_3",
+      "name": "Accessory Protection Stone Lv3",
+      "type": "crafting",
+      "subtype": "acc_protec_stone",
+      "tier": 3,
+      "image": "images/resources/acc_protec_stone_3.png"
+    },
+    {
       "id": "glowfish",
       "name": "Glowfish",
       "type": "fishing",
@@ -335,6 +407,54 @@
       "subtype": null,
       "tier": null,
       "image": "images/resources/wheat.png"
+    },
+    {
+      "id": "protected_ore_1",
+      "name": "Protected Ore Lv1",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/protected_ore.png"
+    },
+    {
+      "id": "stol_nut",
+      "name": "Stol Nut",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/stol_nut.png"
+    },
+    {
+      "id": "nitraria_seed",
+      "name": "Nitraria Seed",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/nitraria_seed.png"
+    },
+    {
+      "id": "desert_welwitschia",
+      "name": "Desert Welwitschia",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/desert_welwitschia.png"
+    },
+    {
+      "id": "starlight_snail",
+      "name": "Starlight Snail",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/starlight_snail.png"
+    },
+    {
+      "id": "night_pearl",
+      "name": "Night Pearl",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/night_pearl.png"
     }
   ]
 }
