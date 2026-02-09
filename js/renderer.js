@@ -78,7 +78,7 @@ const Renderer = {
         return card;
     },
 
-    renderDetailModal(calcResult, resourcesMap) {
+    renderDetailModal(calcResult, resourcesMap, recipesMap, prices) {
         const hasRecipe = calcResult.craftCost !== null;
 
         let html = `
@@ -98,6 +98,10 @@ const Renderer = {
                 <div class="detail-price-block">
                     <div class="detail-price-label">Цена на рынке</div>
                     <div class="detail-price-value">${this.formatNumber(calcResult.marketPrice)}</div>
+                </div>
+                <div class="detail-price-block">
+                    <div class="detail-price-label">После налога</div>
+                    <div class="detail-price-value">${this.formatNumber(calcResult.marketPriceAfterTax)}</div>
                 </div>
                 <div class="detail-price-block">
                     <div class="detail-price-label">Себестоимость</div>
@@ -142,9 +146,50 @@ const Renderer = {
                     </div>
                 </div>
             `;
+
+            const allVariants = Calculator.generateAllVariants(
+                calcResult.resourceId,
+                prices,
+                recipesMap,
+                resourcesMap
+            );
+
+            if (allVariants.length > 1) {
+                html += `
+                    <div class="all-variants">
+                        <h3>Все варианты крафта (${allVariants.length})</h3>
+                        <div class="variants-list">
+                            ${allVariants.map((variant, idx) => this.renderVariant(variant, idx)).join('')}
+                        </div>
+                    </div>
+                `;
+            }
         } else if (!hasRecipe) {
             html += `<div class="no-recipe-msg">Базовый ресурс, рецепт отсутствует</div>`;
         }
+
+        return html;
+    },
+
+    renderVariant(variant, index) {
+        const isOptimal = index === 0;
+        const marginColor = variant.margin > 0 ? 'var(--profit)' : 'var(--loss)';
+
+        let html = `
+            <div class="variant-card ${isOptimal ? 'optimal' : ''}">
+                <div class="variant-header">
+                    <span class="variant-index">#${index + 1}</span>
+                    ${isOptimal ? '<span class="optimal-badge">ОПТИМАЛЬНО</span>' : ''}
+                    <span class="variant-cost">${this.formatNumber(variant.totalCost)}</span>
+                    <span class="variant-margin" style="color: ${marginColor}">
+                        ${variant.margin >= 0 ? '+' : ''}${this.formatNumber(variant.margin)} (${variant.marginPercent}%)
+                    </span>
+                </div>
+                <div class="variant-tree">
+                    ${this.renderCraftTree(variant, 0)}
+                </div>
+            </div>
+        `;
 
         return html;
     },

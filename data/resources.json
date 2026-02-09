@@ -1,12 +1,44 @@
 {
   "resources": [
     {
+      "id": "cobblestone",
+      "name": "Cobblestone",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/cobblestone.png"
+    },
+    {
       "id": "vulcanfish",
       "name": "Vulcanfish",
       "type": "fishing",
       "subtype": null,
       "tier": null,
       "image": "images/resources/vulcanfish.png"
+    },
+    {
+      "id": "emberfish",
+      "name": "Emberfish",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/emberfish.png"
+    },
+    {
+      "id": "hardshell_crab",
+      "name": "Hardshell Crab",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/hardshell_crab.png"
+    },
+    {
+      "id": "butterfly_crowie",
+      "name": "Butterfly Crowie",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/butterfly_crowie.png"
     },
     {
       "id": "turquoise",
@@ -25,12 +57,52 @@
       "image": "images/resources/shell.png"
     },
     {
+      "id": "bascyx_1",
+      "name": "Bascyx Lv1",
+      "type": "crafting",
+      "subtype": "bascyx",
+      "tier": 1,
+      "image": "images/resources/bascyx.png"
+    },
+    {
+      "id": "bascyx_2",
+      "name": "Bascyx Lv2",
+      "type": "crafting",
+      "subtype": "bascyx",
+      "tier": 2,
+      "image": "images/resources/bascyx_2.png"
+    },
+    {
+      "id": "bascyx_3",
+      "name": "Bascyx Lv3",
+      "type": "crafting",
+      "subtype": "bascyx",
+      "tier": 3,
+      "image": "images/resources/bascyx_3.png"
+    },
+    {
       "id": "carnium_1",
       "name": "Carnium Lv1",
       "type": "crafting",
       "subtype": "carnium",
       "tier": 1,
       "image": "images/resources/carnium.png"
+    },
+    {
+      "id": "carnium_2",
+      "name": "Carnium Lv2",
+      "type": "crafting",
+      "subtype": "carnium",
+      "tier": 2,
+      "image": "images/resources/carnium_2.png"
+    },
+    {
+      "id": "carnium_3",
+      "name": "Carnium Lv3",
+      "type": "crafting",
+      "subtype": "carnium",
+      "tier": 3,
+      "image": "images/resources/carnium_3.png"
     },
     {
       "id": "phracon_1",
@@ -145,6 +217,86 @@
       "image": "images/resources/rough_bradium.png"
     },
     {
+      "id": "oridecon_1",
+      "name": "Oridecon",
+      "type": "crafting",
+      "subtype": "oridecon",
+      "tier": 1,
+      "image": "images/resources/oridecon.png"
+    },
+    {
+      "id": "oridecon_2",
+      "name": "Enriched Oridecon",
+      "type": "crafting",
+      "subtype": "oridecon",
+      "tier": 2,
+      "image": "images/resources/oridecon_2.png"
+    },
+    {
+      "id": "oridecon_3",
+      "name": "HD Oridecon",
+      "type": "crafting",
+      "subtype": "oridecon",
+      "tier": 3,
+      "image": "images/resources/oridecon_3.png"
+    },
+    {
+      "id": "elunium_1",
+      "name": "Elunium",
+      "type": "crafting",
+      "subtype": "elunium",
+      "tier": 1,
+      "image": "images/resources/elunium.png"
+    },
+    {
+      "id": "elunium_2",
+      "name": "Enriched Elunium",
+      "type": "crafting",
+      "subtype": "elunium",
+      "tier": 2,
+      "image": "images/resources/elunium_2.png"
+    },
+    {
+      "id": "elunium_3",
+      "name": "HD Elunium",
+      "type": "crafting",
+      "subtype": "elunium",
+      "tier": 3,
+      "image": "images/resources/elunium_3.png"
+    },
+    {
+      "id": "bradium_1",
+      "name": "Bradium",
+      "type": "crafting",
+      "subtype": "bradium",
+      "tier": 1,
+      "image": "images/resources/bradium.png"
+    },
+    {
+      "id": "bradium_2",
+      "name": "Enriched Bradium",
+      "type": "crafting",
+      "subtype": "bradium",
+      "tier": 2,
+      "image": "images/resources/bradium_2.png"
+    },
+    {
+      "id": "bradium_3",
+      "name": "HD Bradium",
+      "type": "crafting",
+      "subtype": "bradium",
+      "tier": 3,
+      "image": "images/resources/bradium_3.png"
+    },
+    {
+      "id": "glowfish",
+      "name": "Glowfish",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/glowfish.png"
+    },
+    {
       "id": "tuna",
       "name": "Tuna",
       "type": "fishing",
@@ -167,6 +319,14 @@
       "subtype": null,
       "tier": null,
       "image": "images/resources/berry.png"
+    },
+    {
+      "id": "coal_ore_1",
+      "name": "Coal Ore",
+      "type": "mining",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/coal_ore.png"
     },
     {
       "id": "wheat",

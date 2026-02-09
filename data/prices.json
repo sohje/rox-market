@@ -19,12 +19,24 @@
     "carnium_1": 2020,
     "carnium_2": 4310,
     "carnium_3": 8070,
+    "bascyx_1": 2080,
+    "bascyx_2": 4580,
+    "bascyx_3": 8560,
+    "oridecon_1": 6370,
+    "oridecon_2": 20200,
+    "elunium_1": 4440,
+    "elunium_2": 18200,
+    "bradium_1": 7170,
+    "bradium_2": 21200,
     "shell": 743,
     "turquoise": 853,
+    "cobblestone": 883,
     "vulcanfish": 914,
-    "tuna": 1000,
-    "salmon": 1200,
-    "berry": 100,
-    "wheat": 80
+    "emberfish": 1010,
+    "hardshell_crab": 1040,
+    "butterfly_crowie": 946,
+    "glowfish": 1070,
+    "coal_ore_1": 500,
+    "kek": 300
   }
 }

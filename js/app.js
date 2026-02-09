@@ -107,7 +107,12 @@ const App = {
         const modal = document.getElementById('detail-modal');
         const content = document.getElementById('detail-content');
 
-        content.innerHTML = Renderer.renderDetailModal(calcResult, this.resourcesMap);
+        content.innerHTML = Renderer.renderDetailModal(
+            calcResult,
+            this.resourcesMap,
+            this.recipesMap,
+            this.prices
+        );
         modal.classList.remove('hidden');
     },
 
@@ -119,6 +124,13 @@ const App = {
         document.getElementById('search').addEventListener('input', () => this.render());
         document.getElementById('type-filter').addEventListener('change', () => this.render());
         document.getElementById('sort-select').addEventListener('change', () => this.render());
+
+        document.getElementById('tax-select').addEventListener('change', (e) => {
+            const taxRate = parseFloat(e.target.value) / 100;
+            Calculator.setTaxRate(taxRate);
+            this.calculateAll();
+            this.render();
+        });
 
         document.getElementById('modal-close').addEventListener('click', () => this.hideDetail());
         document.getElementById('detail-modal').addEventListener('click', (e) => {

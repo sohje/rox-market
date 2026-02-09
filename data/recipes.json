@@ -1,6 +1,45 @@
 {
   "recipes": [
     {
+      "output": "oridecon_2",
+      "ingredients": [
+        {
+          "id": "glowfish",
+          "quantity": 9
+        },
+        {
+          "id": "rough_oridecon_2",
+          "quantity": 8
+        }
+      ]
+    },
+    {
+      "output": "bascyx_1",
+      "ingredients": [
+        {
+          "id": "upgrade_metal_1",
+          "quantity": 10
+        },
+        {
+          "id": "cobblestone",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "output": "bascyx_2",
+      "ingredients": [
+        {
+          "id": "upgrade_metal_2",
+          "quantity": 9
+        },
+        {
+          "id": "emberfish",
+          "quantity": 2
+        }
+      ]
+    },
+    {
       "output": "carnium_1",
       "ingredients": [
         {
@@ -10,6 +49,19 @@
         {
           "id": "turquoise",
           "quantity": 1
+        }
+      ]
+    },
+    {
+      "output": "carnium_2",
+      "ingredients": [
+        {
+          "id": "upgrade_metal_2",
+          "quantity": 9
+        },
+        {
+          "id": "hardshell_crab",
+          "quantity": 2
         }
       ]
     },
@@ -36,6 +88,32 @@
         {
           "id": "vulcanfish",
           "quantity": 2
+        }
+      ]
+    },
+    {
+      "output": "phracon_3",
+      "ingredients": [
+        {
+          "id": "upgrade_metal_3",
+          "quantity": 12
+        },
+        {
+          "id": "butterfly_crowie",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "output": "oridecon_1",
+      "ingredients": [
+        {
+          "id": "rough_oridecon_1",
+          "quantity": 8
+        },
+        {
+          "id": "coal_ore_1",
+          "quantity": 5
         }
       ]
     },
@@ -99,32 +177,6 @@
         {
           "id": "rough_bradium_2",
           "quantity": 3
-        }
-      ]
-    },
-    {
-      "output": "agility_stone",
-      "ingredients": [
-        {
-          "id": "rough_oridecon_2",
-          "quantity": 5
-        },
-        {
-          "id": "tuna",
-          "quantity": 4
-        }
-      ]
-    },
-    {
-      "output": "strength_stone",
-      "ingredients": [
-        {
-          "id": "rough_elunium_2",
-          "quantity": 5
-        },
-        {
-          "id": "salmon",
-          "quantity": 4
         }
       ]
     }
