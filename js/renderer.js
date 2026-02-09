@@ -66,9 +66,9 @@ const Renderer = {
                 </div>
                 <div class="margin-block">
                     <span class="margin-label">Маржа:</span>
-                    <span class="margin-value ${hasRecipe ? (calcResult.margin > 0 ? 'profit' : '') : 'no-recipe'}">
+                    <span class="margin-value ${hasRecipe ? (calcResult.margin > 0 ? 'profit' : 'loss') : 'no-recipe'}">
                         ${hasRecipe
-                            ? `+${this.formatNumber(calcResult.margin)} (${calcResult.marginPercent}%)`
+                            ? `${calcResult.margin > 0 ? '+' : ''}${this.formatNumber(calcResult.margin)} (${calcResult.marginPercent}%)`
                             : 'Нет рецепта'}
                     </span>
                 </div>
@@ -118,20 +118,30 @@ const Renderer = {
             </div>
         `;
 
-        if (hasRecipe && calcResult.breakdown) {
+        const allVariants = Calculator.generateAllVariants(
+            calcResult.resourceId,
+            prices,
+            recipesMap,
+            resourcesMap
+        );
+
+        if (allVariants.length > 0) {
+            // Находим лучший вариант именно КРАФТА для отображения дерева по умолчанию
+            const bestCraft = allVariants.find(v => v.decision === 'craft') || allVariants[0];
+
             html += `
                 <div class="craft-tree">
-                    <h3>Дерево крафта (оптимальный путь)</h3>
-                    ${this.renderCraftTree(calcResult, 0)}
+                    <h3>${bestCraft.decision === 'craft' ? 'Рецепт крафта' : 'Оптимальный путь'}</h3>
+                    ${this.renderCraftTree(bestCraft, 0)}
                 </div>
             `;
 
-            const purchaseList = Calculator.getFlatPurchaseList(calcResult);
+            const purchaseList = Calculator.getFlatPurchaseList(bestCraft);
             const totalCost = purchaseList.reduce((sum, p) => sum + p.totalCost, 0);
 
             html += `
                 <div class="purchase-list">
-                    <h3>Список покупок</h3>
+                    <h3>Список покупок для этого варианта</h3>
                     ${purchaseList.map(p => `
                         <div class="purchase-item">
                             <span class="purchase-item-icon">${this.renderIcon(p.resource, 24)}</span>
@@ -147,24 +157,17 @@ const Renderer = {
                 </div>
             `;
 
-            const allVariants = Calculator.generateAllVariants(
-                calcResult.resourceId,
-                prices,
-                recipesMap,
-                resourcesMap
-            );
-
             if (allVariants.length > 1) {
                 html += `
                     <div class="all-variants">
-                        <h3>Все варианты крафта (${allVariants.length})</h3>
+                        <h3>Все варианты получения (${allVariants.length})</h3>
                         <div class="variants-list">
                             ${allVariants.map((variant, idx) => this.renderVariant(variant, idx)).join('')}
                         </div>
                     </div>
                 `;
             }
-        } else if (!hasRecipe) {
+        } else {
             html += `<div class="no-recipe-msg">Базовый ресурс, рецепт отсутствует</div>`;
         }
 

@@ -68,7 +68,7 @@ const Calculator = {
             decision,
             margin,
             marginPercent: marginPercent.toFixed(1),
-            breakdown: decision === 'craft' ? breakdown : null
+            breakdown: breakdown // Сохраняем структуру всегда, если есть рецепт
         };
 
         this.memo.set(resourceId, result);
@@ -109,27 +109,20 @@ const Calculator = {
     },
 
     generateAllVariants(resourceId, prices, recipesMap, resourcesMap) {
+        const recipe = recipesMap[resourceId];
+        if (!recipe) return [];
+
         const variants = [];
-        const seen = new Set();
+        const seenCosts = new Map(); // cost -> signature to keep it unique
 
         const buildVariant = (resId, decisions = {}) => {
             const resource = resourcesMap[resId];
             const marketPrice = prices[resId] || 0;
-            const recipe = recipesMap[resId];
-
-            if (!recipe) {
-                return {
-                    resourceId: resId,
-                    resource,
-                    cost: marketPrice,
-                    decision: 'buy',
-                    breakdown: null
-                };
-            }
+            const currentRecipe = recipesMap[resId];
 
             const decision = decisions[resId] || 'buy';
 
-            if (decision === 'buy') {
+            if (decision === 'buy' || !currentRecipe) {
                 return {
                     resourceId: resId,
                     resource,
@@ -142,7 +135,7 @@ const Calculator = {
             let craftCost = 0;
             const breakdown = [];
 
-            for (const ing of recipe.ingredients) {
+            for (const ing of currentRecipe.ingredients) {
                 const sub = buildVariant(ing.id, decisions);
                 const totalCost = sub.cost * ing.quantity;
                 craftCost += totalCost;
@@ -163,45 +156,76 @@ const Calculator = {
         };
 
         const generateDecisionSets = (resId, visited = new Set()) => {
-            if (visited.has(resId)) return [{}];
+            const currentRecipe = recipesMap[resId];
+            if (!currentRecipe || visited.has(resId)) return [{}];
+
             visited.add(resId);
 
-            const recipe = recipesMap[resId];
-            if (!recipe) return [{}];
+            let ingredientSets = [{}];
 
-            let allSets = [{}];
-
-            for (const ing of recipe.ingredients) {
+            for (const ing of currentRecipe.ingredients) {
                 const ingSets = generateDecisionSets(ing.id, new Set(visited));
-                const newSets = [];
-
-                for (const baseSet of allSets) {
-                    for (const ingSet of ingSets) {
-                        newSets.push({...baseSet, ...ingSet});
+                const nextSets = [];
+                for (const base of ingredientSets) {
+                    for (const s of ingSets) {
+                        nextSets.push({...base, ...s});
                     }
                 }
-                allSets = newSets;
+                ingredientSets = nextSets;
             }
 
-            const withBuy = allSets.map(s => ({...s}));
-            const withCraft = allSets.map(s => ({...s, [resId]: 'craft'}));
+            const results = [];
+            // Вариант 1: Купить этот ингредиент
+            for (const s of ingredientSets) results.push({...s});
+            // Вариант 2: Крафтить этот ингредиент
+            for (const s of ingredientSets) results.push({...s, [resId]: 'craft'});
 
-            return [...withBuy, ...withCraft];
+            return results;
         };
 
-        const decisionSets = generateDecisionSets(resourceId);
+        // Генерируем сеты, где корень ВСЕГДА 'craft' (чтобы не дублировать 'buy')
+        let rootIngredientSets = [{}];
+        for (const ing of recipe.ingredients) {
+            const ingSets = generateDecisionSets(ing.id, new Set([resourceId]));
+            const nextSets = [];
+            for (const base of rootIngredientSets) {
+                for (const s of ingSets) {
+                    nextSets.push({...base, ...s});
+                }
+            }
+            rootIngredientSets = nextSets;
+        }
+
         const marketPriceAfterTax = (prices[resourceId] || 0) * (1 - this.taxRate);
 
-        for (const decisions of decisionSets) {
-            const variant = buildVariant(resourceId, decisions);
+        // Добавляем вариант "Просто купить"
+        const buyOnly = buildVariant(resourceId, {}); // по умолчанию вернет buy
+        variants.push({
+            ...buyOnly,
+            marketPrice: prices[resourceId] || 0,
+            marketPriceAfterTax,
+            margin: marketPriceAfterTax - buyOnly.cost,
+            marginPercent: buyOnly.cost > 0 ? ((marketPriceAfterTax - buyOnly.cost) / marketPriceAfterTax * 100).toFixed(1) : 0,
+            totalCost: buyOnly.cost
+        });
+
+        // Добавляем все варианты крафта
+        for (const decisions of rootIngredientSets) {
+            const variant = buildVariant(resourceId, {...decisions, [resourceId]: 'craft'});
+
+            // Создаем уникальную подпись для дерева крафта, чтобы убрать дубликаты
+            const signature = JSON.stringify(variant, (key, value) => {
+                if (key === 'resource') return undefined; // исключаем большие объекты
+                return value;
+            });
+
+            if ([...seenCosts.values()].includes(signature)) continue;
+            seenCosts.set(variant.cost, signature);
+
             const margin = marketPriceAfterTax - variant.cost;
             const marginPercent = marketPriceAfterTax > 0
                 ? ((margin / marketPriceAfterTax) * 100).toFixed(1)
                 : 0;
-
-            const signature = JSON.stringify(decisions);
-            if (seen.has(signature)) continue;
-            seen.add(signature);
 
             variants.push({
                 ...variant,
@@ -214,7 +238,6 @@ const Calculator = {
         }
 
         variants.sort((a, b) => b.margin - a.margin);
-
         return variants;
     }
 };
