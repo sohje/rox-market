@@ -1,0 +1,30 @@
+{
+  "updated_at": "2026-02-09T12:00:00Z",
+  "prices": {
+    "upgrade_metal_1": 46,
+    "upgrade_metal_2": 158,
+    "upgrade_metal_3": 370,
+    "rough_oridecon_1": 583,
+    "rough_oridecon_2": 1580,
+    "rough_oridecon_3": 4180,
+    "rough_elunium_1": 269,
+    "rough_elunium_2": 694,
+    "rough_elunium_3": 1840,
+    "rough_bradium_1": 647,
+    "rough_bradium_2": 1730,
+    "rough_bradium_3": 4580,
+    "phracon_1": 1680,
+    "phracon_2": 4180,
+    "phracon_3": 8560,
+    "carnium_1": 2020,
+    "carnium_2": 4310,
+    "carnium_3": 8070,
+    "shell": 743,
+    "turquoise": 853,
+    "vulcanfish": 914,
+    "tuna": 1000,
+    "salmon": 1200,
+    "berry": 100,
+    "wheat": 80
+  }
+}

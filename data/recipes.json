@@ -1,0 +1,132 @@
+{
+  "recipes": [
+    {
+      "output": "carnium_1",
+      "ingredients": [
+        {
+          "id": "upgrade_metal_1",
+          "quantity": 10
+        },
+        {
+          "id": "turquoise",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "output": "phracon_1",
+      "ingredients": [
+        {
+          "id": "upgrade_metal_1",
+          "quantity": 10
+        },
+        {
+          "id": "shell",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "output": "phracon_2",
+      "ingredients": [
+        {
+          "id": "upgrade_metal_2",
+          "quantity": 9
+        },
+        {
+          "id": "vulcanfish",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "output": "upgrade_metal_2",
+      "ingredients": [
+        {
+          "id": "upgrade_metal_1",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "output": "upgrade_metal_3",
+      "ingredients": [
+        {
+          "id": "upgrade_metal_2",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "output": "rough_oridecon_2",
+      "ingredients": [
+        {
+          "id": "rough_oridecon_1",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "output": "rough_oridecon_3",
+      "ingredients": [
+        {
+          "id": "rough_oridecon_2",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "output": "rough_elunium_2",
+      "ingredients": [
+        {
+          "id": "rough_elunium_1",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "output": "rough_bradium_2",
+      "ingredients": [
+        {
+          "id": "rough_bradium_1",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "output": "rough_bradium_3",
+      "ingredients": [
+        {
+          "id": "rough_bradium_2",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "output": "agility_stone",
+      "ingredients": [
+        {
+          "id": "rough_oridecon_2",
+          "quantity": 5
+        },
+        {
+          "id": "tuna",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "output": "strength_stone",
+      "ingredients": [
+        {
+          "id": "rough_elunium_2",
+          "quantity": 5
+        },
+        {
+          "id": "salmon",
+          "quantity": 4
+        }
+      ]
+    }
+  ]
+}

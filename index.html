@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROX Market</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>ROX Market</h1>
+            <p class="subtitle">Калькулятор цен и себестоимости</p>
+        </header>
+
+        <div class="controls">
+            <input
+                type="text"
+                id="search"
+                class="search-input"
+                placeholder="Поиск по названию..."
+            >
+            <select id="type-filter" class="filter-select">
+                <option value="all">Все типы</option>
+                <option value="mining">Добыча</option>
+                <option value="fishing">Рыболовство</option>
+                <option value="gathering">Собирательство</option>
+                <option value="crafting">Создание</option>
+            </select>
+            <select id="sort-select" class="filter-select">
+                <option value="margin-desc">Маржа ↓</option>
+                <option value="margin-asc">Маржа ↑</option>
+                <option value="price-desc">Цена ↓</option>
+                <option value="price-asc">Цена ↑</option>
+                <option value="name-asc">Название A-Z</option>
+            </select>
+        </div>
+
+        <div id="resources-list" class="resources-list">
+            <!-- Ресурсы будут загружены через JS -->
+        </div>
+
+        <div id="detail-modal" class="modal hidden">
+            <div class="modal-content">
+                <button class="modal-close" id="modal-close">&times;</button>
+                <div id="detail-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/calculator.js"></script>
+    <script src="js/renderer.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

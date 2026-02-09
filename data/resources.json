@@ -1,0 +1,180 @@
+{
+  "resources": [
+    {
+      "id": "vulcanfish",
+      "name": "Vulcanfish",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/vulcanfish.png"
+    },
+    {
+      "id": "turquoise",
+      "name": "Turquoise",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/turquoise.png"
+    },
+    {
+      "id": "shell",
+      "name": "Shell",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/shell.png"
+    },
+    {
+      "id": "carnium_1",
+      "name": "Carnium Lv1",
+      "type": "crafting",
+      "subtype": "carnium",
+      "tier": 1,
+      "image": "images/resources/carnium.png"
+    },
+    {
+      "id": "phracon_1",
+      "name": "Phracon Lv1",
+      "type": "crafting",
+      "subtype": "phracon",
+      "tier": 1,
+      "image": "images/resources/phracon.png"
+    },
+    {
+      "id": "phracon_2",
+      "name": "Phracon Lv2",
+      "type": "crafting",
+      "subtype": "phracon",
+      "tier": 2,
+      "image": "images/resources/phracon_2.png"
+    },
+    {
+      "id": "phracon_3",
+      "name": "Phracon Lv3",
+      "type": "crafting",
+      "subtype": "phracon",
+      "tier": 3,
+      "image": "images/resources/phracon_3.png"
+    },
+    {
+      "id": "upgrade_metal_1",
+      "name": "Upgrade Metal Lv1",
+      "type": "mining",
+      "subtype": "upgrade_metal",
+      "tier": 1,
+      "image": "images/resources/upgrade_metal.png"
+    },
+    {
+      "id": "upgrade_metal_2",
+      "name": "Upgrade Metal Lv2",
+      "type": "mining",
+      "subtype": "upgrade_metal",
+      "tier": 2,
+      "image": "images/resources/upgrade_metal.png"
+    },
+    {
+      "id": "upgrade_metal_3",
+      "name": "Upgrade Metal Lv3",
+      "type": "mining",
+      "subtype": "upgrade_metal",
+      "tier": 3,
+      "image": "images/resources/upgrade_metal.png"
+    },
+    {
+      "id": "rough_oridecon_1",
+      "name": "Rough Oridecon Lv1",
+      "type": "mining",
+      "subtype": "oridecon",
+      "tier": 1,
+      "image": "images/resources/rough_oridecon.png"
+    },
+    {
+      "id": "rough_oridecon_2",
+      "name": "Rough Oridecon Lv2",
+      "type": "mining",
+      "subtype": "oridecon",
+      "tier": 2,
+      "image": "images/resources/rough_oridecon.png"
+    },
+    {
+      "id": "rough_oridecon_3",
+      "name": "Rough Oridecon Lv3",
+      "type": "mining",
+      "subtype": "oridecon",
+      "tier": 3,
+      "image": "images/resources/rough_oridecon.png"
+    },
+    {
+      "id": "rough_elunium_1",
+      "name": "Rough Elunium Lv1",
+      "type": "mining",
+      "subtype": "elunium",
+      "tier": 1,
+      "image": "images/resources/rough_elunium.png"
+    },
+    {
+      "id": "rough_elunium_2",
+      "name": "Rough Elunium Lv2",
+      "type": "mining",
+      "subtype": "elunium",
+      "tier": 2,
+      "image": "images/resources/rough_elunium.png"
+    },
+    {
+      "id": "rough_bradium_1",
+      "name": "Rough Bradium Lv1",
+      "type": "mining",
+      "subtype": "bradium",
+      "tier": 1,
+      "image": "images/resources/rough_bradium.png"
+    },
+    {
+      "id": "rough_bradium_2",
+      "name": "Rough Bradium Lv2",
+      "type": "mining",
+      "subtype": "bradium",
+      "tier": 2,
+      "image": "images/resources/rough_bradium.png"
+    },
+    {
+      "id": "rough_bradium_3",
+      "name": "Rough Bradium Lv3",
+      "type": "mining",
+      "subtype": "bradium",
+      "tier": 3,
+      "image": "images/resources/rough_bradium.png"
+    },
+    {
+      "id": "tuna",
+      "name": "Tuna",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/tuna.png"
+    },
+    {
+      "id": "salmon",
+      "name": "Salmon",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/salmon.png"
+    },
+    {
+      "id": "berry",
+      "name": "Berry",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/berry.png"
+    },
+    {
+      "id": "wheat",
+      "name": "Wheat",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/wheat.png"
+    }
+  ]
+}
