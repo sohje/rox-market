@@ -1,6 +1,19 @@
 {
   "recipes": [
     {
+      "output": "sharpening_enchantment_stone",
+      "ingredients": [
+        {
+          "id": "shattering_shroom",
+          "quantity": 1
+        },
+        {
+          "id": "muspellium_1",
+          "quantity": 5
+        }
+      ]
+    },
+    {
       "output": "oridecon_2",
       "ingredients": [
         {
@@ -40,6 +53,19 @@
       ]
     },
     {
+      "output": "bascyx_3",
+      "ingredients": [
+        {
+          "id": "upgrade_metal_3",
+          "quantity": 12
+        },
+        {
+          "id": "mystic_mussel",
+          "quantity": 3
+        }
+      ]
+    },
+    {
       "output": "carnium_1",
       "ingredients": [
         {
@@ -62,6 +88,19 @@
         {
           "id": "hardshell_crab",
           "quantity": 2
+        }
+      ]
+    },
+    {
+      "output": "carnium_3",
+      "ingredients": [
+        {
+          "id": "upgrade_metal_3",
+          "quantity": 12
+        },
+        {
+          "id": "whitefeather_cowrie",
+          "quantity": 3
         }
       ]
     },
