@@ -23,11 +23,62 @@ const App = {
 
         const resourcesData = await resourcesRes.json();
         const recipesData = await recipesRes.json();
-        const pricesData = await pricesRes.json();
+        const defaultPricesData = await pricesRes.json();
 
         this.resources = resourcesData.resources;
         this.recipes = recipesData.recipes;
-        this.prices = pricesData.prices;
+
+        // Загружаем цены из localStorage или используем дефолтные
+        const savedPrices = localStorage.getItem('rox_prices');
+        if (savedPrices) {
+            this.prices = JSON.parse(savedPrices);
+        } else {
+            this.prices = defaultPricesData.prices;
+        }
+    },
+
+    savePrices() {
+        localStorage.setItem('rox_prices', JSON.stringify(this.prices));
+        this.calculateAll();
+        this.render();
+    },
+
+    updatePrice(resourceId, newPrice) {
+        const price = parseFloat(newPrice);
+        if (!isNaN(price) && price >= 0) {
+            this.prices[resourceId] = price;
+            this.savePrices();
+        }
+    },
+
+    resetPrices() {
+        if (confirm('Вы уверены, что хотите сбросить все цены к значениям по умолчанию?')) {
+            localStorage.removeItem('rox_prices');
+            location.reload();
+        }
+    },
+
+    exportPrices() {
+        const data = JSON.stringify(this.prices);
+        navigator.clipboard.writeText(data).then(() => {
+            alert('Цены скопированы в буфер обмена в формате JSON');
+        });
+    },
+
+    importPrices() {
+        const data = prompt('Вставьте JSON с ценами:');
+        if (data) {
+            try {
+                const newPrices = JSON.parse(data);
+                if (typeof newPrices === 'object') {
+                    this.prices = newPrices;
+                    this.savePrices();
+                    alert('Цены успешно импортированы!');
+                }
+            } catch (e) {
+                alert('Ошибка: неверный формат JSON');
+            }
+        }
     },
 
     buildMaps() {
@@ -130,6 +181,23 @@ const App = {
             Calculator.setTaxRate(taxRate);
             this.calculateAll();
             this.render();
+        });
+
+        document.getElementById('reset-prices').addEventListener('click', () => this.resetPrices());
+        document.getElementById('export-prices').addEventListener('click', () => this.exportPrices());
+        document.getElementById('import-prices').addEventListener('click', () => this.importPrices());
+
+        // Обработка клика по редактируемой цене (делегирование)
+        document.getElementById('resources-list').addEventListener('click', (e) => {
+            const editable = e.target.closest('.editable');
+            if (editable) {
+                const id = editable.dataset.id;
+                const currentPrice = this.prices[id];
+                const newPrice = prompt(`Введите новую цену для ${this.resourcesMap[id].name}:`, currentPrice);
+                if (newPrice !== null) {
+                    this.updatePrice(id, newPrice);
+                }
+            }
         });
 
         document.getElementById('modal-close').addEventListener('click', () => this.hideDetail());

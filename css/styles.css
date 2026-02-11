@@ -77,6 +77,33 @@ body {
     cursor: pointer;
 }
 
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-danger {
+    background: var(--loss);
+    color: white;
+}
+
+.price-value.editable {
+    cursor: pointer;
+    text-decoration: underline dotted;
+}
+
+.price-value.editable:hover {
+    color: var(--accent);
+}
+
 .resources-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));

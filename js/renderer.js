@@ -36,7 +36,12 @@ const Renderer = {
     renderResourceCard(calcResult, onClick) {
         const card = document.createElement('div');
         card.className = 'resource-card';
-        card.onclick = () => onClick(calcResult);
+        // Предотвращаем открытие модалки при клике на редактируемую цену
+        card.addEventListener('click', (e) => {
+            if (!e.target.closest('.editable')) {
+                onClick(calcResult);
+            }
+        });
 
         const hasRecipe = calcResult.craftCost !== null;
         const marginClass = hasRecipe && calcResult.margin > 0 ? 'profit' : '';
@@ -56,7 +61,11 @@ const Renderer = {
             <div class="resource-prices">
                 <div class="price-block">
                     <div class="price-label">Цена на рынке</div>
-                    <div class="price-value">${this.formatNumber(calcResult.marketPrice)}</div>
+                    <div class="price-value editable"
+                         data-id="${calcResult.resourceId}"
+                         title="Нажмите, чтобы изменить">
+                        ${this.formatNumber(calcResult.marketPrice)}
+                    </div>
                 </div>
                 <div class="price-block">
                     <div class="price-label">Себестоимость</div>
