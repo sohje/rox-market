@@ -399,6 +399,94 @@
       "subtype": null,
       "tier": null,
       "image": "images/resources/sharpening_enchantment_stone.png"
+    },
+    {
+      "id": "conch_snail",
+      "name": "Conch Snail",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/conch_snail.png"
+    },
+    {
+      "id": "white_cloud_fish",
+      "name": "White Cloud Fish",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/white_cloud_fish.png"
+    },
+    {
+      "id": "pure_water_sturgeon",
+      "name": "Pure Water Sturgeon",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/pure_water_sturgeon.png"
+    },
+    {
+      "id": "str_stone_1",
+      "name": "STR Stone Lv1",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/str_stone_1.png"
+    },
+    {
+      "id": "agi_stone_1",
+      "name": "AGI Stone Lv1",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/agi_stone_1.png"
+    },
+    {
+      "id": "int_stone_1",
+      "name": "INT Stone Lv1",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/int_stone_1.png"
+    },
+    {
+      "id": "vit_stone_1",
+      "name": "VIT Stone Lv1",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/vit_stone_1.png"
+    },
+    {
+      "id": "luk_stone_1",
+      "name": "LUK Stone Lv1",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/luk_stone_1.png"
+    },
+    {
+      "id": "dex_stone_1",
+      "name": "DEX Stone Lv1",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/dex_stone_1.png"
+    },
+    {
+      "id": "pure_jewelstone_1",
+      "name": "Pure Jewelstone Lv1",
+      "type": "mining",
+      "subtype": "jewelstone",
+      "tier": 1,
+      "image": "images/resources/pure_jewelstone.png"
+    },
+    {
+      "id": "impure_jewelstone_1",
+      "name": "Impure Jewelstone Lv1",
+      "type": "mining",
+      "subtype": "jewelstone",
+      "tier": 1,
+      "image": "images/resources/impure_jewelstone.png"
     }
   ]
 }

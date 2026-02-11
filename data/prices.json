@@ -1,6 +1,9 @@
 {
   "updated_at": "2026-02-09T12:00:00Z",
   "prices": {
+    "impure_jewelstone_1": 128,
+    "pure_jewelstone_1": 544,
+    "pure_jewelstone_2": 1580,
     "muspellium_1": 92,
     "muspellium_2": 275,
     "upgrade_metal_1": 46,
@@ -49,8 +52,17 @@
     "nitraria_seed": 769,
     "desert_welwitschia": 718,
     "starlight_snail": 1100,
+    "conch_snail": 1010,
+    "white_cloud_fish": 883,
+    "pure_water_sturgeon": 946,
     "night_pearl": 1130,
     "whitefeather_cowrie": 946,
-    "mystic_mussel": 1040
+    "mystic_mussel": 1040,
+    "str_stone_1": 10100,
+    "agi_stone_1": 5650,
+    "int_stone_1": 10400,
+    "vit_stone_1": 6760,
+    "luk_stone_1": 9900,
+    "dex_stone_1": 6370
   }
 }

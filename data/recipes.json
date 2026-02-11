@@ -1,6 +1,84 @@
 {
   "recipes": [
     {
+      "output": "str_stone_1",
+      "ingredients": [
+        {
+          "id": "pure_jewelstone_1",
+          "quantity": 10
+        },
+        {
+          "id": "conch_snail",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "output": "agi_stone_1",
+      "ingredients": [
+        {
+          "id": "impure_jewelstone_1",
+          "quantity": 10
+        },
+        {
+          "id": "white_cloud_fish",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "output": "int_stone_1",
+      "ingredients": [
+        {
+          "id": "pure_jewelstone_1",
+          "quantity": 10
+        },
+        {
+          "id": "pure_water_sturgeon",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "output": "vit_stone_1",
+      "ingredients": [
+        {
+          "id": "impure_jewelstone_1",
+          "quantity": 10
+        },
+        {
+          "id": "conch_snail",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "output": "luk_stone_1",
+      "ingredients": [
+        {
+          "id": "pure_jewelstone_1",
+          "quantity": 10
+        },
+        {
+          "id": "white_cloud_fish",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "output": "dex_stone_1",
+      "ingredients": [
+        {
+          "id": "impure_jewelstone_1",
+          "quantity": 10
+        },
+        {
+          "id": "pure_water_sturgeon",
+          "quantity": 4
+        }
+      ]
+    },
+    {
       "output": "muspellium_2",
       "ingredients": [
         {
