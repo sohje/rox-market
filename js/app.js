@@ -35,6 +35,10 @@ const App = {
         } else {
             this.prices = defaultPricesData.prices;
         }
+
+        // Загружаем историю цен
+        const savedHistory = localStorage.getItem('rox_history');
+        this.history = savedHistory ? JSON.parse(savedHistory) : {};
     },
 
     savePrices() {
@@ -47,8 +51,33 @@ const App = {
         const price = parseFloat(newPrice);
         if (!isNaN(price) && price >= 0) {
             this.prices[resourceId] = price;
+            this.addToHistory(resourceId, price);
             this.savePrices();
         }
+    },
+
+    addToHistory(resourceId, price) {
+        const today = new Date().toLocaleDateString('ru-RU');
+        if (!this.history[resourceId]) {
+            this.history[resourceId] = [];
+        }
+
+        const resourceHistory = this.history[resourceId];
+        const lastEntry = resourceHistory[resourceHistory.length - 1];
+
+        // Обновляем цену за сегодня или добавляем новую запись
+        if (lastEntry && lastEntry.date === today) {
+            lastEntry.price = price;
+        } else {
+            resourceHistory.push({ date: today, price: price });
+        }
+
+        // Ограничиваем историю (например, последние 30 записей)
+        if (resourceHistory.length > 30) {
+            resourceHistory.shift();
+        }
+
+        localStorage.setItem('rox_history', JSON.stringify(this.history));
     },
 
     resetPrices() {
@@ -165,6 +194,9 @@ const App = {
             this.prices
         );
         modal.classList.remove('hidden');
+
+        // Инициализируем график истории
+        Renderer.initPriceChart(this.history[calcResult.resourceId]);
     },
 
     hideDetail() {

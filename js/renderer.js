@@ -180,7 +180,64 @@ const Renderer = {
             html += `<div class="no-recipe-msg">Базовый ресурс, рецепт отсутствует</div>`;
         }
 
+        html += `
+            <div class="price-history-section">
+                <h3>История цен</h3>
+                <div class="chart-container" style="position: relative; height:200px; width:100%">
+                    <canvas id="priceChart"></canvas>
+                </div>
+            </div>
+        `;
+
         return html;
+    },
+
+    initPriceChart(history) {
+        const ctx = document.getElementById('priceChart').getContext('2d');
+        if (!history || history.length === 0) {
+            ctx.font = '14px Arial';
+            ctx.fillStyle = '#aaa';
+            ctx.textAlign = 'center';
+            ctx.fillText('Нет данных истории', ctx.canvas.width / 2, ctx.canvas.height / 2);
+            return;
+        }
+
+        const labels = history.map(h => h.date);
+        const prices = history.map(h => h.price);
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Цена',
+                    data: prices,
+                    borderColor: '#e94560',
+                    backgroundColor: 'rgba(233, 69, 96, 0.1)',
+                    borderWidth: 2,
+                    fill: true,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        grid: { color: '#334155' },
+                        ticks: { color: '#aaa' }
+                    },
+                    x: {
+                        grid: { display: false },
+                        ticks: { color: '#aaa' }
+                    }
+                }
+            }
+        });
     },
 
     renderVariant(variant, index) {
