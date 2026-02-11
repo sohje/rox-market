@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROX Market</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QR4T2KMQXH"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QR4T2KMQXH');
+</script>
+
 <body>
     <div class="container">
         <header class="header">
@@ -14,12 +25,7 @@
         </header>
 
         <div class="controls">
-            <input
-                type="text"
-                id="search"
-                class="search-input"
-                placeholder="Поиск по названию..."
-            >
+            <input type="text" id="search" class="search-input" placeholder="Поиск по названию...">
             <select id="type-filter" class="filter-select">
                 <option value="all">Все типы</option>
                 <option value="mining">Добыча</option>
@@ -62,4 +68,5 @@
     <script src="js/renderer.js"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>
