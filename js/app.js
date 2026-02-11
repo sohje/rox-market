@@ -197,6 +197,26 @@ const App = {
 
         // Инициализируем график истории
         Renderer.initPriceChart(this.history[calcResult.resourceId]);
+
+        // Обработка изменения количества
+        const qtyInput = document.getElementById('modal-qty');
+        const dynamicContent = document.getElementById('modal-dynamic-content');
+
+        if (qtyInput && dynamicContent) {
+            qtyInput.addEventListener('input', (e) => {
+                let qty = parseInt(e.target.value) || 1;
+                if (qty < 1) qty = 1;
+                if (qty > 999) qty = 999;
+
+                dynamicContent.innerHTML = Renderer.renderDynamicDetailContent(
+                    calcResult,
+                    this.resourcesMap,
+                    this.recipesMap,
+                    this.prices,
+                    qty
+                );
+            });
+        }
     },
 
     hideDetail() {

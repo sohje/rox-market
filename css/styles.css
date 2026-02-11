@@ -333,6 +333,45 @@ body {
     font-weight: 700;
 }
 
+.quantity-selector {
+    margin: 20px 0;
+    padding: 15px;
+    background: var(--bg-card);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.quantity-selector label {
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.quantity-selector input {
+    width: 80px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.quantity-selector input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.variants-subtitle {
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
 .craft-tree {
     background: var(--bg-card);
     border-radius: 10px;
@@ -427,6 +466,34 @@ body {
     width: 28px;
     height: 28px;
     flex-shrink: 0;
+}
+
+.purchase-item-name {
+    flex: 1;
+}
+
+.purchase-item-math, .tree-item-math {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin: 0 15px;
+}
+
+.math-operator {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.unit-price {
+    font-weight: 500;
+}
+
+.purchase-item-total {
+    font-weight: 600;
+    min-width: 60px;
+    text-align: right;
 }
 
 .purchase-item:last-child {

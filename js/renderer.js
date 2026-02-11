@@ -77,8 +77,8 @@ const Renderer = {
                     <span class="margin-label">Маржа:</span>
                     <span class="margin-value ${hasRecipe ? (calcResult.margin > 0 ? 'profit' : 'loss') : 'no-recipe'}">
                         ${hasRecipe
-                            ? `${calcResult.margin > 0 ? '+' : ''}${this.formatNumber(calcResult.margin)} (${calcResult.marginPercent}%)`
-                            : 'Нет рецепта'}
+                ? `${calcResult.margin > 0 ? '+' : ''}${this.formatNumber(calcResult.margin)} (${calcResult.marginPercent}%)`
+                : 'Нет рецепта'}
                     </span>
                 </div>
             </div>
@@ -125,60 +125,16 @@ const Renderer = {
                     </div>
                 </div>
             </div>
+
+            <div class="quantity-selector">
+                <label for="modal-qty">Количество для крафта:</label>
+                <input type="number" id="modal-qty" value="1" min="1" max="999">
+            </div>
+
+            <div id="modal-dynamic-content">
+                ${this.renderDynamicDetailContent(calcResult, resourcesMap, recipesMap, prices, 1)}
+            </div>
         `;
-
-        const allVariants = Calculator.generateAllVariants(
-            calcResult.resourceId,
-            prices,
-            recipesMap,
-            resourcesMap
-        );
-
-        if (allVariants.length > 0) {
-            // Находим лучший вариант именно КРАФТА для отображения дерева по умолчанию
-            const bestCraft = allVariants.find(v => v.decision === 'craft') || allVariants[0];
-
-            html += `
-                <div class="craft-tree">
-                    <h3>${bestCraft.decision === 'craft' ? 'Рецепт крафта' : 'Оптимальный путь'}</h3>
-                    ${this.renderCraftTree(bestCraft, 0)}
-                </div>
-            `;
-
-            const purchaseList = Calculator.getFlatPurchaseList(bestCraft);
-            const totalCost = purchaseList.reduce((sum, p) => sum + p.totalCost, 0);
-
-            html += `
-                <div class="purchase-list">
-                    <h3>Список покупок для этого варианта</h3>
-                    ${purchaseList.map(p => `
-                        <div class="purchase-item">
-                            <span class="purchase-item-icon">${this.renderIcon(p.resource, 24)}</span>
-                            <span>${p.resource?.name || p.resourceId}</span>
-                            <span>× ${p.quantity}</span>
-                            <span>${this.formatNumber(p.totalCost)}</span>
-                        </div>
-                    `).join('')}
-                    <div class="purchase-total">
-                        <span>Итого:</span>
-                        <span style="color: var(--profit)">${this.formatNumber(totalCost)}</span>
-                    </div>
-                </div>
-            `;
-
-            if (allVariants.length > 1) {
-                html += `
-                    <div class="all-variants">
-                        <h3>Все варианты получения (${allVariants.length})</h3>
-                        <div class="variants-list">
-                            ${allVariants.map((variant, idx) => this.renderVariant(variant, idx)).join('')}
-                        </div>
-                    </div>
-                `;
-            }
-        } else {
-            html += `<div class="no-recipe-msg">Базовый ресурс, рецепт отсутствует</div>`;
-        }
 
         html += `
             <div class="price-history-section">
@@ -189,6 +145,67 @@ const Renderer = {
             </div>
         `;
 
+        return html;
+    },
+
+    renderDynamicDetailContent(calcResult, resourcesMap, recipesMap, prices, qty) {
+        const allVariants = Calculator.generateAllVariants(
+            calcResult.resourceId,
+            prices,
+            recipesMap,
+            resourcesMap
+        );
+
+        let html = '';
+
+        if (allVariants.length > 0) {
+            // Находим лучший вариант именно КРАФТА для отображения дерева по умолчанию
+            const bestCraft = allVariants.find(v => v.decision === 'craft') || allVariants[0];
+
+            html += `
+                <div class="craft-tree">
+                    <h3>${bestCraft.decision === 'craft' ? 'Рецепт крафта' : 'Оптимальный путь'}</h3>
+                    ${this.renderCraftTree(bestCraft, 0, qty)}
+                </div>
+            `;
+
+            const purchaseList = Calculator.getFlatPurchaseList(bestCraft);
+            const totalCost = purchaseList.reduce((sum, p) => sum + p.totalCost * qty, 0);
+
+            html += `
+                <div class="purchase-list">
+                    <h3>Список покупок для ${qty} шт.</h3>
+                    ${purchaseList.map(p => `
+                        <div class="purchase-item">
+                            <span class="purchase-item-icon">${this.renderIcon(p.resource, 24)}</span>
+                            <span class="purchase-item-name">${p.resource?.name || p.resourceId}</span>
+                            <span class="purchase-item-math">
+                                <span class="unit-price">${this.formatNumber(p.unitCost)}</span>
+                                <span class="math-operator">×</span>
+                                <span class="quantity">${p.quantity * qty}</span>
+                            </span>
+                            <span class="purchase-item-total">${this.formatNumber(p.totalCost * qty)}</span>
+                        </div>
+                    `).join('')}
+                    <div class="purchase-total">
+                        <span>Итоговая себестоимость:</span>
+                        <span style="color: var(--profit)">${this.formatNumber(totalCost)}</span>
+                    </div>
+                </div>
+            `;
+
+            if (allVariants.length > 1) {
+                html += `
+                    <div class="all-variants">
+                        <h3>Все варианты получения (${allVariants.length})</h3>
+                        <p class="variants-subtitle" style="color: var(--text-secondary); font-size: 0.8rem; margin-bottom: 10px;">Ниже расчет приведен на 1 единицу товара</p>
+                        <div class="variants-list">
+                            ${allVariants.map((variant, idx) => this.renderVariant(variant, idx)).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+        }
         return html;
     },
 
@@ -263,7 +280,7 @@ const Renderer = {
         return html;
     },
 
-    renderCraftTree(node, depth) {
+    renderCraftTree(node, depth, multiplier = 1) {
         const indent = depth > 0;
         let html = '';
 
@@ -273,18 +290,25 @@ const Renderer = {
                 const decisionClass = child.decision;
                 const decisionText = child.decision === 'buy' ? 'КУПИТЬ' : 'КРАФТ';
 
+                const unitPrice = child.cost !== undefined ? child.cost : child.optimalCost;
+                const totalQty = child.quantity * multiplier;
+
                 html += `
                     <div class="tree-item">
                         <div class="tree-item-icon">${this.renderIcon(child.resource, 24)}</div>
                         <span class="tree-item-name">${child.resource?.name || child.resourceId}</span>
-                        <span class="tree-item-qty">× ${child.quantity}</span>
+                        <span class="tree-item-math">
+                            <span class="unit-price">${this.formatNumber(unitPrice)}</span>
+                            <span class="math-operator">×</span>
+                            <span class="quantity">${totalQty}</span>
+                        </span>
                         <span class="tree-item-decision ${decisionClass}">${decisionText}</span>
-                        <span class="tree-item-cost">${this.formatNumber(child.totalCost)}</span>
+                        <span class="tree-item-cost">${this.formatNumber(child.totalCost * multiplier)}</span>
                     </div>
                 `;
 
                 if (child.breakdown) {
-                    html += this.renderCraftTree(child, depth + 1);
+                    html += this.renderCraftTree(child, depth + 1, multiplier);
                 }
             }
             html += `</div>`;
