@@ -1,6 +1,15 @@
 {
   "recipes": [
     {
+      "output": "muspellium_2",
+      "ingredients": [
+        {
+          "id": "muspellium_1",
+          "quantity": 3
+        }
+      ]
+    },
+    {
       "output": "sharpening_enchantment_stone",
       "ingredients": [
         {
