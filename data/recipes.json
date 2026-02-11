@@ -1,6 +1,24 @@
 {
   "recipes": [
     {
+      "output": "pure_jewelstone_2",
+      "ingredients": [
+        {
+          "id": "pure_jewelstone_1",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "output": "impure_jewelstone_2",
+      "ingredients": [
+        {
+          "id": "impure_jewelstone_1",
+          "quantity": 3
+        }
+      ]
+    },
+    {
       "output": "str_stone_1",
       "ingredients": [
         {
@@ -10,6 +28,19 @@
         {
           "id": "conch_snail",
           "quantity": 4
+        }
+      ]
+    },
+    {
+      "output": "str_stone_2",
+      "ingredients": [
+        {
+          "id": "pure_jewelstone_2",
+          "quantity": 30
+        },
+        {
+          "id": "tube_eye",
+          "quantity": 12
         }
       ]
     },
@@ -27,6 +58,19 @@
       ]
     },
     {
+      "output": "agi_stone_2",
+      "ingredients": [
+        {
+          "id": "impure_jewelstone_2",
+          "quantity": 30
+        },
+        {
+          "id": "soldierfish",
+          "quantity": 12
+        }
+      ]
+    },
+    {
       "output": "int_stone_1",
       "ingredients": [
         {
@@ -36,6 +80,19 @@
         {
           "id": "pure_water_sturgeon",
           "quantity": 4
+        }
+      ]
+    },
+    {
+      "output": "int_stone_2",
+      "ingredients": [
+        {
+          "id": "pure_jewelstone_2",
+          "quantity": 30
+        },
+        {
+          "id": "rainbow_coral",
+          "quantity": 12
         }
       ]
     },
@@ -53,6 +110,19 @@
       ]
     },
     {
+      "output": "vit_stone_2",
+      "ingredients": [
+        {
+          "id": "impure_jewelstone_2",
+          "quantity": 30
+        },
+        {
+          "id": "tube_eye",
+          "quantity": 12
+        }
+      ]
+    },
+    {
       "output": "luk_stone_1",
       "ingredients": [
         {
@@ -66,6 +136,19 @@
       ]
     },
     {
+      "output": "luk_stone_2",
+      "ingredients": [
+        {
+          "id": "pure_jewelstone_2",
+          "quantity": 30
+        },
+        {
+          "id": "soldierfish",
+          "quantity": 12
+        }
+      ]
+    },
+    {
       "output": "dex_stone_1",
       "ingredients": [
         {
@@ -75,6 +158,19 @@
         {
           "id": "pure_water_sturgeon",
           "quantity": 4
+        }
+      ]
+    },
+    {
+      "output": "dex_stone_2",
+      "ingredients": [
+        {
+          "id": "impure_jewelstone_2",
+          "quantity": 30
+        },
+        {
+          "id": "rainbow_coral",
+          "quantity": 12
         }
       ]
     },

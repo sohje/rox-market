@@ -425,12 +425,44 @@
       "image": "images/resources/pure_water_sturgeon.png"
     },
     {
+      "id": "tube_eye",
+      "name": "Tube Eye",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/tube_eye.png"
+    },
+    {
+      "id": "soldierfish",
+      "name": "Soldierfish",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/soldierfish.png"
+    },
+    {
+      "id": "rainbow_coral",
+      "name": "Rainbow Coral",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/rainbow_coral.png"
+    },
+    {
       "id": "str_stone_1",
       "name": "STR Stone Lv1",
       "type": "crafting",
       "subtype": null,
       "tier": null,
       "image": "images/resources/str_stone_1.png"
+    },
+    {
+      "id": "str_stone_2",
+      "name": "STR Stone Lv2",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/str_stone_2.png"
     },
     {
       "id": "agi_stone_1",
@@ -441,12 +473,28 @@
       "image": "images/resources/agi_stone_1.png"
     },
     {
+      "id": "agi_stone_2",
+      "name": "AGI Stone Lv2",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/agi_stone_2.png"
+    },
+    {
       "id": "int_stone_1",
       "name": "INT Stone Lv1",
       "type": "crafting",
       "subtype": null,
       "tier": null,
       "image": "images/resources/int_stone_1.png"
+    },
+    {
+      "id": "int_stone_2",
+      "name": "INT Stone Lv2",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/int_stone_2.png"
     },
     {
       "id": "vit_stone_1",
@@ -457,12 +505,28 @@
       "image": "images/resources/vit_stone_1.png"
     },
     {
+      "id": "vit_stone_2",
+      "name": "VIT Stone Lv2",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/vit_stone_2.png"
+    },
+    {
       "id": "luk_stone_1",
       "name": "LUK Stone Lv1",
       "type": "crafting",
       "subtype": null,
       "tier": null,
       "image": "images/resources/luk_stone_1.png"
+    },
+    {
+      "id": "luk_stone_2",
+      "name": "LUK Stone Lv2",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/luk_stone_2.png"
     },
     {
       "id": "dex_stone_1",
@@ -473,6 +537,14 @@
       "image": "images/resources/dex_stone_1.png"
     },
     {
+      "id": "dex_stone_2",
+      "name": "DEX Stone Lv2",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/dex_stone_2.png"
+    },
+    {
       "id": "pure_jewelstone_1",
       "name": "Pure Jewelstone Lv1",
       "type": "mining",
@@ -481,11 +553,27 @@
       "image": "images/resources/pure_jewelstone.png"
     },
     {
+      "id": "pure_jewelstone_2",
+      "name": "Pure Jewelstone Lv2",
+      "type": "mining",
+      "subtype": "jewelstone",
+      "tier": 2,
+      "image": "images/resources/pure_jewelstone.png"
+    },
+    {
       "id": "impure_jewelstone_1",
       "name": "Impure Jewelstone Lv1",
       "type": "mining",
       "subtype": "jewelstone",
       "tier": 1,
+      "image": "images/resources/impure_jewelstone.png"
+    },
+    {
+      "id": "impure_jewelstone_2",
+      "name": "Impure Jewelstone Lv2",
+      "type": "mining",
+      "subtype": "jewelstone",
+      "tier": 2,
       "image": "images/resources/impure_jewelstone.png"
     }
   ]

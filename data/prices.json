@@ -2,8 +2,9 @@
   "updated_at": "2026-02-09T12:00:00Z",
   "prices": {
     "impure_jewelstone_1": 128,
+    "impure_jewelstone_2": 333,
     "pure_jewelstone_1": 544,
-    "pure_jewelstone_2": 1580,
+    "pure_jewelstone_2": 1040,
     "muspellium_1": 92,
     "muspellium_2": 275,
     "upgrade_metal_1": 46,
@@ -57,12 +58,21 @@
     "pure_water_sturgeon": 946,
     "night_pearl": 1130,
     "whitefeather_cowrie": 946,
+    "tube_eye": 1040,
+    "soldierfish": 824,
+    "rainbow_coral": 946,
     "mystic_mussel": 1040,
     "str_stone_1": 10100,
+    "str_stone_2": 54700,
     "agi_stone_1": 5650,
+    "agi_stone_2": 0,
     "int_stone_1": 10400,
+    "int_stone_2": 49400,
     "vit_stone_1": 6760,
+    "vit_stone_2": 25400,
     "luk_stone_1": 9900,
-    "dex_stone_1": 6370
+    "luk_stone_2": 0,
+    "dex_stone_1": 6370,
+    "dex_stone_2": 27500
   }
 }
