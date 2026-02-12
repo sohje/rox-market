@@ -1,6 +1,45 @@
 {
   "recipes": [
     {
+      "output": "blazing_enchantment_stone",
+      "ingredients": [
+        {
+          "id": "goldflower",
+          "quantity": 1
+        },
+        {
+          "id": "muspellium_2",
+          "quantity": 8
+        }
+      ]
+    },
+    {
+      "output": "hardening_enchantment_stone",
+      "ingredients": [
+        {
+          "id": "scorched_mushroom",
+          "quantity": 1
+        },
+        {
+          "id": "muspellium_2",
+          "quantity": 8
+        }
+      ]
+    },
+    {
+      "output": "gold_enchantment_stone",
+      "ingredients": [
+        {
+          "id": "withered_chastetree",
+          "quantity": 1
+        },
+        {
+          "id": "muspellium_2",
+          "quantity": 8
+        }
+      ]
+    },
+    {
       "output": "pure_jewelstone_2",
       "ingredients": [
         {

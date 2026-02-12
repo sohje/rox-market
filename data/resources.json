@@ -449,6 +449,54 @@
       "image": "images/resources/rainbow_coral.png"
     },
     {
+      "id": "goldflower",
+      "name": "Goldflower",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/goldflower.png"
+    },
+    {
+      "id": "scorched_mushroom",
+      "name": "Scorched Mushroom",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/scorched_mushroom.png"
+    },
+    {
+      "id": "withered_chastetree",
+      "name": "Withered Chastetree",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/withered_chastetree.png"
+    },
+    {
+      "id": "blazing_enchantment_stone",
+      "name": "Blazing Enchantment Stone",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/blazing_enchantment_stone.png"
+    },
+    {
+      "id": "hardening_enchantment_stone",
+      "name": "Hardening Enchantment Stone",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/hardening_enchantment_stone.png"
+    },
+    {
+      "id": "gold_enchantment_stone",
+      "name": "Gold Enchantment Stone",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/gold_enchantment_stone.png"
+    },
+    {
       "id": "str_stone_1",
       "name": "STR Stone Lv1",
       "type": "crafting",
