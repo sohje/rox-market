@@ -162,6 +162,18 @@ const Renderer = {
             // Находим лучший вариант именно КРАФТА для отображения дерева по умолчанию
             const bestCraft = allVariants.find(v => v.decision === 'craft') || allVariants[0];
 
+            const totalProfit = bestCraft.margin * qty;
+            const profitColor = totalProfit > 0 ? 'var(--profit)' : (totalProfit < 0 ? 'var(--loss)' : 'var(--text-secondary)');
+
+            html += `
+                <div class="detail-profit" style="margin-bottom: 1rem; text-align: center; padding: 10px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                    <span style="margin-right: 10px; color: var(--text-secondary);">Ожидаемая прибыль:</span>
+                    <span style="font-size: 1.2rem; font-weight: bold; color: ${profitColor}">
+                        ${totalProfit > 0 ? '+' : ''}${this.formatNumber(totalProfit)}
+                    </span>
+                </div>
+            `;
+
             html += `
                 <div class="craft-tree">
                     <h3>${bestCraft.decision === 'craft' ? 'Рецепт крафта' : 'Оптимальный путь'}</h3>
