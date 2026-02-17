@@ -623,6 +623,38 @@
       "subtype": "jewelstone",
       "tier": 2,
       "image": "images/resources/impure_jewelstone.png"
+    },
+    {
+      "id": "tough_wine",
+      "name": "Tough Wine",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/tough_wine.png"
+    },
+    {
+      "id": "arcane_flower",
+      "name": "Arcane Flower",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/arcane_flower.png"
+    },
+    {
+      "id": "toughening_enchantment_stone",
+      "name": "Toughening Enchantment Stone",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/toughening_enchantment_stone.png"
+    },
+    {
+      "id": "secret_enchantment_stone",
+      "name": "Secret Enchantment Stone",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/secret_enchantment_stone.png"
     }
   ]
 }

@@ -27,6 +27,32 @@
       ]
     },
     {
+      "output": "toughening_enchantment_stone",
+      "ingredients": [
+        {
+          "id": "tough_wine",
+          "quantity": 1
+        },
+        {
+          "id": "muspellium_2",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "output": "secret_enchantment_stone",
+      "ingredients": [
+        {
+          "id": "arcane_flower",
+          "quantity": 1
+        },
+        {
+          "id": "muspellium_2",
+          "quantity": 5
+        }
+      ]
+    },
+    {
       "output": "gold_enchantment_stone",
       "ingredients": [
         {
