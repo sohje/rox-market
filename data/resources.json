@@ -655,6 +655,62 @@
       "subtype": null,
       "tier": null,
       "image": "images/resources/secret_enchantment_stone.png"
+    },
+    {
+      "id": "blessed_ore_1",
+      "name": "Blessed Ore Lv1",
+      "type": "mining",
+      "subtype": "ore",
+      "tier": 1,
+      "image": "images/resources/blessed_ore_1.png"
+    },
+    {
+      "id": "yarn_marina",
+      "name": "Yarn Marina",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/yarn_marina.png"
+    },
+    {
+      "id": "sandfish",
+      "name": "Sandfish",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/sandfish.png"
+    },
+    {
+      "id": "mapple_fish",
+      "name": "Mapple Fish",
+      "type": "fishing",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/mapple_fish.png"
+    },
+    {
+      "id": "blessed_oridecon_1",
+      "name": "Blessed Oridecon Lv1",
+      "type": "mining",
+      "subtype": "oridecon",
+      "tier": 1,
+      "image": "images/resources/blessed_oridecon_1.png"
+    },
+    {
+      "id": "blessed_elunium_1",
+      "name": "Blessed Elunium Lv1",
+      "type": "mining",
+      "subtype": "elunium",
+      "tier": 1,
+      "image": "images/resources/blessed_elunium_1.png"
+    },
+    {
+      "id": "blessed_bradium_1",
+      "name": "Blessed Bradium Lv1",
+      "type": "mining",
+      "subtype": "bradium",
+      "tier": 1,
+      "image": "images/resources/blessed_bradium_1.png"
     }
   ]
 }

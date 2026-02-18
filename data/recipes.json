@@ -1,6 +1,45 @@
 {
   "recipes": [
     {
+      "output": "blessed_oridecon_1",
+      "ingredients": [
+        {
+          "id": "blessed_ore_1",
+          "quantity": 7
+        },
+        {
+          "id": "yarn_marina",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "output": "blessed_elunium_1",
+      "ingredients": [
+        {
+          "id": "blessed_ore_1",
+          "quantity": 7
+        },
+        {
+          "id": "sandfish",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "output": "blessed_bradium_1",
+      "ingredients": [
+        {
+          "id": "blessed_ore_1",
+          "quantity": 7
+        },
+        {
+          "id": "mapple_fish",
+          "quantity": 6
+        }
+      ]
+    },
+    {
       "output": "blazing_enchantment_stone",
       "ingredients": [
         {
