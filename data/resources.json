@@ -711,6 +711,62 @@
       "subtype": "bradium",
       "tier": 1,
       "image": "images/resources/blessed_bradium_1.png"
+    },
+    {
+      "id": "water_seeking_flower",
+      "name": "Water Seeking Flower",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/water_seeking_flower.png"
+    },
+    {
+      "id": "sea_gem_grass",
+      "name": "Sea Gem Grass",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/sea_gem_grass.png"
+    },
+    {
+      "id": "firefly_grass",
+      "name": "Firefly Grass",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/firefly_grass.png"
+    },
+    {
+      "id": "tidal_current_enchantment_stone",
+      "name": "Tidal Current Enchantment Stone",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/tidal_current_enchantment_stone.png"
+    },
+    {
+      "id": "crystallize_enchantment_stone",
+      "name": "Crystallize Enchantment Stone",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/crystallize_enchantment_stone.png"
+    },
+    {
+      "id": "glowing_star_enchantment_stone",
+      "name": "Glowing Star Enchantment Stone",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/glowing_star_enchantment_stone.png"
+    },
+    {
+      "id": "muspellium_3",
+      "name": "Muspellium Lv3",
+      "type": "crafting",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/muspellium.png"
     }
   ]
 }

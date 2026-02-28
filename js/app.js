@@ -5,6 +5,7 @@ const App = {
     resourcesMap: {},
     recipesMap: {},
     calculations: [],
+    currentView: 'market',
 
     async init() {
         await this.loadData();
@@ -12,6 +13,42 @@ const App = {
         this.calculateAll();
         this.render();
         this.bindEvents();
+    },
+
+    switchView(viewName) {
+        this.currentView = viewName;
+
+        document.getElementById('view-market').classList.toggle('hidden', viewName !== 'market');
+        document.getElementById('view-enchant').classList.toggle('hidden', viewName !== 'enchant');
+
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.classList.toggle('active', tab.dataset.view === viewName);
+        });
+
+        if (viewName === 'enchant') {
+            this.updateEnchantment();
+        }
+    },
+
+    getEnchantSlots() {
+        const slots = [];
+        document.querySelectorAll('.enchant-slot-row').forEach(row => {
+            const checkbox = row.querySelector('.slot-enable');
+            const fromSelect = row.querySelector('.slot-from');
+            const toSelect = row.querySelector('.slot-to');
+            slots.push({
+                enabled: checkbox.checked,
+                from: parseInt(fromSelect.value),
+                to: parseInt(toSelect.value)
+            });
+        });
+        return slots;
+    },
+
+    updateEnchantment() {
+        const slots = this.getEnchantSlots();
+        const result = EnchantmentCalc.calculate(slots, this.prices, this.recipesMap, this.resourcesMap);
+        document.getElementById('enchant-results').innerHTML = EnchantmentCalc.render(result);
     },
 
     async loadData() {
@@ -262,6 +299,23 @@ const App = {
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 this.hideDetail();
+            }
+        });
+
+        // Sidebar toggle
+        document.querySelector('.sidebar-toggle').addEventListener('click', () => {
+            document.querySelector('.sidebar').classList.toggle('collapsed');
+        });
+
+        // Nav tabs
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.addEventListener('click', () => this.switchView(tab.dataset.view));
+        });
+
+        // Enchantment form reactivity
+        document.getElementById('view-enchant').addEventListener('change', () => {
+            if (this.currentView === 'enchant') {
+                this.updateEnchantment();
             }
         });
     }

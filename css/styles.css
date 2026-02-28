@@ -616,7 +616,258 @@ body {
 }
 
 
+.hidden {
+    display: none;
+}
+
+/* App shell layout */
+.app-shell {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background: var(--bg-secondary);
+    border-right: 1px solid var(--border);
+    flex-shrink: 0;
+    transition: width 0.2s;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebar.collapsed {
+    width: 48px;
+}
+
+.sidebar-toggle {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.4rem;
+    padding: 14px;
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.sidebar-toggle:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 4px;
+}
+
+.nav-tab {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: none;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.nav-tab:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+}
+
+.nav-tab.active {
+    background: var(--accent);
+    color: #fff;
+}
+
+.nav-icon {
+    flex-shrink: 0;
+    font-size: 1.1rem;
+    width: 24px;
+    text-align: center;
+}
+
+.sidebar.collapsed .nav-label {
+    display: none;
+}
+
+.sidebar.collapsed .nav-tab {
+    justify-content: center;
+    padding: 12px 0;
+}
+
+.sidebar.collapsed .sidebar-nav {
+    padding: 8px 4px;
+}
+
+.main-content {
+    flex: 1;
+    overflow-y: auto;
+    min-width: 0;
+}
+
+/* Enchantment calculator */
+.enchant-form {
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.enchant-slot-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.enchant-slot-row:last-child {
+    border-bottom: none;
+}
+
+.slot-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 140px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.slot-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--accent);
+    cursor: pointer;
+}
+
+.slot-levels {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.slot-levels select {
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.slot-arrow {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+.enchant-summary {
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.enchant-summary strong {
+    color: var(--accent);
+    font-size: 1.3rem;
+}
+
+.enchant-table {
+    width: 100%;
+    background: var(--bg-card);
+    border-radius: 12px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+.enchant-table th,
+.enchant-table td {
+    padding: 12px 16px;
+    text-align: right;
+    border-bottom: 1px solid var(--border);
+}
+
+.enchant-table th {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.enchant-table th:first-child,
+.enchant-table td:first-child {
+    text-align: left;
+}
+
+.enchant-table tr:last-child td {
+    border-bottom: none;
+}
+
+.enchant-table .best-row {
+    background: rgba(74, 222, 128, 0.08);
+}
+
+.enchant-table .best {
+    color: var(--profit);
+    font-weight: 700;
+}
+
+.enchant-table .stone-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.enchant-table .stone-name img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.btn-secondary {
+    background: var(--bg-card);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+}
+
 @media (max-width: 768px) {
+    .sidebar {
+        width: 48px;
+    }
+
+    .sidebar .nav-label {
+        display: none;
+    }
+
+    .sidebar .nav-tab {
+        justify-content: center;
+        padding: 12px 0;
+    }
+
+    .sidebar .sidebar-nav {
+        padding: 8px 4px;
+    }
+
     .resources-list {
         grid-template-columns: 1fr;
     }
@@ -627,5 +878,16 @@ body {
 
     .controls {
         flex-direction: column;
+    }
+
+    .enchant-slot-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .enchant-table th,
+    .enchant-table td {
+        padding: 8px 10px;
+        font-size: 0.85rem;
     }
 }

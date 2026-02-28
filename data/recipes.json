@@ -1,6 +1,45 @@
 {
   "recipes": [
     {
+      "output": "tidal_current_enchantment_stone",
+      "ingredients": [
+        {
+          "id": "water_seeking_flower",
+          "quantity": 3
+        },
+        {
+          "id": "muspellium_3",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "output": "crystallize_enchantment_stone",
+      "ingredients": [
+        {
+          "id": "sea_gem_grass",
+          "quantity": 3
+        },
+        {
+          "id": "muspellium_3",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "output": "glowing_star_enchantment_stone",
+      "ingredients": [
+        {
+          "id": "firefly_grass",
+          "quantity": 3
+        },
+        {
+          "id": "muspellium_3",
+          "quantity": 6
+        }
+      ]
+    },
+    {
       "output": "blessed_oridecon_1",
       "ingredients": [
         {
@@ -283,6 +322,15 @@
       "ingredients": [
         {
           "id": "muspellium_1",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "output": "muspellium_3",
+      "ingredients": [
+        {
+          "id": "muspellium_2",
           "quantity": 3
         }
       ]
