@@ -891,3 +891,158 @@ body {
         font-size: 0.85rem;
     }
 }
+
+/* Gardening calculator */
+.gardening-level-section {
+    margin-bottom: 20px;
+}
+
+.gardening-level-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    background: var(--bg-card);
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.15s;
+}
+
+.gardening-level-header:hover {
+    background: rgba(15, 52, 96, 0.85);
+}
+
+.gardening-level-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.gardening-level-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.gardening-level-count {
+    margin-left: auto;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.gardening-level-toggle {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    transition: transform 0.2s;
+}
+
+.gardening-table {
+    width: 100%;
+    background: var(--bg-card);
+    border-radius: 0 0 12px 12px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.gardening-table.collapsed {
+    display: none;
+}
+
+.gardening-table th,
+.gardening-table td {
+    padding: 10px 14px;
+    text-align: right;
+    border-bottom: 1px solid var(--border);
+}
+
+.gardening-table th {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+}
+
+.gardening-table th:first-child,
+.gardening-table td:first-child {
+    text-align: left;
+}
+
+.gardening-table tr:last-child td {
+    border-bottom: none;
+}
+
+.gardening-table .best-row {
+    background: rgba(74, 222, 128, 0.08);
+}
+
+.gardening-table .best {
+    color: var(--profit);
+    font-weight: 700;
+}
+
+.gardening-resource-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.gardening-resource-name img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.gardening-price-edit {
+    cursor: pointer;
+    text-decoration: underline dotted;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.gardening-price-edit:hover {
+    color: var(--accent);
+}
+
+.profit-cell {
+    color: var(--text-secondary);
+}
+
+.profit-cell.positive {
+    color: var(--profit);
+    font-weight: 600;
+}
+
+.tax-label {
+    font-size: 0.65rem;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .gardening-table th,
+    .gardening-table td {
+        padding: 8px 8px;
+        font-size: 0.8rem;
+    }
+
+    .gardening-level-header {
+        padding: 10px 14px;
+    }
+
+    .gardening-resource-name img {
+        width: 22px;
+        height: 22px;
+    }
+}

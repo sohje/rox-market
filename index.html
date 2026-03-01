@@ -30,6 +30,10 @@
                     <span class="nav-icon">✨</span>
                     <span class="nav-label">Enchantment</span>
                 </button>
+                <button class="nav-tab" data-view="gardening">
+                    <span class="nav-icon">🌱</span>
+                    <span class="nav-label">Gardening</span>
+                </button>
             </div>
         </nav>
 
@@ -185,6 +189,18 @@
                 </div>
             </div>
 
+            <div id="view-gardening" class="hidden">
+                <div class="container">
+                    <header class="header">
+                        <h1>Gardening</h1>
+                        <p class="subtitle">Калькулятор выгоды собирательства</p>
+                    </header>
+                    <div id="gardening-results">
+                        <!-- Results rendered by JS -->
+                    </div>
+                </div>
+            </div>
+
             <div id="detail-modal" class="modal hidden">
                 <div class="modal-content">
                     <button class="modal-close" id="modal-close">&times;</button>
@@ -198,6 +214,7 @@
     <script src="js/calculator.js"></script>
     <script src="js/renderer.js"></script>
     <script src="js/enchantment.js"></script>
+    <script src="js/gardening.js"></script>
     <script src="js/app.js"></script>
 </body>
 

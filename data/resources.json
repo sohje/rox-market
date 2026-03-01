@@ -318,7 +318,9 @@
       "type": "gathering",
       "subtype": null,
       "tier": null,
-      "image": "images/resources/stol_nut.png"
+      "image": "images/resources/stol_nut.png",
+      "required_lvl": 4,
+      "stamina": 10
     },
     {
       "id": "nitraria_seed",
@@ -326,7 +328,9 @@
       "type": "gathering",
       "subtype": null,
       "tier": null,
-      "image": "images/resources/nitraria_seed.png"
+      "image": "images/resources/nitraria_seed.png",
+      "required_lvl": 4,
+      "stamina": 10
     },
     {
       "id": "desert_welwitschia",
@@ -334,7 +338,9 @@
       "type": "gathering",
       "subtype": null,
       "tier": null,
-      "image": "images/resources/desert_welwitschia.png"
+      "image": "images/resources/desert_welwitschia.png",
+      "required_lvl": 4,
+      "stamina": 10
     },
     {
       "id": "starlight_snail",
@@ -390,7 +396,9 @@
       "type": "gathering",
       "subtype": null,
       "tier": null,
-      "image": "images/resources/shattering_shroom.png"
+      "image": "images/resources/shattering_shroom.png",
+      "required_lvl": 1,
+      "stamina": 10
     },
     {
       "id": "sharpening_enchantment_stone",
@@ -454,7 +462,9 @@
       "type": "gathering",
       "subtype": null,
       "tier": null,
-      "image": "images/resources/goldflower.png"
+      "image": "images/resources/goldflower.png",
+      "required_lvl": 3,
+      "stamina": 10
     },
     {
       "id": "scorched_mushroom",
@@ -462,7 +472,9 @@
       "type": "gathering",
       "subtype": null,
       "tier": null,
-      "image": "images/resources/scorched_mushroom.png"
+      "image": "images/resources/scorched_mushroom.png",
+      "required_lvl": 3,
+      "stamina": 10
     },
     {
       "id": "withered_chastetree",
@@ -470,7 +482,9 @@
       "type": "gathering",
       "subtype": null,
       "tier": null,
-      "image": "images/resources/withered_chastetree.png"
+      "image": "images/resources/withered_chastetree.png",
+      "required_lvl": 3,
+      "stamina": 10
     },
     {
       "id": "blazing_enchantment_stone",
@@ -630,7 +644,9 @@
       "type": "gathering",
       "subtype": null,
       "tier": null,
-      "image": "images/resources/tough_wine.png"
+      "image": "images/resources/tough_wine.png",
+      "required_lvl": 1,
+      "stamina": 10
     },
     {
       "id": "arcane_flower",
@@ -638,7 +654,9 @@
       "type": "gathering",
       "subtype": null,
       "tier": null,
-      "image": "images/resources/arcane_flower.png"
+      "image": "images/resources/arcane_flower.png",
+      "required_lvl": 1,
+      "stamina": 10
     },
     {
       "id": "toughening_enchantment_stone",
@@ -718,7 +736,9 @@
       "type": "gathering",
       "subtype": null,
       "tier": null,
-      "image": "images/resources/water_seeking_flower.png"
+      "image": "images/resources/water_seeking_flower.png",
+      "required_lvl": 5,
+      "stamina": 10
     },
     {
       "id": "sea_gem_grass",
@@ -726,7 +746,9 @@
       "type": "gathering",
       "subtype": null,
       "tier": null,
-      "image": "images/resources/sea_gem_grass.png"
+      "image": "images/resources/sea_gem_grass.png",
+      "required_lvl": 5,
+      "stamina": 10
     },
     {
       "id": "firefly_grass",
@@ -734,7 +756,9 @@
       "type": "gathering",
       "subtype": null,
       "tier": null,
-      "image": "images/resources/firefly_grass.png"
+      "image": "images/resources/firefly_grass.png",
+      "required_lvl": 5,
+      "stamina": 10
     },
     {
       "id": "tidal_current_enchantment_stone",
@@ -767,6 +791,346 @@
       "subtype": null,
       "tier": null,
       "image": "images/resources/muspellium.png"
+    },
+    {
+      "id": "pumpkin",
+      "name": "Pumpkin",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/pumpkin.png",
+      "required_lvl": 1,
+      "stamina": 1
+    },
+    {
+      "id": "wheat",
+      "name": "Wheat",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/wheat.png",
+      "required_lvl": 1,
+      "stamina": 1
+    },
+    {
+      "id": "berry",
+      "name": "Berry",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/berry.png",
+      "required_lvl": 2,
+      "stamina": 1
+    },
+    {
+      "id": "chili",
+      "name": "Chili",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/chili.png",
+      "required_lvl": 2,
+      "stamina": 1
+    },
+    {
+      "id": "cactus",
+      "name": "Cactus",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/cactus.png",
+      "required_lvl": 3,
+      "stamina": 1
+    },
+    {
+      "id": "desert_tomato",
+      "name": "Desert Tomato",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/desert_tomato.png",
+      "required_lvl": 3,
+      "stamina": 1
+    },
+    {
+      "id": "aloe_vera",
+      "name": "Aloe Vera",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/aloe_vera.png",
+      "required_lvl": 4,
+      "stamina": 1
+    },
+    {
+      "id": "crimson_herb",
+      "name": "Crimson Herb",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/crimson_herb.png",
+      "required_lvl": 4,
+      "stamina": 1
+    },
+    {
+      "id": "sea_buckthorn",
+      "name": "Sea Buckthorn",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/sea_buckthorn.png",
+      "required_lvl": 4,
+      "stamina": 1
+    },
+    {
+      "id": "rot_root_grass",
+      "name": "Rot Root Grass",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/rot_root_grass.png",
+      "required_lvl": 4,
+      "stamina": 10
+    },
+    {
+      "id": "guiding_grass",
+      "name": "Guiding Grass",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/guiding_grass.png",
+      "required_lvl": 4,
+      "stamina": 10
+    },
+    {
+      "id": "stoneheart_shroom",
+      "name": "Stoneheart Shroom",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/stoneheart_shroom.png",
+      "required_lvl": 4,
+      "stamina": 10
+    },
+    {
+      "id": "kelp",
+      "name": "Kelp",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/kelp.png",
+      "required_lvl": 5,
+      "stamina": 1
+    },
+    {
+      "id": "algae",
+      "name": "Algae",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/algae.png",
+      "required_lvl": 5,
+      "stamina": 1
+    },
+    {
+      "id": "seaweed",
+      "name": "Seaweed",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/seaweed.png",
+      "required_lvl": 5,
+      "stamina": 1
+    },
+    {
+      "id": "chrysanthemum",
+      "name": "Chrysanthemum",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/chrysanthemum.png",
+      "required_lvl": 6,
+      "stamina": 1
+    },
+    {
+      "id": "bamboo",
+      "name": "Bamboo",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/bamboo.png",
+      "required_lvl": 6,
+      "stamina": 1
+    },
+    {
+      "id": "cavern_vanila",
+      "name": "Cavern Vanilla",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/cavern_vanila.png",
+      "required_lvl": 7,
+      "stamina": 1
+    },
+    {
+      "id": "sour_fruit",
+      "name": "Sour Fruit",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/sour_fruit.png",
+      "required_lvl": 7,
+      "stamina": 1
+    },
+    {
+      "id": "green_mint",
+      "name": "Green Mint",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/green_mint.png",
+      "required_lvl": 7,
+      "stamina": 1
+    },
+    {
+      "id": "aquatic_reed",
+      "name": "Aquatic Reed",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/aquatic_reed.png",
+      "required_lvl": 7,
+      "stamina": 10
+    },
+    {
+      "id": "winter_cherry",
+      "name": "Winter Cherry",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/winter_cherry.png",
+      "required_lvl": 7,
+      "stamina": 10
+    },
+    {
+      "id": "singing_plant",
+      "name": "Singing Plant",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/singing_plant.png",
+      "required_lvl": 7,
+      "stamina": 10
+    },
+    {
+      "id": "grim_grass",
+      "name": "Grim Grass",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/grim_grass.png",
+      "required_lvl": 7,
+      "stamina": 10
+    },
+    {
+      "id": "ochre_seedling",
+      "name": "Ochre Seedling",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/ochre_seedling.png",
+      "required_lvl": 7,
+      "stamina": 10
+    },
+    {
+      "id": "quiet_flower",
+      "name": "Quiet Flower",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/quiet_flower.png",
+      "required_lvl": 7,
+      "stamina": 10
+    },
+    {
+      "id": "cliff_moss",
+      "name": "Cliff Moss",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/cliff_moss.png",
+      "required_lvl": 7,
+      "stamina": 10
+    },
+    {
+      "id": "glowing_mushroom",
+      "name": "Glowing Mushroom",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/glowing_mushroom.png",
+      "required_lvl": 7,
+      "stamina": 10
+    },
+    {
+      "id": "phantom_vine",
+      "name": "Phantom Vine",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/phantom_vine.png",
+      "required_lvl": 7,
+      "stamina": 10
+    },
+    {
+      "id": "tea_plant",
+      "name": "Tea Plant",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/tea_plant.png",
+      "required_lvl": 8,
+      "stamina": 1
+    },
+    {
+      "id": "lavender",
+      "name": "Lavender",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/lavender.png",
+      "required_lvl": 8,
+      "stamina": 1
+    },
+    {
+      "id": "moonflower",
+      "name": "Moonflower",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/moonflower.png",
+      "required_lvl": 8,
+      "stamina": 10
+    },
+    {
+      "id": "praying_flower",
+      "name": "Praying Flower",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/praying_flower.png",
+      "required_lvl": 8,
+      "stamina": 10
+    },
+    {
+      "id": "crystal_rose",
+      "name": "Crystal Rose",
+      "type": "gathering",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/crystal_rose.png",
+      "required_lvl": 8,
+      "stamina": 10
     }
   ]
 }

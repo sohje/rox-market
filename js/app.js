@@ -20,6 +20,7 @@ const App = {
 
         document.getElementById('view-market').classList.toggle('hidden', viewName !== 'market');
         document.getElementById('view-enchant').classList.toggle('hidden', viewName !== 'enchant');
+        document.getElementById('view-gardening').classList.toggle('hidden', viewName !== 'gardening');
 
         document.querySelectorAll('.nav-tab').forEach(tab => {
             tab.classList.toggle('active', tab.dataset.view === viewName);
@@ -27,6 +28,9 @@ const App = {
 
         if (viewName === 'enchant') {
             this.updateEnchantment();
+        }
+        if (viewName === 'gardening') {
+            this.updateGardening();
         }
     },
 
@@ -49,6 +53,13 @@ const App = {
         const slots = this.getEnchantSlots();
         const result = EnchantmentCalc.calculate(slots, this.prices, this.recipesMap, this.resourcesMap);
         document.getElementById('enchant-results').innerHTML = EnchantmentCalc.render(result);
+    },
+
+    updateGardening() {
+        const container = document.getElementById('gardening-results');
+        const grouped = GardeningCalc.calculate(this.resources, this.prices);
+        container.innerHTML = GardeningCalc.render(grouped, this.prices);
+        GardeningCalc.bindToggle(container);
     },
 
     async loadData() {
@@ -285,6 +296,22 @@ const App = {
                 const newPrice = prompt(`Введите новую цену для ${this.resourcesMap[id].name}:`, currentPrice);
                 if (newPrice !== null) {
                     this.updatePrice(id, newPrice);
+                }
+            }
+        });
+
+        // Обработка клика по редактируемой цене в Gardening
+        document.getElementById('gardening-results').addEventListener('click', (e) => {
+            const editable = e.target.closest('.editable');
+            if (editable) {
+                const id = editable.dataset.id;
+                const currentPrice = this.prices[id];
+                const newPrice = prompt(`Введите новую цену для ${this.resourcesMap[id].name}:`, currentPrice);
+                if (newPrice !== null) {
+                    this.updatePrice(id, newPrice);
+                    if (this.currentView === 'gardening') {
+                        this.updateGardening();
+                    }
                 }
             }
         });
