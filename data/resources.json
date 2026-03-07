@@ -298,7 +298,15 @@
     },
     {
       "id": "coal_ore_1",
-      "name": "Coal Ore",
+      "name": "Coal Ore 1",
+      "type": "mining",
+      "subtype": null,
+      "tier": null,
+      "image": "images/resources/coal_ore.png"
+    },
+    {
+      "id": "coal_ore_2",
+      "name": "Coal Ore 2",
       "type": "mining",
       "subtype": null,
       "tier": null,
@@ -1131,6 +1139,102 @@
       "image": "images/resources/crystal_rose.png",
       "required_lvl": 8,
       "stamina": 10
+    },
+    {
+      "id": "iron_ore_1",
+      "name": "Iron Ore 1",
+      "type": "mining",
+      "subtype": null,
+      "tier": 1,
+      "image": "images/resources/iron_ore.png"
+    },
+    {
+      "id": "silver_ore_1",
+      "name": "Silver Ore 1",
+      "type": "mining",
+      "subtype": null,
+      "tier": 1,
+      "image": "images/resources/silver_ore.png"
+    },
+    {
+      "id": "gold_ore_1",
+      "name": "Gold Ore 1",
+      "type": "mining",
+      "subtype": null,
+      "tier": 1,
+      "image": "images/resources/gold_ore.png"
+    },
+    {
+      "id": "iron_ore_2",
+      "name": "Iron Ore 2",
+      "type": "mining",
+      "subtype": null,
+      "tier": 2,
+      "image": "images/resources/iron_ore.png"
+    },
+    {
+      "id": "silver_ore_2",
+      "name": "Silver Ore 2",
+      "type": "mining",
+      "subtype": null,
+      "tier": 2,
+      "image": "images/resources/silver_ore.png"
+    },
+    {
+      "id": "gold_ore_2",
+      "name": "Gold Ore 2",
+      "type": "mining",
+      "subtype": null,
+      "tier": 2,
+      "image": "images/resources/gold_ore.png"
+    },
+    {
+      "id": "iron_1",
+      "name": "Iron 1",
+      "type": "crafting",
+      "subtype": "ore",
+      "tier": 1,
+      "image": "images/resources/iron_1.png"
+    },
+    {
+      "id": "iron_2",
+      "name": "Iron 2",
+      "type": "crafting",
+      "subtype": "ore",
+      "tier": 2,
+      "image": "images/resources/iron_2.png"
+    },
+    {
+      "id": "silver_1",
+      "name": "Silver 1",
+      "type": "crafting",
+      "subtype": "ore",
+      "tier": 1,
+      "image": "images/resources/silver_1.png"
+    },
+    {
+      "id": "silver_2",
+      "name": "Silver 2",
+      "type": "crafting",
+      "subtype": "ore",
+      "tier": 2,
+      "image": "images/resources/silver_2.png"
+    },
+    {
+      "id": "gold_1",
+      "name": "Gold 1",
+      "type": "crafting",
+      "subtype": "ore",
+      "tier": 1,
+      "image": "images/resources/gold_1.png"
+    },
+    {
+      "id": "gold_2",
+      "name": "Gold 2",
+      "type": "crafting",
+      "subtype": "ore",
+      "tier": 2,
+      "image": "images/resources/gold_2.png"
     }
   ]
 }

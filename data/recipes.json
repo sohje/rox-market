@@ -1,6 +1,120 @@
 {
   "recipes": [
     {
+      "output": "coal_ore_2",
+      "ingredients": [
+        {
+          "id": "coal_ore_1",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "output": "iron_ore_2",
+      "ingredients": [
+        {
+          "id": "iron_ore_1",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "output": "gold_ore_2",
+      "ingredients": [
+        {
+          "id": "gold_ore_1",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "output": "silver_ore_2",
+      "ingredients": [
+        {
+          "id": "silver_ore_1",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "output": "iron_1",
+      "ingredients": [
+        {
+          "id": "iron_ore_1",
+          "quantity": 12
+        },
+        {
+          "id": "coal_ore_1",
+          "quantity": 12
+        }
+      ]
+    },
+    {
+      "output": "silver_1",
+      "ingredients": [
+        {
+          "id": "silver_ore_1",
+          "quantity": 12
+        },
+        {
+          "id": "coal_ore_1",
+          "quantity": 12
+        }
+      ]
+    },
+    {
+      "output": "gold_1",
+      "ingredients": [
+        {
+          "id": "gold_ore_1",
+          "quantity": 12
+        },
+        {
+          "id": "coal_ore_1",
+          "quantity": 12
+        }
+      ]
+    },
+    {
+      "output": "iron_2",
+      "ingredients": [
+        {
+          "id": "iron_ore_2",
+          "quantity": 35
+        },
+        {
+          "id": "coal_ore_2",
+          "quantity": 35
+        }
+      ]
+    },
+    {
+      "output": "silver_2",
+      "ingredients": [
+        {
+          "id": "silver_ore_2",
+          "quantity": 35
+        },
+        {
+          "id": "coal_ore_2",
+          "quantity": 35
+        }
+      ]
+    },
+    {
+      "output": "gold_2",
+      "ingredients": [
+        {
+          "id": "gold_ore_2",
+          "quantity": 35
+        },
+        {
+          "id": "coal_ore_2",
+          "quantity": 35
+        }
+      ]
+    },
+    {
       "output": "tidal_current_enchantment_stone",
       "ingredients": [
         {
