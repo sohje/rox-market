@@ -1296,6 +1296,29 @@ body {
     color: var(--profit);
 }
 
+/* Mining group header rows */
+.mining-group-header td {
+    background: var(--bg-secondary);
+    padding: 7px 14px;
+    border-bottom: 1px solid var(--border);
+}
+
+.mining-group-header:not(.first) td {
+    border-top: 2px solid var(--border);
+    padding-top: 10px;
+}
+
+.mining-group-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--text-secondary);
+    padding-left: 4px;
+    border-left: 3px solid var(--accent);
+    padding-left: 8px;
+}
+
 @media (max-width: 768px) {
     .mining-summary-grid {
         grid-template-columns: 1fr 1fr;

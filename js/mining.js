@@ -102,8 +102,8 @@ const MiningCalc = {
     },
 
     /**
-     * Compute profit values for a given price and quantity at each tax rate.
-     */
+         * Compute profit values for a given price and quantity at each tax rate.
+         */
     computeProfitByTax(price, quantity) {
         const result = {};
         for (const tax of [5, 10, 15]) {
@@ -112,12 +112,51 @@ const MiningCalc = {
         return result;
     },
 
+    /**
+     * Derive a group key for a mining resource.
+     * Uses subtype when available, otherwise strips trailing _N from id.
+     */
+    getGroupKey(resource) {
+        if (resource.subtype) return resource.subtype;
+        return resource.id.replace(/_\d+$/, '');
+    },
+
+    /**
+     * Human-readable group label from a group key.
+     */
+    formatGroupLabel(key) {
+        return key
+            .split('_')
+            .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+            .join(' ');
+    },
+
+    /**
+     * Group and sort mining resources: by group key order of first appearance,
+     * then by tier within each group.
+     */
+    groupResources(miningResources) {
+        const groups = new Map();
+        for (const r of miningResources) {
+            const key = this.getGroupKey(r);
+            if (!groups.has(key)) groups.set(key, []);
+            groups.get(key).push(r);
+        }
+        // Sort within each group by tier (nulls last)
+        for (const items of groups.values()) {
+            items.sort((a, b) => (a.tier ?? 999) - (b.tier ?? 999));
+        }
+        return groups;
+    },
+
     render(resources, prices, recipes, resourcesMap, stamina) {
         const miningResources = resources.filter(r => r.type === 'mining');
 
         if (miningResources.length === 0) {
             return '<p style="color: var(--text-secondary); text-align: center; padding: 40px;">Нет ресурсов для отображения</p>';
         }
+
+        const groups = this.groupResources(miningResources);
 
         let html = `
             <div class="mining-controls">
@@ -146,11 +185,19 @@ const MiningCalc = {
                     <tbody>
         `;
 
-        for (const resource of miningResources) {
-            const price = prices[resource.id] || 0;
-            const qty = 0; // default quantity
-
-            html += this.renderRow(resource, price, qty, prices, recipes, resourcesMap);
+        let isFirst = true;
+        for (const [key, items] of groups) {
+            const label = this.formatGroupLabel(key);
+            html += `
+                <tr class="mining-group-header${isFirst ? ' first' : ''}">
+                    <td colspan="8"><span class="mining-group-label">${label}</span></td>
+                </tr>
+            `;
+            isFirst = false;
+            for (const resource of items) {
+                const price = prices[resource.id] || 0;
+                html += this.renderRow(resource, price, 0, prices, recipes, resourcesMap);
+            }
         }
 
         html += `
