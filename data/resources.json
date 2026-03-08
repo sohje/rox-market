@@ -733,7 +733,7 @@
     {
       "id": "blessed_oridecon_1",
       "name": "Blessed Oridecon Lv1",
-      "type": "mining",
+      "type": "crafting",
       "subtype": "oridecon",
       "tier": 1,
       "image": "images/resources/blessed_oridecon_1.png"
