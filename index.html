@@ -34,6 +34,10 @@
                     <span class="nav-icon">🌱</span>
                     <span class="nav-label">Gardening</span>
                 </button>
+                <button class="nav-tab" data-view="mining">
+                    <span class="nav-icon">⛏️</span>
+                    <span class="nav-label">Mining</span>
+                </button>
             </div>
         </nav>
 
@@ -201,6 +205,18 @@
                 </div>
             </div>
 
+            <div id="view-mining" class="hidden">
+                <div class="container mining-container">
+                    <header class="header">
+                        <h1>Mining</h1>
+                        <p class="subtitle">Калькулятор профита от добычи</p>
+                    </header>
+                    <div id="mining-results">
+                        <!-- Results rendered by JS -->
+                    </div>
+                </div>
+            </div>
+
             <div id="detail-modal" class="modal hidden">
                 <div class="modal-content">
                     <button class="modal-close" id="modal-close">&times;</button>
@@ -215,6 +231,7 @@
     <script src="js/renderer.js"></script>
     <script src="js/enchantment.js"></script>
     <script src="js/gardening.js"></script>
+    <script src="js/mining.js"></script>
     <script src="js/app.js"></script>
 </body>
 

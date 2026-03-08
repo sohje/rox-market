@@ -21,6 +21,7 @@ const App = {
         document.getElementById('view-market').classList.toggle('hidden', viewName !== 'market');
         document.getElementById('view-enchant').classList.toggle('hidden', viewName !== 'enchant');
         document.getElementById('view-gardening').classList.toggle('hidden', viewName !== 'gardening');
+        document.getElementById('view-mining').classList.toggle('hidden', viewName !== 'mining');
 
         document.querySelectorAll('.nav-tab').forEach(tab => {
             tab.classList.toggle('active', tab.dataset.view === viewName);
@@ -31,6 +32,9 @@ const App = {
         }
         if (viewName === 'gardening') {
             this.updateGardening();
+        }
+        if (viewName === 'mining') {
+            this.updateMining();
         }
     },
 
@@ -60,6 +64,40 @@ const App = {
         const grouped = GardeningCalc.calculate(this.resources, this.prices);
         container.innerHTML = GardeningCalc.render(grouped, this.prices);
         GardeningCalc.bindToggle(container);
+    },
+
+    updateMining() {
+        const container = document.getElementById('mining-results');
+        const stamina = this.miningStamina || 100;
+        container.innerHTML = MiningCalc.render(
+            this.resources,
+            this.prices,
+            this.recipes,
+            this.resourcesMap,
+            stamina
+        );
+        // Restore qty state if any
+        if (this.miningQtyState) {
+            this.restoreMiningQtyState(container);
+            MiningCalc.updateCalculations(container, this.prices, this.recipes, this.resourcesMap);
+        }
+    },
+
+    captureMiningQtyState(container) {
+        const state = {};
+        container.querySelectorAll('.mining-qty-input').forEach(input => {
+            if (input.value) state[input.dataset.id] = input.value;
+        });
+        return state;
+    },
+
+    restoreMiningQtyState(container) {
+        if (!this.miningQtyState) return;
+        container.querySelectorAll('.mining-qty-input').forEach(input => {
+            if (this.miningQtyState[input.dataset.id]) {
+                input.value = this.miningQtyState[input.dataset.id];
+            }
+        });
     },
 
     async loadData() {
@@ -313,6 +351,37 @@ const App = {
                         this.updateGardening();
                     }
                 }
+            }
+        });
+
+        // Обработка клика по редактируемой цене в Mining
+        document.getElementById('mining-results').addEventListener('click', (e) => {
+            const editable = e.target.closest('.mining-price-edit');
+            if (!editable) return;
+            const id = editable.dataset.id;
+            const currentPrice = this.prices[id];
+            const newPrice = prompt(`Введите новую цену для ${this.resourcesMap[id].name}:`, currentPrice);
+            if (newPrice !== null) {
+                const container = document.getElementById('mining-results');
+                this.miningStamina = parseInt(container.querySelector('#mining-stamina')?.value) || 100;
+                this.miningQtyState = this.captureMiningQtyState(container);
+                this.updatePrice(id, newPrice);
+                if (this.currentView === 'mining') {
+                    this.updateMining();
+                }
+            }
+        });
+
+        // Обработка ввода количества и стамины в Mining
+        document.getElementById('mining-results').addEventListener('input', (e) => {
+            const target = e.target;
+            if (target.classList.contains('mining-qty-input') || target.id === 'mining-stamina') {
+                MiningCalc.updateCalculations(
+                    document.getElementById('mining-results'),
+                    this.prices,
+                    this.recipes,
+                    this.resourcesMap
+                );
             }
         });
 

@@ -153,6 +153,14 @@
       "image": "images/resources/upgrade_metal.png"
     },
     {
+      "id": "upgrade_metal_4",
+      "name": "Upgrade Metal Lv4",
+      "type": "mining",
+      "subtype": "upgrade_metal",
+      "tier": 4,
+      "image": "images/resources/upgrade_metal.png"
+    },
+    {
       "id": "rough_oridecon_1",
       "name": "Rough Oridecon Lv1",
       "type": "mining",
@@ -190,6 +198,14 @@
       "type": "mining",
       "subtype": "elunium",
       "tier": 2,
+      "image": "images/resources/rough_elunium.png"
+    },
+    {
+      "id": "rough_elunium_3",
+      "name": "Rough Elunium Lv3",
+      "type": "mining",
+      "subtype": "elunium",
+      "tier": 3,
       "image": "images/resources/rough_elunium.png"
     },
     {
@@ -685,7 +701,7 @@
     {
       "id": "blessed_ore_1",
       "name": "Blessed Ore Lv1",
-      "type": "mining",
+      "type": "crafting",
       "subtype": "ore",
       "tier": 1,
       "image": "images/resources/blessed_ore_1.png"
@@ -725,7 +741,7 @@
     {
       "id": "blessed_elunium_1",
       "name": "Blessed Elunium Lv1",
-      "type": "mining",
+      "type": "crafting",
       "subtype": "elunium",
       "tier": 1,
       "image": "images/resources/blessed_elunium_1.png"
@@ -733,7 +749,7 @@
     {
       "id": "blessed_bradium_1",
       "name": "Blessed Bradium Lv1",
-      "type": "mining",
+      "type": "crafting",
       "subtype": "bradium",
       "tier": 1,
       "image": "images/resources/blessed_bradium_1.png"
@@ -795,9 +811,17 @@
     {
       "id": "muspellium_3",
       "name": "Muspellium Lv3",
-      "type": "crafting",
-      "subtype": null,
-      "tier": null,
+      "type": "mining",
+      "subtype": "muspellium",
+      "tier": 3,
+      "image": "images/resources/muspellium.png"
+    },
+    {
+      "id": "muspellium_4",
+      "name": "Muspellium Lv4",
+      "type": "mining",
+      "subtype": "muspellium",
+      "tier": 4,
       "image": "images/resources/muspellium.png"
     },
     {

@@ -450,6 +450,15 @@
       ]
     },
     {
+      "output": "muspellium_4",
+      "ingredients": [
+        {
+          "id": "muspellium_3",
+          "quantity": 3
+        }
+      ]
+    },
+    {
       "output": "sharpening_enchantment_stone",
       "ingredients": [
         {
@@ -619,6 +628,15 @@
       "ingredients": [
         {
           "id": "upgrade_metal_2",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "output": "upgrade_metal_4",
+      "ingredients": [
+        {
+          "id": "upgrade_metal_3",
           "quantity": 3
         }
       ]
