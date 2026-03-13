@@ -314,6 +314,18 @@ const App = {
         document.getElementById('type-filter').addEventListener('change', () => this.render());
         document.getElementById('sort-select').addEventListener('change', () => this.render());
 
+        const themeToggle = document.getElementById('theme-toggle');
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            document.documentElement.classList.add('light');
+            themeToggle.querySelector('.toggle-icon').textContent = '☀️';
+        }
+        themeToggle.addEventListener('click', () => {
+            const isLight = document.documentElement.classList.toggle('light');
+            themeToggle.querySelector('.toggle-icon').textContent = isLight ? '☀️' : '🌙';
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        });
+
         document.getElementById('tax-select').addEventListener('change', (e) => {
             const taxRate = parseFloat(e.target.value) / 100;
             Calculator.setTaxRate(taxRate);
