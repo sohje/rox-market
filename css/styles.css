@@ -750,6 +750,29 @@ body {
     text-align: center;
 }
 
+.nav-tab-link {
+    text-decoration: none;
+    color: var(--text-secondary);
+    margin-top: auto;
+}
+
+.nav-tab-link:hover {
+    color: var(--text-primary);
+}
+
+.nav-icon-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-icon-img img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
 .sidebar.collapsed .nav-label {
     display: none;
 }

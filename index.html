@@ -26,21 +26,26 @@
             </button>
             <div class="sidebar-nav">
                 <button class="nav-tab active" data-view="market">
-                    <span class="nav-icon">📊</span>
+                    <span class="nav-icon nav-icon-img"><img src="img/market_icon.png" alt="Market"></span>
                     <span class="nav-label">Market</span>
                 </button>
                 <button class="nav-tab" data-view="enchant">
-                    <span class="nav-icon">✨</span>
+                    <span class="nav-icon nav-icon-img"><img src="img/enchant_icon.png" alt="Enchantment"></span>
                     <span class="nav-label">Enchantment</span>
                 </button>
                 <button class="nav-tab" data-view="gardening">
-                    <span class="nav-icon">🌱</span>
+                    <span class="nav-icon nav-icon-img"><img src="img/gardening_icon.png" alt="Gardening"></span>
                     <span class="nav-label">Gardening</span>
                 </button>
                 <button class="nav-tab" data-view="mining">
-                    <span class="nav-icon">⛏️</span>
+                    <span class="nav-icon nav-icon-img"><img src="img/mining_icon.png" alt="Mining"></span>
                     <span class="nav-label">Mining</span>
                 </button>
+                <a class="nav-tab nav-tab-link" href="https://guild.sohje.com" target="_blank" rel="noopener noreferrer"
+                    title="Guild">
+                    <span class="nav-icon nav-icon-img"><img src="img/guild_icon.png" alt="Guild"></span>
+                    <span class="nav-label">Guild</span>
+                </a>
             </div>
         </nav>
 
@@ -77,6 +82,15 @@
                         <button id="reset-prices" class="btn btn-danger">Сбросить цены</button>
                         <button id="export-prices" class="btn btn-secondary">Экспорт</button>
                         <button id="import-prices" class="btn btn-secondary">Импорт</button>
+                    </div>
+
+                    <div class="info-banner"
+                        style="background-color: var(--card-bg); padding: 15px; border-radius: var(--border-radius); border-left: 4px solid var(--accent); margin-bottom: 20px; font-size: 0.9em; line-height: 1.5;">
+                        <strong>Информация:</strong> Дамп цен с рынка от февраля-марта 2026 года + некоторые изменения
+                        от апреля 2026. Реал-тайм
+                        обновления цен отключены. За реал-тайм обновлениями обращайтесь в телеграм <a
+                            href="https://t.me/sohje" target="_blank"
+                            style="color: var(--accent); text-decoration: none;">@sohje</a>.
                     </div>
 
                     <div id="resources-list" class="resources-list">
