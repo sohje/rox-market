@@ -33,6 +33,10 @@
                     <span class="nav-icon nav-icon-img"><img src="img/enchant_icon.png" alt="Enchantment"></span>
                     <span class="nav-label">Enchantment</span>
                 </button>
+                <button class="nav-tab" data-view="city-enchants">
+                    <span class="nav-icon nav-icon-img"><img src="img/city_enchant_icon.png" alt="City Enchants"></span>
+                    <span class="nav-label">City Enchants</span>
+                </button>
                 <button class="nav-tab" data-view="gardening">
                     <span class="nav-icon nav-icon-img"><img src="img/gardening_icon.png" alt="Gardening"></span>
                     <span class="nav-label">Gardening</span>
@@ -235,6 +239,18 @@
                 </div>
             </div>
 
+            <div id="view-city-enchants" class="hidden">
+                <div class="container">
+                    <header class="header">
+                        <h1>City Enchants</h1>
+                        <p class="subtitle">Городские зачарования по городам</p>
+                    </header>
+                    <div id="city-enchants-results">
+                        <!-- Results rendered by JS -->
+                    </div>
+                </div>
+            </div>
+
             <div id="detail-modal" class="modal hidden">
                 <div class="modal-content">
                     <button class="modal-close" id="modal-close">&times;</button>
@@ -250,6 +266,7 @@
     <script src="js/enchantment.js"></script>
     <script src="js/gardening.js"></script>
     <script src="js/mining.js"></script>
+    <script src="js/city_enchants.js"></script>
     <script src="js/app.js"></script>
 </body>
 

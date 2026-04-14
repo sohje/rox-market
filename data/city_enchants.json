@@ -1,0 +1,307 @@
+{
+  "colors": {
+    "white": {
+      "label": "White",
+      "hex": "#c8c8c8",
+      "order": 1
+    },
+    "blue": {
+      "label": "Blue",
+      "hex": "#4db8ff",
+      "order": 2
+    },
+    "purple": {
+      "label": "Purple",
+      "hex": "#c77dff",
+      "order": 3
+    },
+    "gold": {
+      "label": "Gold",
+      "hex": "#ffd700",
+      "order": 4
+    }
+  },
+  "slotLabels": {
+    "weapon": "Weapon",
+    "armor": "Armor",
+    "accessory": "Accessory"
+  },
+  "slotIcons": {
+    "weapon": "⚔️",
+    "armor": "🛡️",
+    "accessory": "💍"
+  },
+  "cities": [
+    {
+      "id": "prontera",
+      "name": "Prontera",
+      "stones": {
+        "weapon": null,
+        "armor": null,
+        "accessory": null
+      },
+      "levels": {
+        "1": {
+          "weapon": {
+            "white": [
+              "STR, AGI, VIT, INT, DEX, LUK = +3"
+            ],
+            "blue": [
+              "STR, AGI, VIT, INT, DEX, LUK = +3.8"
+            ],
+            "purple": [
+              "STR, AGI, VIT, INT, DEX, LUK = +4.5"
+            ],
+            "gold": [
+              "STR, AGI, VIT, INT, DEX, LUK = +6"
+            ]
+          },
+          "armor": {
+            "white": [
+              "STR, AGI, VIT, INT, DEX, LUK = +1"
+            ],
+            "blue": [
+              "STR, AGI, VIT, INT, DEX, LUK = +1.3"
+            ],
+            "purple": [
+              "STR, AGI, VIT, INT, DEX, LUK = +2.3"
+            ],
+            "gold": [
+              "STR, AGI, VIT, INT, DEX, LUK = +3"
+            ]
+          },
+          "accessory": {
+            "white": [
+              "STR, AGI, VIT, INT, DEX, LUK = +1"
+            ],
+            "blue": [
+              "STR, AGI, VIT, INT, DEX, LUK = +1.3"
+            ],
+            "purple": [
+              "STR, AGI, VIT, INT, DEX, LUK = +2.3"
+            ],
+            "gold": [
+              "STR, AGI, VIT, INT, DEX, LUK = +3"
+            ]
+          }
+        },
+        "2": {
+          "armor": {
+            "white": [
+              "STR, AGI, VIT, INT, DEX, LUK = +1.5"
+            ],
+            "blue": [
+              "STR, AGI, VIT, INT, DEX, LUK = +1.9"
+            ],
+            "purple": [
+              "STR, AGI, VIT, INT, DEX, LUK = +2.3"
+            ],
+            "gold": [
+              "STR, AGI, VIT, INT, DEX, LUK = +3"
+            ]
+          },
+          "accessory": {
+            "white": [
+              "STR, AGI, VIT, INT, DEX, LUK = +1.5"
+            ],
+            "blue": [
+              "STR, AGI, VIT, INT, DEX, LUK = +1.9"
+            ],
+            "purple": [
+              "STR, AGI, VIT, INT, DEX, LUK = +2.3"
+            ],
+            "gold": [
+              "STR, AGI, VIT, INT, DEX, LUK = +3"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "izlude",
+      "name": "Izlude",
+      "stones": {
+        "weapon": null,
+        "armor": null,
+        "accessory": null
+      },
+      "levels": {
+        "1": {
+          "weapon": {
+            "white": [
+              "P.ATK, M.ATK, P.PEN, M.PEN = +30",
+              "P.DMG Bonus, M.DMG Bonus = +60",
+              "P.DMG Bonus, M.DMG Bonus = +1.5%"
+            ],
+            "blue": [
+              "P.ATK, M.ATK, P.PEN, M.PEN = +37.5",
+              "P.DMG Bonus, M.DMG Bonus = +75",
+              "P.DMG Bonus, M.DMG Bonus = +1.88%"
+            ],
+            "purple": [
+              "P.ATK, M.ATK, P.PEN, M.PEN = +45",
+              "P.DMG Bonus, M.DMG Bonus = +90",
+              "P.DMG Bonus, M.DMG Bonus = +2.25%"
+            ],
+            "gold": [
+              "P.ATK, M.ATK, P.PEN, M.PEN = +60",
+              "P.DMG Bonus, M.DMG Bonus = +120",
+              "P.DMG Bonus, M.DMG Bonus = +3%"
+            ]
+          }
+        },
+        "2": {
+          "armor": {
+            "white": [
+              "P.DEF, M.DEF = +15",
+              "Max HP = +750",
+              "Max SP = +75",
+              "P.DMG RED, M.DMG RED = +30",
+              "P.DMG Reduction, M.DMG Reduction = +0.75%"
+            ],
+            "blue": [
+              "P.DEF, M.DEF = +18.8",
+              "Max HP = +937.5",
+              "Max SP = +93.8",
+              "P.DMG RED, M.DMG RED = +37.5",
+              "P.DMG Reduction, M.DMG Reduction = +0.94%"
+            ],
+            "purple": [
+              "P.DEF, M.DEF = +22.5",
+              "Max HP = +1125",
+              "Max SP = +112.5",
+              "P.DMG RED, M.DMG RED = +45",
+              "P.DMG Reduction, M.DMG Reduction = +1.13%"
+            ],
+            "gold": [
+              "P.DEF, M.DEF = +30",
+              "Max HP = +1500",
+              "Max SP = +150",
+              "P.DMG RED, M.DMG RED = +60",
+              "P.DMG Reduction, M.DMG Reduction = +1.5%"
+            ]
+          },
+          "accessory": {
+            "white": [
+              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +15"
+            ],
+            "blue": [
+              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +18.8"
+            ],
+            "purple": [
+              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +22.5"
+            ],
+            "gold": [
+              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +30"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "morroc",
+      "name": "Morroc",
+      "stones": {
+        "weapon": null,
+        "armor": null,
+        "accessory": null
+      },
+      "levels": {
+        "1": {
+          "weapon": {
+            "white": [
+              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +0.6%",
+              "Debuff Penetration, Debuff Enhancement = +1.5%"
+            ],
+            "blue": [
+              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +0.75%",
+              "Debuff Penetration, Debuff Enhancement = +1.88%"
+            ],
+            "purple": [
+              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +0.9%",
+              "Debuff Penetration, Debuff Enhancement = +2.25%"
+            ],
+            "gold": [
+              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +1.2%",
+              "Debuff Penetration, Debuff Enhancement = +3%"
+            ]
+          }
+        },
+        "2": {
+          "armor": {
+            "white": [
+              "Max HP = +0.5%",
+              "Max SP = +1%",
+              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +0.5%",
+              "Debuff Duration RED, Debuff Resistance = +0.75%",
+              "% Max HP/s, % Max SP/s = +0.25%"
+            ],
+            "blue": [
+              "Max HP = +0.64%",
+              "Max SP = +1.25%",
+              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +0.63%",
+              "Debuff Duration RED, Debuff Resistance = +0.94%",
+              "% Max HP/s, % Max SP/s = +0.31%"
+            ],
+            "purple": [
+              "Max HP = +0.75%",
+              "Max SP = +1.5%",
+              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +0.75%",
+              "Debuff Duration RED, Debuff Resistance = +1.13%",
+              "% Max HP/s, % Max SP/s = +0.38%"
+            ],
+            "gold": [
+              "Max HP = +1%",
+              "Max SP = +2%",
+              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +1%",
+              "Debuff Duration RED, Debuff Resistance = +1.5%",
+              "% Max HP/s, % Max SP/s = +0.5%"
+            ]
+          },
+          "accessory": {
+            "white": [
+              "Final ASPD = +2.5%",
+              "Final Haste = +0.25%",
+              "Final Crit = +0.5%",
+              "Crit DMG = +0.6%",
+              "Final Dodge = +0.5%",
+              "Final Anti-Crit = +0.5%",
+              "Final Hit = +0.5%",
+              "Crit DMG RED = +1%"
+            ],
+            "blue": [
+              "Final ASPD = +3.13%",
+              "Final Haste = +0.31%",
+              "Final Crit = +0.63%",
+              "Crit DMG = +0.75%",
+              "Final Dodge = +0.63%",
+              "Final Anti-Crit = +0.63%",
+              "Final Hit = +0.63%",
+              "Crit DMG RED = +1.25%"
+            ],
+            "purple": [
+              "Final ASPD = +3.75%",
+              "Final Haste = +0.38%",
+              "Final Crit = +0.75%",
+              "Crit DMG = +0.9%",
+              "Final Dodge = +0.75%",
+              "Final Anti-Crit = +0.75%",
+              "Final Hit = +0.75%",
+              "Crit DMG RED = +1.5%"
+            ],
+            "gold": [
+              "Final ASPD = +5%",
+              "Final Haste = +0.5%",
+              "Final Crit = +1%",
+              "Crit DMG = +1.2%",
+              "Final Dodge = +1%",
+              "Final Anti-Crit = +1%",
+              "Final Hit = +1%",
+              "Crit DMG RED = +2%"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

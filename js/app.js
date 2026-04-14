@@ -20,6 +20,7 @@ const App = {
 
         document.getElementById('view-market').classList.toggle('hidden', viewName !== 'market');
         document.getElementById('view-enchant').classList.toggle('hidden', viewName !== 'enchant');
+        document.getElementById('view-city-enchants').classList.toggle('hidden', viewName !== 'city-enchants');
         document.getElementById('view-gardening').classList.toggle('hidden', viewName !== 'gardening');
         document.getElementById('view-mining').classList.toggle('hidden', viewName !== 'mining');
 
@@ -29,6 +30,9 @@ const App = {
 
         if (viewName === 'enchant') {
             this.updateEnchantment();
+        }
+        if (viewName === 'city-enchants') {
+            this.updateCityEnchants();
         }
         if (viewName === 'gardening') {
             this.updateGardening();
@@ -66,6 +70,13 @@ const App = {
         GardeningCalc.bindToggle(container);
     },
 
+    updateCityEnchants() {
+        const container = document.getElementById('city-enchants-results');
+        CityEnchantsCalc.setData(this.cityEnchantsData);
+        container.innerHTML = CityEnchantsCalc.render();
+        CityEnchantsCalc.bindEvents(container);
+    },
+
     updateMining() {
         const container = document.getElementById('mining-results');
         const stamina = this.miningStamina || 100;
@@ -101,15 +112,17 @@ const App = {
     },
 
     async loadData() {
-        const [resourcesRes, recipesRes, pricesRes] = await Promise.all([
+        const [resourcesRes, recipesRes, pricesRes, cityEnchantsRes] = await Promise.all([
             fetch('data/resources.json'),
             fetch('data/recipes.json'),
-            fetch('data/prices.json')
+            fetch('data/prices.json'),
+            fetch('data/city_enchants.json')
         ]);
 
         const resourcesData = await resourcesRes.json();
         const recipesData = await recipesRes.json();
         const defaultPricesData = await pricesRes.json();
+        this.cityEnchantsData = await cityEnchantsRes.json();
 
         this.resources = resourcesData.resources;
         this.recipes = recipesData.recipes;
