@@ -369,12 +369,6 @@
           }
         },
         "2": {
-          "weapon": {
-            "white": [],
-            "blue": [],
-            "purple": [],
-            "gold": []
-          },
           "armor": {
             "white": [
               "Neutral Attr. RES = +0.75%",
@@ -612,6 +606,141 @@
               "Large DMG RED = +1.63%",
               "Medium DMG RED = +1.63%",
               "Small DMG RED = +1.63%"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "geffen",
+      "name": "Geffen",
+      "stones": {
+        "weapon": null,
+        "armor": null,
+        "accessory": null
+      },
+      "levels": {
+        "1": {
+          "weapon": {
+            "white": [
+              "PVP P.DMG Bonus = +42",
+              "PVP M.DMG Bonus = +42",
+              "PVP Final P.DMG Bonus = +1.4%",
+              "PVP Final M.DMG Bonus = +1.4%",
+              "PVP Debuff Penetration = +2.1%",
+              "PVP Debuff Enhancement = +2.1%"
+            ],
+            "blue": [
+              "PVP P.DMG Bonus = +52.5",
+              "PVP M.DMG Bonus = +52.5",
+              "PVP Final P.DMG Bonus = +1.75%",
+              "PVP Final M.DMG Bonus = +1.75%",
+              "PVP Debuff Penetration = +2.63%",
+              "PVP Debuff Enhancement = +2.63%"
+            ],
+            "purple": [
+              "PVP P.DMG Bonus = +63",
+              "PVP M.DMG Bonus = +63",
+              "PVP Final P.DMG Bonus = +2.1%",
+              "PVP Final M.DMG Bonus = +2.1%",
+              "PVP Debuff Penetration = +3.15%",
+              "PVP Debuff Enhancement = +3.15%"
+            ],
+            "gold": [
+              "PVP P.DMG Bonus = +84",
+              "PVP M.DMG Bonus = +84",
+              "PVP Final P.DMG Bonus = +2.8%",
+              "PVP Final M.DMG Bonus = +2.8%",
+              "PVP Debuff Penetration = +4.2%",
+              "PVP Debuff Enhancement = +4.2%"
+            ]
+          },
+          "armor": {
+            "white": [],
+            "blue": [],
+            "purple": [],
+            "gold": []
+          },
+          "accessory": {
+            "white": [],
+            "blue": [],
+            "purple": [],
+            "gold": []
+          }
+        },
+        "2": {
+          "weapon": {
+            "white": [],
+            "blue": [],
+            "purple": [],
+            "gold": []
+          },
+          "armor": {
+            "white": [
+              "PVP P.DMG RED = +21",
+              "PVP M.DMG RED = +21",
+              "PVP Final P.DMG RED = +0.7%",
+              "PVP Final M.DMG RED = +0.7%",
+              "PVP Debuff Duration RES = +1.05%",
+              "PVP Debuff RES = +1.05%"
+            ],
+            "blue": [
+              "PVP P.DMG RED = +26.3",
+              "PVP M.DMG RED = +26.3",
+              "PVP Final P.DMG RED = +0.88%",
+              "PVP Final M.DMG RED = +0.88%",
+              "PVP Debuff Duration RES = +1.31%",
+              "PVP Debuff RES = +1.31%"
+            ],
+            "purple": [
+              "PVP P.DMG RED = +31.5",
+              "PVP M.DMG RED = +31.5",
+              "PVP Final P.DMG RED = +1.05%",
+              "PVP Final M.DMG RED = +1.05%",
+              "PVP Debuff Duration RES = +1.58%",
+              "PVP Debuff RES = +1.58%"
+            ],
+            "gold": [
+              "PVP P.DMG RED = +42",
+              "PVP M.DMG RED = +42",
+              "PVP Final P.DMG RED = +1.4%",
+              "PVP Final M.DMG RED = +1.4%",
+              "PVP Debuff Duration RES = +2.1%",
+              "PVP Debuff RES = +2.1%"
+            ]
+          },
+          "accessory": {
+            "white": [
+              "Increase STR = +0.42%",
+              "Increase INT = +0.42%",
+              "Increase VIT = +0.42%",
+              "Increase DEX = +0.42%",
+              "Increase LUK = +0.42%",
+              "Increase AGI = +0.42%"
+            ],
+            "blue": [
+              "Increase STR = +0.53%",
+              "Increase INT = +0.53%",
+              "Increase VIT = +0.53%",
+              "Increase DEX = +0.53%",
+              "Increase LUK = +0.53%",
+              "Increase AGI = +0.53%"
+            ],
+            "purple": [
+              "Increase STR = +0.63%",
+              "Increase INT = +0.63%",
+              "Increase VIT = +0.63%",
+              "Increase DEX = +0.63%",
+              "Increase LUK = +0.63%",
+              "Increase AGI = +0.63%"
+            ],
+            "gold": [
+              "Increase STR = +0.84%",
+              "Increase INT = +0.84%",
+              "Increase VIT = +0.84%",
+              "Increase DEX = +0.84%",
+              "Increase LUK = +0.84%",
+              "Increase AGI = +0.84%"
             ]
           }
         }
