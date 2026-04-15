@@ -23,6 +23,7 @@ const App = {
         document.getElementById('view-city-enchants').classList.toggle('hidden', viewName !== 'city-enchants');
         document.getElementById('view-gardening').classList.toggle('hidden', viewName !== 'gardening');
         document.getElementById('view-mining').classList.toggle('hidden', viewName !== 'mining');
+        document.getElementById('view-materials').classList.toggle('hidden', viewName !== 'materials');
 
         document.querySelectorAll('.nav-tab').forEach(tab => {
             tab.classList.toggle('active', tab.dataset.view === viewName);
@@ -39,6 +40,9 @@ const App = {
         }
         if (viewName === 'mining') {
             this.updateMining();
+        }
+        if (viewName === 'materials') {
+            this.updateMaterials();
         }
     },
 
@@ -91,6 +95,15 @@ const App = {
         if (this.miningQtyState) {
             this.restoreMiningQtyState(container);
             MiningCalc.updateCalculations(container, this.prices, this.recipes, this.resourcesMap);
+        }
+    },
+
+    updateMaterials() {
+        const container = document.getElementById('materials-results');
+        if (!container.classList.contains('initialized')) {
+            container.innerHTML = MaterialsCalc.render();
+            MaterialsCalc.bindEvents(container);
+            container.classList.add('initialized');
         }
     },
 
