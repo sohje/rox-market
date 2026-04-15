@@ -148,6 +148,50 @@
               "P.DMG Bonus, M.DMG Bonus = +120",
               "P.DMG Bonus, M.DMG Bonus = +3%"
             ]
+          },
+          "armor": {
+            "white": [
+              "P.DEF, M.DEF = +10",
+              "Max HP = +500",
+              "Max SP = +50",
+              "P.DMG RED, M.DMG RED = +20",
+              "P.DMG Reduction, M.DMG Reduction = +0.5%"
+            ],
+            "blue": [
+              "P.DEF, M.DEF = +12.5",
+              "Max HP = +625",
+              "Max SP = +62.5",
+              "P.DMG RED, M.DMG RED = +25",
+              "P.DMG Reduction, M.DMG Reduction = +0.63%"
+            ],
+            "purple": [
+              "P.DEF, M.DEF = +15",
+              "Max HP = +750",
+              "Max SP = +75",
+              "P.DMG RED, M.DMG RED = +30",
+              "P.DMG Reduction, M.DMG Reduction = +0.75%"
+            ],
+            "gold": [
+              "P.DEF, M.DEF = +20",
+              "Max HP = +1000",
+              "Max SP = +100",
+              "P.DMG RED, M.DMG RED = +40",
+              "P.DMG Reduction, M.DMG Reduction = +1%"
+            ]
+          },
+          "accessory": {
+            "white": [
+              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +10"
+            ],
+            "blue": [
+              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +12.5"
+            ],
+            "purple": [
+              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +15"
+            ],
+            "gold": [
+              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +20"
+            ]
           }
         },
         "2": {
