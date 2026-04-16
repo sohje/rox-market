@@ -114,6 +114,55 @@
               "STR, AGI, VIT, INT, DEX, LUK = +3"
             ]
           }
+        },
+        "7": {
+          "weapon": {
+            "white": [
+              "STR, AGI, VIT, INT, DEX, LUK = +10"
+            ],
+            "blue": [
+              "STR, AGI, VIT, INT, DEX, LUK = +12.5"
+            ],
+            "purple": [
+              "STR, AGI, VIT, INT, DEX, LUK = +15"
+            ],
+            "gold": [
+              "STR, AGI, VIT, INT, DEX, LUK = +20"
+            ]
+          }
+        },
+        "8": {
+          "weapon": {
+            "white": [
+              "STR, AGI, VIT, INT, DEX, LUK = +12"
+            ],
+            "blue": [
+              "STR, AGI, VIT, INT, DEX, LUK = +15"
+            ],
+            "purple": [
+              "STR, AGI, VIT, INT, DEX, LUK = +18"
+            ],
+            "gold": [
+              "STR, AGI, VIT, INT, DEX, LUK = +24"
+            ]
+          }
+        },
+        "9": {},
+        "10": {
+          "armor": {
+            "white": [
+              "STR, AGI, VIT, INT, DEX, LUK = +8"
+            ],
+            "blue": [
+              "STR, AGI, VIT, INT, DEX, LUK = +10"
+            ],
+            "purple": [
+              "STR, AGI, VIT, INT, DEX, LUK = +12"
+            ],
+            "gold": [
+              "STR, AGI, VIT, INT, DEX, LUK = +16"
+            ]
+          }
         }
       }
     },
