@@ -239,6 +239,76 @@
               "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +30"
             ]
           }
+        },
+        "8": {
+          "weapon": {
+            "white": [
+              "P.ATK, M.ATK, P.PEN, M.PEN = +120",
+              "P.DMG Bonus, M.DMG Bonus = +240",
+              "P.DMG Bonus, M.DMG Bonus = +6%"
+            ],
+            "blue": [
+              "P.ATK, M.ATK, P.PEN, M.PEN = +150",
+              "P.DMG Bonus, M.DMG Bonus = +300",
+              "P.DMG Bonus, M.DMG Bonus = +7.5%"
+            ],
+            "purple": [
+              "P.ATK, M.ATK, P.PEN, M.PEN = +180",
+              "P.DMG Bonus, M.DMG Bonus = +360",
+              "P.DMG Bonus, M.DMG Bonus = +9%"
+            ],
+            "gold": [
+              "P.ATK, M.ATK, P.PEN, M.PEN = +240",
+              "P.DMG Bonus, M.DMG Bonus = +480",
+              "P.DMG Bonus, M.DMG Bonus = +12%"
+            ]
+          },
+          "accessory": {
+            "white": [
+              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +60"
+            ],
+            "blue": [
+              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +75"
+            ],
+            "purple": [
+              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +90"
+            ],
+            "gold": [
+              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +120"
+            ]
+          }
+        },
+        "10": {
+          "armor": {
+            "white": [
+              "P.DEF, M.DEF = +80",
+              "Max HP = +4000",
+              "Max SP = +400",
+              "P.DMG RED, M.DMG RED = +160",
+              "P.DMG Reduction, M.DMG Reduction = +4%"
+            ],
+            "blue": [
+              "P.DEF, M.DEF = +100",
+              "Max HP = +5000",
+              "Max SP = +500",
+              "P.DMG RED, M.DMG RED = +200",
+              "P.DMG Reduction, M.DMG Reduction = +5%"
+            ],
+            "purple": [
+              "P.DEF, M.DEF = +120",
+              "Max HP = +6000",
+              "Max SP = +600",
+              "P.DMG RED, M.DMG RED = +240",
+              "P.DMG Reduction, M.DMG Reduction = +6%"
+            ],
+            "gold": [
+              "P.DEF, M.DEF = +160",
+              "Max HP = +8000",
+              "Max SP = +800",
+              "P.DMG RED, M.DMG RED = +320",
+              "P.DMG Reduction, M.DMG Reduction = +8%"
+            ]
+          }
         }
       }
     },
