@@ -129,6 +129,20 @@
             "gold": [
               "STR, AGI, VIT, INT, DEX, LUK = +20"
             ]
+          },
+          "accessory": {
+            "white": [
+              "STR, AGI, VIT, INT, DEX, LUK = +5"
+            ],
+            "blue": [
+              "STR, AGI, VIT, INT, DEX, LUK = +6.3"
+            ],
+            "purple": [
+              "STR, AGI, VIT, INT, DEX, LUK = +7.5"
+            ],
+            "gold": [
+              "STR, AGI, VIT, INT, DEX, LUK = +10"
+            ]
           }
         },
         "8": {
@@ -144,6 +158,20 @@
             ],
             "gold": [
               "STR, AGI, VIT, INT, DEX, LUK = +24"
+            ]
+          },
+          "accessory": {
+            "white": [
+              "STR, AGI, VIT, INT, DEX, LUK = +6"
+            ],
+            "blue": [
+              "STR, AGI, VIT, INT, DEX, LUK = +7.5"
+            ],
+            "purple": [
+              "STR, AGI, VIT, INT, DEX, LUK = +9"
+            ],
+            "gold": [
+              "STR, AGI, VIT, INT, DEX, LUK = +12"
             ]
           }
         },
@@ -461,6 +489,100 @@
               "Final Anti-Crit = +1%",
               "Final Hit = +1%",
               "Crit DMG RED = +2%"
+            ]
+          }
+        },
+        "8": {
+          "weapon": {
+            "white": [
+              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +2.4%",
+              "Debuff Penetration, Debuff Enhancement = +6%"
+            ],
+            "blue": [
+              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +3%",
+              "Debuff Penetration, Debuff Enhancement = +7.5%"
+            ],
+            "purple": [
+              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +3.6%",
+              "Debuff Penetration, Debuff Enhancement = +9%"
+            ],
+            "gold": [
+              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +4.8%",
+              "Debuff Penetration, Debuff Enhancement = +12%"
+            ]
+          },
+          "accessory": {
+            "white": [
+              "Final ASPD = +10%",
+              "Final Haste = +1%",
+              "Final Crit = +2%",
+              "Crit DMG = +2.4%",
+              "Final Dodge = +2%",
+              "Final Anti-Crit = +2%",
+              "Final Hit = +2%",
+              "Crit DMG RED = +4%"
+            ],
+            "blue": [
+              "Final ASPD = +12.5%",
+              "Final Haste = +1.25%",
+              "Final Crit = +2.5%",
+              "Crit DMG = +3%",
+              "Final Dodge = +2.5%",
+              "Final Anti-Crit = +2.5%",
+              "Final Hit = +2.5%",
+              "Crit DMG RED = +5%"
+            ],
+            "purple": [
+              "Final ASPD = +15%",
+              "Final Haste = +1.5%",
+              "Final Crit = +3%",
+              "Crit DMG = +3.6%",
+              "Final Dodge = +3%",
+              "Final Anti-Crit = +3%",
+              "Final Hit = +3%",
+              "Crit DMG RED = +6%"
+            ],
+            "gold": [
+              "Final ASPD = +20%",
+              "Final Haste = +2%",
+              "Final Crit = +4%",
+              "Crit DMG = +4.8%",
+              "Final Dodge = +4%",
+              "Final Anti-Crit = +4%",
+              "Final Hit = +4%",
+              "Crit DMG RED = +8%"
+            ]
+          }
+        },
+        "10": {
+          "armor": {
+            "white": [
+              "Max HP = +2.67%",
+              "Max SP = +5.33%",
+              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +2.67%",
+              "Debuff Duration RED, Debuff Resistance = +4%",
+              "% Max HP/s, % Max SP/s = +1.34%"
+            ],
+            "blue": [
+              "Max HP = +3.33%",
+              "Max SP = +6.67%",
+              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +3.33%",
+              "Debuff Duration RED, Debuff Resistance = +5%",
+              "% Max HP/s, % Max SP/s = +1.67%"
+            ],
+            "purple": [
+              "Max HP = +4%",
+              "Max SP = +8%",
+              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +4%",
+              "Debuff Duration RED, Debuff Resistance = +6%",
+              "% Max HP/s, % Max SP/s = +2%"
+            ],
+            "gold": [
+              "Max HP = +5.33%",
+              "Max SP = +10.67%",
+              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +5.33%",
+              "Debuff Duration RED, Debuff Resistance = +8%",
+              "% Max HP/s, % Max SP/s = +2.67%"
             ]
           }
         }
