@@ -1210,12 +1210,6 @@
           }
         },
         "2": {
-          "weapon": {
-            "white": [],
-            "blue": [],
-            "purple": [],
-            "gold": []
-          },
           "armor": {
             "white": [
               "PVP P.DMG RED = +21",
@@ -1282,6 +1276,112 @@
               "Increase DEX = +0.84%",
               "Increase LUK = +0.84%",
               "Increase AGI = +0.84%"
+            ]
+          }
+        },
+        "8": {
+          "weapon": {
+            "white": [
+              "PVP P.DMG Bonus = +168",
+              "PVP M.DMG Bonus = +168",
+              "PVP Final P.DMG Bonus = +5.6%",
+              "PVP Final M.DMG Bonus = +5.6%",
+              "PVP Debuff Penetration = +8.4%",
+              "PVP Debuff Enhancement = +8.4%"
+            ],
+            "blue": [
+              "PVP P.DMG Bonus = +210",
+              "PVP M.DMG Bonus = +210",
+              "PVP Final P.DMG Bonus = +7%",
+              "PVP Final M.DMG Bonus = +7%",
+              "PVP Debuff Penetration = +10.5%",
+              "PVP Debuff Enhancement = +10.5%"
+            ],
+            "purple": [
+              "PVP P.DMG Bonus = +252",
+              "PVP M.DMG Bonus = +252",
+              "PVP Final P.DMG Bonus = +8.4%",
+              "PVP Final M.DMG Bonus = +8.4%",
+              "PVP Debuff Penetration = +12.6%",
+              "PVP Debuff Enhancement = +12.6%"
+            ],
+            "gold": [
+              "PVP P.DMG Bonus = +336",
+              "PVP M.DMG Bonus = +336",
+              "PVP Final P.DMG Bonus = +11.2%",
+              "PVP Final M.DMG Bonus = +11.2%",
+              "PVP Debuff Penetration = +16.8%",
+              "PVP Debuff Enhancement = +16.8%"
+            ]
+          },
+          "accessory": {
+            "white": [
+              "Increase STR = +1.68%",
+              "Increase INT = +1.68%",
+              "Increase VIT = +1.68%",
+              "Increase DEX = +1.68%",
+              "Increase LUK = +1.68%",
+              "Increase AGI = +1.68%"
+            ],
+            "blue": [
+              "Increase STR = +2.1%",
+              "Increase INT = +2.1%",
+              "Increase VIT = +2.1%",
+              "Increase DEX = +2.1%",
+              "Increase LUK = +2.1%",
+              "Increase AGI = +2.1%"
+            ],
+            "purple": [
+              "Increase STR = +2.52%",
+              "Increase INT = +2.52%",
+              "Increase VIT = +2.52%",
+              "Increase DEX = +2.52%",
+              "Increase LUK = +2.52%",
+              "Increase AGI = +2.52%"
+            ],
+            "gold": [
+              "Increase STR = +3.36%",
+              "Increase INT = +3.36%",
+              "Increase VIT = +3.36%",
+              "Increase DEX = +3.36%",
+              "Increase LUK = +3.36%",
+              "Increase AGI = +3.36%"
+            ]
+          }
+        },
+        "10": {
+          "armor": {
+            "white": [
+              "PVP P.DMG RED = +112",
+              "PVP M.DMG RED = +112",
+              "PVP Final P.DMG RED = +3.73%",
+              "PVP Final M.DMG RED = +3.73%",
+              "PVP Debuff Duration RES = +5.6%",
+              "PVP Debuff RES = +5.6%"
+            ],
+            "blue": [
+              "PVP P.DMG RED = +140",
+              "PVP M.DMG RED = +140",
+              "PVP Final P.DMG RED = +4.67%",
+              "PVP Final M.DMG RED = +4.67%",
+              "PVP Debuff Duration RES = +7%",
+              "PVP Debuff RES = +7%"
+            ],
+            "purple": [
+              "PVP P.DMG RED = +168",
+              "PVP M.DMG RED = +168",
+              "PVP Final P.DMG RED = +5.6%",
+              "PVP Final M.DMG RED = +5.6%",
+              "PVP Debuff Duration RES = +8.4%",
+              "PVP Debuff RES = +8.4%"
+            ],
+            "gold": [
+              "PVP P.DMG RED = +224",
+              "PVP M.DMG RED = +224",
+              "PVP Final P.DMG RED = +7.47%",
+              "PVP Final M.DMG RED = +7.47%",
+              "PVP Debuff Duration RES = +11.2%",
+              "PVP Debuff RES = +11.2%"
             ]
           }
         }
