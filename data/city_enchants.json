@@ -742,6 +742,140 @@
               "Shadow DMG RED = +1.5%"
             ]
           }
+        },
+        "8": {
+          "weapon": {
+            "white": [
+              "Neutral Attr. Enhance = +2.88%",
+              "Fire Attr. Enhance = +2.88%",
+              "Water Attr. Enhance = +2.88%",
+              "Earth Attr. Enhance = +2.88%",
+              "Wind Attr. Enhance = +2.88%",
+              "Poison Attr. Enhance = +2.88%",
+              "Holy Attr. Enhance = + 2.88%",
+              "Ghost Attr. Enhance = +2.88%"
+            ],
+            "blue": [
+              "Neutral Attr. Enhance = +3.6%",
+              "Fire Attr. Enhance = +3.6%",
+              "Water Attr. Enhance = +3.6%",
+              "Earth Attr. Enhance = +3.6%",
+              "Wind Attr. Enhance = +3.6%",
+              "Poison Attr. Enhance = +3.6%",
+              "Holy Attr. Enhance = +3.6%",
+              "Ghost Attr. Enhance = +3.6%"
+            ],
+            "purple": [
+              "Neutral Attr. Enhance = +4.32%",
+              "Fire Attr. Enhance = +4.32%",
+              "Water Attr. Enhance = +4.32%",
+              "Earth Attr. Enhance = +4.32%",
+              "Wind Attr. Enhance = +4.32%",
+              "Poison Attr. Enhance = +4.32%",
+              "Holy Attr. Enhance = +4.32%",
+              "Ghost Attr. Enhance = +4.32%"
+            ],
+            "gold": [
+              "Neutral Attr. Enhance = +5.76%",
+              "Fire Attr. Enhance = +5.76%",
+              "Water Attr. Enhance = +5.76%",
+              "Earth Attr. Enhance = +5.76%",
+              "Wind Attr. Enhance = +5.76%",
+              "Poison Attr. Enhance = +5.76%",
+              "Holy Attr. Enhance = +5.76%",
+              "Ghost Attr. Enhance = +5.76%"
+            ]
+          },
+          "accessory": {
+            "white": [
+              "Bonus DMG to Neutral Mon. = +3%",
+              "Bonus DMG to Water Mon. = +3%",
+              "Bonus DMG to Earth Mon. = +3%",
+              "Bonus DMG to Shadow Mon. = +3%",
+              "Neutral DMG RED = +3%",
+              "Water DMG RED = +3%",
+              "Earth DMG RED = +3%",
+              "Shadow DMG RED = +3%"
+            ],
+            "blue": [
+              "Bonus DMG to Neutral Mon. = +3.75%",
+              "Bonus DMG to Water Mon. = +3.75%",
+              "Bonus DMG to Earth Mon. = +3.75%",
+              "Bonus DMG to Shadow Mon. = +3.75%",
+              "Neutral DMG RED = +3.75%",
+              "Water DMG RED = +3.75%",
+              "Earth DMG RED = +3.75%",
+              "Shadow DMG RED = +3.75%"
+            ],
+            "purple": [
+              "Bonus DMG to Neutral Mon. = +4.5%",
+              "Bonus DMG to Water Mon. = +4.5%",
+              "Bonus DMG to Earth Mon. = +4.5%",
+              "Bonus DMG to Shadow Mon. = +4.5%",
+              "Neutral DMG RED = +4.5%",
+              "Water DMG RED = +4.5%",
+              "Earth DMG RED = +4.5%",
+              "Shadow DMG RED = +4.5%"
+            ],
+            "gold": [
+              "Bonus DMG to Neutral Mon. = +6%",
+              "Bonus DMG to Water Mon. = +6%",
+              "Bonus DMG to Earth Mon. = +6%",
+              "Bonus DMG to Shadow Mon. = +6%",
+              "Neutral DMG RED = +6%",
+              "Water DMG RED = +6%",
+              "Earth DMG RED = +6%",
+              "Shadow DMG RED = +6%"
+            ]
+          }
+        },
+        "10": {
+          "armor": {
+            "white": [
+              "Neutral Attr. RES = +4%",
+              "Fire Attr. RES = +4%",
+              "Water Attr. RES = +4%",
+              "Earth Attr. RES = +4%",
+              "Wind Attr. RES = +4%",
+              "Poison Attr. RES = +4%",
+              "Holy Attr. RES = +4%",
+              "Shadow Attr. RES = +4%",
+              "Ghost Attr. RES = +4%"
+            ],
+            "blue": [
+              "Neutral Attr. RES = +5%",
+              "Fire Attr. RES = +5%",
+              "Water Attr. RES = +5%",
+              "Earth Attr. RES = +5%",
+              "Wind Attr. RES = +5%",
+              "Poison Attr. RES = +5%",
+              "Holy Attr. RES = +5%",
+              "Shadow Attr. RES = +5%",
+              "Ghost Attr. RES = +5%"
+            ],
+            "purple": [
+              "Neutral Attr. RES = +6%",
+              "Fire Attr. RES = +6%",
+              "Water Attr. RES = +6%",
+              "Earth Attr. RES = +6%",
+              "Wind Attr. RES = +6%",
+              "Poison Attr. RES = +6%",
+              "Holy Attr. RES = +6%",
+              "Shadow Attr. RES = +6%",
+              "Ghost Attr. RES = +6%"
+            ],
+            "gold": [
+              "Neutral Attr. RES = +8%",
+              "Fire Attr. RES = +8%",
+              "Water Attr. RES = +8%",
+              "Earth Attr. RES = +8%",
+              "Wind Attr. RES = +8%",
+              "Poison Attr. RES = +8%",
+              "Holy Attr. RES = +8%",
+              "Shadow Attr. RES = +8%",
+              "Ghost Attr. RES = +8%"
+            ]
+          }
         }
       }
     },
@@ -891,6 +1025,128 @@
               "Large DMG RED = +1.63%",
               "Medium DMG RED = +1.63%",
               "Small DMG RED = +1.63%"
+            ]
+          }
+        },
+        "8": {
+          "weapon": {
+            "white": [
+              "Bonus DMG to Demon = +6.5%",
+              "Bonus DMG to Insect = +6.5%",
+              "Bonus DMG to Fish = +6.5%",
+              "Bonus DMG to Demi-Human = +6.5%",
+              "Bonus DMG to Undead = +6.5%",
+              "Bonus DMG to Plant = +6.5%",
+              "Bonus DMG to Brute = +6.5%"
+            ],
+            "blue": [
+              "Bonus DMG to Demon = +8.13%",
+              "Bonus DMG to Insect = +8.13%",
+              "Bonus DMG to Fish = +8.13%",
+              "Bonus DMG to Demi-Human = +8.13%",
+              "Bonus DMG to Undead = +8.13%",
+              "Bonus DMG to Plant = +8.13%",
+              "Bonus DMG to Brute = +8.13%"
+            ],
+            "purple": [
+              "Bonus DMG to Demon = +9.75%",
+              "Bonus DMG to Insect = +9.75%",
+              "Bonus DMG to Fish = +9.75%",
+              "Bonus DMG to Demi-Human = +9.75%",
+              "Bonus DMG to Undead = +9.75%",
+              "Bonus DMG to Plant = +9.75%",
+              "Bonus DMG to Brute = +9.75%"
+            ],
+            "gold": [
+              "Bonus DMG to Demon = +13%",
+              "Bonus DMG to Insect = +13%",
+              "Bonus DMG to Fish = +13%",
+              "Bonus DMG to Demi-Human = +13%",
+              "Bonus DMG to Undead = +13%",
+              "Bonus DMG to Plant = +13%",
+              "Bonus DMG to Brute = +13%"
+            ]
+          },
+          "accessory": {
+            "white": [
+              "Bonus Heal = +2.6%",
+              "Bonus Heal Received = +2.6%",
+              "Bonus DMG to Large Mon. = +3.25%",
+              "Bonus DMG to Medium Mon. = +3.25%",
+              "Bonus DMG to Small Mon. = +3.25%",
+              "Large DMG RED = +3.25%",
+              "Medium DMG RED = +3.25%",
+              "Small DMG RED = +3.25%"
+            ],
+            "blue": [
+              "Bonus Heal = +3.25%",
+              "Bonus Heal Received = +3.25%",
+              "Bonus DMG to Large Mon. = +4.06%",
+              "Bonus DMG to Medium Mon. = +4.06%",
+              "Bonus DMG to Small Mon. = +4.06%",
+              "Large DMG RED = +4.06%",
+              "Medium DMG RED = +4.06%",
+              "Small DMG RED = +4.06%"
+            ],
+            "purple": [
+              "Bonus Heal = +3.9%",
+              "Bonus Heal Received = +3.9%",
+              "Bonus DMG to Large Mon. = +4.88%",
+              "Bonus DMG to Medium Mon. = +4.88%",
+              "Bonus DMG to Small Mon. = +4.88%",
+              "Large DMG RED = +4.88%",
+              "Medium DMG RED = +4.88%",
+              "Small DMG RED = +4.88%"
+            ],
+            "gold": [
+              "Bonus Heal = +5.2%",
+              "Bonus Heal Received = +5.2%",
+              "Bonus DMG to Large Mon. = +6.5%",
+              "Bonus DMG to Medium Mon. = +6.5%",
+              "Bonus DMG to Small Mon. = +6.5%",
+              "Large DMG RED = +6.5%",
+              "Medium DMG RED = +6.5%",
+              "Small DMG RED = +6.5%"
+            ]
+          }
+        },
+        "10": {
+          "armor": {
+            "white": [
+              "Demon DMG RED = +4.33%",
+              "Insect DMG RED = +4.33%",
+              "Fish DMG RED = +4.33%",
+              "Demi-Human DMG RED = +4.33%",
+              "Undead DMG RED = +4.33%",
+              "Plant DMG RED = +4.33%",
+              "Brute DMG RED = +4.33%"
+            ],
+            "blue": [
+              "Demon DMG RED = +5.42%",
+              "Insect DMG RED = +5.42%",
+              "Fish DMG RED = +5.42%",
+              "Demi-Human DMG RED = +5.42%",
+              "Undead DMG RED = +5.42%",
+              "Plant DMG RED = +5.42%",
+              "Brute DMG RED = +5.42%"
+            ],
+            "purple": [
+              "Demon DMG RED = +6.5%",
+              "Insect DMG RED = +6.5%",
+              "Fish DMG RED = +6.5%",
+              "Demi-Human DMG RED = +6.5%",
+              "Undead DMG RED = +6.5%",
+              "Plant DMG RED = +6.5%",
+              "Brute DMG RED = +6.5%"
+            ],
+            "gold": [
+              "Demon DMG RED = +8.67%",
+              "Insect DMG RED = +8.67%",
+              "Fish DMG RED = +8.67%",
+              "Demi-Human DMG RED = +8.67%",
+              "Undead DMG RED = +8.67%",
+              "Plant DMG RED = +8.67%",
+              "Brute DMG RED = +8.67%"
             ]
           }
         }
