@@ -44,16 +44,16 @@
         "1": {
           "weapon": {
             "white": [
-              "STR, AGI, VIT, INT, DEX, LUK = +3"
+              "STR, AGI, VIT, INT, DEX, LUK = +2"
             ],
             "blue": [
-              "STR, AGI, VIT, INT, DEX, LUK = +3.8"
+              "STR, AGI, VIT, INT, DEX, LUK = +2.5"
             ],
             "purple": [
-              "STR, AGI, VIT, INT, DEX, LUK = +4.5"
+              "STR, AGI, VIT, INT, DEX, LUK = +3"
             ],
             "gold": [
-              "STR, AGI, VIT, INT, DEX, LUK = +6"
+              "STR, AGI, VIT, INT, DEX, LUK = +4"
             ]
           },
           "armor": {
@@ -206,24 +206,24 @@
         "1": {
           "weapon": {
             "white": [
+              "P.ATK, M.ATK, P.PEN, M.PEN = +20",
+              "P.DMG Bonus, M.DMG Bonus = +40",
+              "P.DMG Bonus, M.DMG Bonus = +1%"
+            ],
+            "blue": [
+              "P.ATK, M.ATK, P.PEN, M.PEN = +25",
+              "P.DMG Bonus, M.DMG Bonus = +50",
+              "P.DMG Bonus, M.DMG Bonus = +1.25%"
+            ],
+            "purple": [
               "P.ATK, M.ATK, P.PEN, M.PEN = +30",
               "P.DMG Bonus, M.DMG Bonus = +60",
               "P.DMG Bonus, M.DMG Bonus = +1.5%"
             ],
-            "blue": [
-              "P.ATK, M.ATK, P.PEN, M.PEN = +37.5",
-              "P.DMG Bonus, M.DMG Bonus = +75",
-              "P.DMG Bonus, M.DMG Bonus = +1.88%"
-            ],
-            "purple": [
-              "P.ATK, M.ATK, P.PEN, M.PEN = +45",
-              "P.DMG Bonus, M.DMG Bonus = +90",
-              "P.DMG Bonus, M.DMG Bonus = +2.25%"
-            ],
             "gold": [
-              "P.ATK, M.ATK, P.PEN, M.PEN = +60",
-              "P.DMG Bonus, M.DMG Bonus = +120",
-              "P.DMG Bonus, M.DMG Bonus = +3%"
+              "P.ATK, M.ATK, P.PEN, M.PEN = +40",
+              "P.DMG Bonus, M.DMG Bonus = +80",
+              "P.DMG Bonus, M.DMG Bonus = +2%"
             ]
           },
           "armor": {
@@ -401,20 +401,50 @@
         "1": {
           "weapon": {
             "white": [
+              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +0.4%",
+              "Debuff Penetration, Debuff Enhancement = +1%"
+            ],
+            "blue": [
+              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +0.5%",
+              "Debuff Penetration, Debuff Enhancement = +1.25%"
+            ],
+            "purple": [
               "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +0.6%",
               "Debuff Penetration, Debuff Enhancement = +1.5%"
             ],
+            "gold": [
+              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +0.8%",
+              "Debuff Penetration, Debuff Enhancement = +2%"
+            ]
+          },
+          "armor": {
+            "white": [
+              "Max HP = +0.33%",
+              "Max SP = +0.67%",
+              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +0.33%",
+              "Debuff Duration RED, Debuff Resistance = +0.5%",
+              "% Max HP/s, % Max SP/s = +0.17%"
+            ],
             "blue": [
-              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +0.75%",
-              "Debuff Penetration, Debuff Enhancement = +1.88%"
+              "Max HP = +0.42%",
+              "Max SP = +0.83%",
+              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +0.42%",
+              "Debuff Duration RED, Debuff Resistance = +0.63%",
+              "% Max HP/s, % Max SP/s = +0.21%"
             ],
             "purple": [
-              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +0.9%",
-              "Debuff Penetration, Debuff Enhancement = +2.25%"
+              "Max HP = +0.5%",
+              "Max SP = +1%",
+              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +0.5%",
+              "Debuff Duration RED, Debuff Resistance = +0.75%",
+              "% Max HP/s, % Max SP/s = +0.25%"
             ],
             "gold": [
-              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +1.2%",
-              "Debuff Penetration, Debuff Enhancement = +3%"
+              "Max HP = +0.67%",
+              "Max SP = +1.33%",
+              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +0.67%",
+              "Debuff Duration RED, Debuff Resistance = +1%",
+              "% Max HP/s, % Max SP/s = +0.33%"
             ]
           }
         },
@@ -600,6 +630,26 @@
         "1": {
           "weapon": {
             "white": [
+              "Neutral Attr. Enhance = +0.48%",
+              "Fire Attr. Enhance = +0.48%",
+              "Water Attr. Enhance = +0.48%",
+              "Earth Attr. Enhance = +0.48%",
+              "Wind Attr. Enhance = +0.48%",
+              "Poison Attr. Enhance = +0.48%",
+              "Holy Attr. Enhance = +0.48%",
+              "Ghost Attr. Enhance = +0.48%"
+            ],
+            "blue": [
+              "Neutral Attr. Enhance = +0.6%",
+              "Fire Attr. Enhance = +0.6%",
+              "Water Attr. Enhance = +0.6%",
+              "Earth Attr. Enhance = +0.6%",
+              "Wind Attr. Enhance = +0.6%",
+              "Poison Attr. Enhance = +0.6%",
+              "Holy Attr. Enhance = +0.6%",
+              "Ghost Attr. Enhance = +0.6%"
+            ],
+            "purple": [
               "Neutral Attr. Enhance = +0.72%",
               "Fire Attr. Enhance = +0.72%",
               "Water Attr. Enhance = +0.72%",
@@ -609,42 +659,62 @@
               "Holy Attr. Enhance = +0.72%",
               "Ghost Attr. Enhance = +0.72%"
             ],
-            "blue": [
-              "Neutral Attr. Enhance = +0.9%",
-              "Fire Attr. Enhance = +0.9%",
-              "Water Attr. Enhance = +0.9%",
-              "Earth Attr. Enhance = +0.9%",
-              "Wind Attr. Enhance = +0.9%",
-              "Poison Attr. Enhance = +0.9%",
-              "Holy Attr. Enhance = +0.9%",
-              "Ghost Attr. Enhance = +0.9%"
-            ],
-            "purple": [
-              "Neutral Attr. Enhance = +1.08%",
-              "Fire Attr. Enhance = +1.08%",
-              "Water Attr. Enhance = +1.08%",
-              "Earth Attr. Enhance = +1.08%",
-              "Wind Attr. Enhance = +1.08%",
-              "Poison Attr. Enhance = +1.08%",
-              "Holy Attr. Enhance = +1.08%",
-              "Ghost Attr. Enhance = +1.08%"
-            ],
             "gold": [
-              "Neutral Attr. Enhance = +1.44%",
-              "Fire Attr. Enhance = +1.44%",
-              "Water Attr. Enhance = +1.44%",
-              "Earth Attr. Enhance = +1.44%",
-              "Wind Attr. Enhance = +1.44%",
-              "Poison Attr. Enhance = +1.44%",
-              "Holy Attr. Enhance = +1.44%",
-              "Ghost Attr. Enhance = +1.44%"
+              "Neutral Attr. Enhance = +0.96%",
+              "Fire Attr. Enhance = +0.96%",
+              "Water Attr. Enhance = +0.96%",
+              "Earth Attr. Enhance = +0.96%",
+              "Wind Attr. Enhance = +0.96%",
+              "Poison Attr. Enhance = +0.96%",
+              "Holy Attr. Enhance = +0.96%",
+              "Ghost Attr. Enhance = +0.96%"
             ]
           },
           "armor": {
-            "white": [],
-            "blue": [],
-            "purple": [],
-            "gold": []
+            "white": [
+              "Neutral Attr. RES = +0.5%",
+              "Fire Attr. RES = +0.5%",
+              "Water Attr. RES = +0.5%",
+              "Earth Attr. RES = +0.5%",
+              "Wind Attr. RES = +0.5%",
+              "Poison Attr. RES = +0.5%",
+              "Holy Attr. RES = +0.5%",
+              "Shadow Attr. RES = +0.5%",
+              "Ghost Attr. RES = +0.5%"
+            ],
+            "blue": [
+              "Neutral Attr. RES = +0.63%",
+              "Fire Attr. RES = +0.63%",
+              "Water Attr. RES = +0.63%",
+              "Earth Attr. RES = +0.63%",
+              "Wind Attr. RES = +0.63%",
+              "Poison Attr. RES = +0.63%",
+              "Holy Attr. RES = +0.63%",
+              "Shadow Attr. RES = +0.63%",
+              "Ghost Attr. RES = +0.63%"
+            ],
+            "purple": [
+              "Neutral Attr. RES = +0.75%",
+              "Fire Attr. RES = +0.75%",
+              "Water Attr. RES = +0.75%",
+              "Earth Attr. RES = +0.75%",
+              "Wind Attr. RES = +0.75%",
+              "Poison Attr. RES = +0.75%",
+              "Holy Attr. RES = +0.75%",
+              "Shadow Attr. RES = +0.75%",
+              "Ghost Attr. RES = +0.75%"
+            ],
+            "gold": [
+              "Neutral Attr. RES = +1%",
+              "Fire Attr. RES = +1%",
+              "Water Attr. RES = +1%",
+              "Earth Attr. RES = +1%",
+              "Wind Attr. RES = +1%",
+              "Poison Attr. RES = +1%",
+              "Holy Attr. RES = +1%",
+              "Shadow Attr. RES = +1%",
+              "Ghost Attr. RES = +1%"
+            ]
           },
           "accessory": {
             "white": [],
@@ -891,6 +961,24 @@
         "1": {
           "weapon": {
             "white": [
+              "Bonus DMG to Demon = +1.08%",
+              "Bonus DMG to Insect = +1.08%",
+              "Bonus DMG to Fish = +1.08%",
+              "Bonus DMG to Demi-Human = +1.08%",
+              "Bonus DMG to Undead = +1.08%",
+              "Bonus DMG to Plant = +1.08%",
+              "Bonus DMG to Brute = +1.08%"
+            ],
+            "blue": [
+              "Bonus DMG to Demon = +1.35%",
+              "Bonus DMG to Insect = +1.35%",
+              "Bonus DMG to Fish = +1.35%",
+              "Bonus DMG to Demi-Human = +1.35%",
+              "Bonus DMG to Undead = +1.35%",
+              "Bonus DMG to Plant = +1.35%",
+              "Bonus DMG to Brute = +1.35%"
+            ],
+            "purple": [
               "Bonus DMG to Demon = +1.63%",
               "Bonus DMG to Insect = +1.63%",
               "Bonus DMG to Fish = +1.63%",
@@ -899,39 +987,53 @@
               "Bonus DMG to Plant = +1.63%",
               "Bonus DMG to Brute = +1.63%"
             ],
-            "blue": [
-              "Bonus DMG to Demon = +2.03%",
-              "Bonus DMG to Insect = +2.03%",
-              "Bonus DMG to Fish = +2.03%",
-              "Bonus DMG to Demi-Human = +2.03%",
-              "Bonus DMG to Undead = +2.03%",
-              "Bonus DMG to Plant = +2.03%",
-              "Bonus DMG to Brute = +2.03%"
-            ],
-            "purple": [
-              "Bonus DMG to Demon = +2.44%",
-              "Bonus DMG to Insect = +2.44%",
-              "Bonus DMG to Fish = +2.44%",
-              "Bonus DMG to Demi-Human = +2.44%",
-              "Bonus DMG to Undead = +2.44%",
-              "Bonus DMG to Plant = +2.44%",
-              "Bonus DMG to Brute = +2.45%"
-            ],
             "gold": [
-              "Bonus DMG to Demon = +3.25%",
-              "Bonus DMG to Insect = +3.25%",
-              "Bonus DMG to Fish = +3.25%",
-              "Bonus DMG to Demi-Human = +3.25%",
-              "Bonus DMG to Undead = +3.25%",
-              "Bonus DMG to Plant = +3.25%",
-              "Bonus DMG to Brute = +3.25%"
+              "Bonus DMG to Demon = +2.17%",
+              "Bonus DMG to Insect = +2.17%",
+              "Bonus DMG to Fish = +2.17%",
+              "Bonus DMG to Demi-Human = +2.17%",
+              "Bonus DMG to Undead = +2.17%",
+              "Bonus DMG to Plant = +2.17%",
+              "Bonus DMG to Brute = +2.17%"
             ]
           },
           "armor": {
-            "white": [],
-            "blue": [],
-            "purple": [],
-            "gold": []
+            "white": [
+              "Demon DMG RED = +0.54%",
+              "Insect DMG RED = +0.54%",
+              "Fish DMG RED = +0.54%",
+              "Demi-Human DMG RED = +0.54%",
+              "Undead DMG RED = +0.54%",
+              "Plant DMG RED = +0.54%",
+              "Brute DMG RED = +0.54%"
+            ],
+            "blue": [
+              "Demon DMG RED = +0.68%",
+              "Insect DMG RED = +0.68%",
+              "Fish DMG RED = +0.68%",
+              "Demi-Human DMG RED = +0.68%",
+              "Undead DMG RED = +0.68%",
+              "Plant DMG RED = +0.68%",
+              "Brute DMG RED = +0.68%"
+            ],
+            "purple": [
+              "Demon DMG RED = +0.81%",
+              "Insect DMG RED = +0.81%",
+              "Fish DMG RED = +0.81%",
+              "Demi-Human DMG RED = +0.81%",
+              "Undead DMG RED = +0.81%",
+              "Plant DMG RED = +0.81%",
+              "Brute DMG RED = +0.81%"
+            ],
+            "gold": [
+              "Demon DMG RED = +1.08%",
+              "Insect DMG RED = +1.08%",
+              "Fish DMG RED = +1.08%",
+              "Demi-Human DMG RED = +1.08%",
+              "Undead DMG RED = +1.08%",
+              "Plant DMG RED = +1.08%",
+              "Brute DMG RED = +1.08%"
+            ]
           },
           "accessory": {
             "white": [],
@@ -1164,6 +1266,22 @@
         "1": {
           "weapon": {
             "white": [
+              "PVP P.DMG Bonus = +28",
+              "PVP M.DMG Bonus = +28",
+              "PVP Final P.DMG Bonus = +0.93%",
+              "PVP Final M.DMG Bonus = +0.93%",
+              "PVP Debuff Penetration = +1.4%",
+              "PVP Debuff Enhancement = +1.4%"
+            ],
+            "blue": [
+              "PVP P.DMG Bonus = +35",
+              "PVP M.DMG Bonus = +35",
+              "PVP Final P.DMG Bonus = +1.17%",
+              "PVP Final M.DMG Bonus = +1.17%",
+              "PVP Debuff Penetration = +1.75%",
+              "PVP Debuff Enhancement = +1.75%"
+            ],
+            "purple": [
               "PVP P.DMG Bonus = +42",
               "PVP M.DMG Bonus = +42",
               "PVP Final P.DMG Bonus = +1.4%",
@@ -1171,36 +1289,48 @@
               "PVP Debuff Penetration = +2.1%",
               "PVP Debuff Enhancement = +2.1%"
             ],
-            "blue": [
-              "PVP P.DMG Bonus = +52.5",
-              "PVP M.DMG Bonus = +52.5",
-              "PVP Final P.DMG Bonus = +1.75%",
-              "PVP Final M.DMG Bonus = +1.75%",
-              "PVP Debuff Penetration = +2.63%",
-              "PVP Debuff Enhancement = +2.63%"
-            ],
-            "purple": [
-              "PVP P.DMG Bonus = +63",
-              "PVP M.DMG Bonus = +63",
-              "PVP Final P.DMG Bonus = +2.1%",
-              "PVP Final M.DMG Bonus = +2.1%",
-              "PVP Debuff Penetration = +3.15%",
-              "PVP Debuff Enhancement = +3.15%"
-            ],
             "gold": [
-              "PVP P.DMG Bonus = +84",
-              "PVP M.DMG Bonus = +84",
-              "PVP Final P.DMG Bonus = +2.8%",
-              "PVP Final M.DMG Bonus = +2.8%",
-              "PVP Debuff Penetration = +4.2%",
-              "PVP Debuff Enhancement = +4.2%"
+              "PVP P.DMG Bonus = +56",
+              "PVP M.DMG Bonus = +56",
+              "PVP Final P.DMG Bonus = +1.87%",
+              "PVP Final M.DMG Bonus = +1.87%",
+              "PVP Debuff Penetration = +2.8%",
+              "PVP Debuff Enhancement = +2.8%"
             ]
           },
           "armor": {
-            "white": [],
-            "blue": [],
-            "purple": [],
-            "gold": []
+            "white": [
+              "PVP P.DMG RED = +14",
+              "PVP M.DMG RED = +14",
+              "PVP Final P.DMG RED = +0.47%",
+              "PVP Final M.DMG RED = +0.47%",
+              "PVP Debuff Duration RES = +0.7%",
+              "PVP Debuff RES = +0.7%"
+            ],
+            "blue": [
+              "PVP P.DMG RED = +17.5",
+              "PVP M.DMG RED = +17.5",
+              "PVP Final P.DMG RED = +0.58%",
+              "PVP Final M.DMG RED = +0.58%",
+              "PVP Debuff Duration RES = +0.88%",
+              "PVP Debuff RES = +0.88%"
+            ],
+            "purple": [
+              "PVP P.DMG RED = +21",
+              "PVP M.DMG RED = +21",
+              "PVP Final P.DMG RED = +0.7%",
+              "PVP Final M.DMG RED = +0.7%",
+              "PVP Debuff Duration RES = +1.05%",
+              "PVP Debuff RES = +1.05%"
+            ],
+            "gold": [
+              "PVP P.DMG RED = +28",
+              "PVP M.DMG RED = +28",
+              "PVP Final P.DMG RED = +0.93%",
+              "PVP Final M.DMG RED = +0.93%",
+              "PVP Debuff Duration RES = +1.4%",
+              "PVP Debuff RES = +1.4%"
+            ]
           },
           "accessory": {
             "white": [],
