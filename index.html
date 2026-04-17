@@ -50,6 +50,10 @@
                             alt="Synthesizer"></span>
                     <span class="nav-label">Material Calc</span>
                 </button>
+                <button class="nav-tab" data-view="ox-quiz">
+                    <span class="nav-icon nav-icon-img"><img src="img/ox_quiz_icon.png" alt="OX Quiz"></span>
+                    <span class="nav-label">OX Quiz</span>
+                </button>
                 <a class="nav-tab nav-tab-link" href="https://guild.sohje.com" target="_blank" rel="noopener noreferrer"
                     title="Guild">
                     <span class="nav-icon nav-icon-img"><img src="img/guild_icon.png" alt="Guild"></span>
@@ -268,6 +272,18 @@
                 </div>
             </div>
 
+            <div id="view-ox-quiz" class="hidden">
+                <div class="container ox-quiz-container">
+                    <header class="header">
+                        <h1>OX Quiz</h1>
+                        <p class="subtitle">Ответы на викторину</p>
+                    </header>
+                    <div id="ox-quiz-results">
+                        <!-- Results rendered by JS -->
+                    </div>
+                </div>
+            </div>
+
             <div id="detail-modal" class="modal hidden">
                 <div class="modal-content">
                     <button class="modal-close" id="modal-close">&times;</button>
@@ -285,6 +301,7 @@
     <script src="js/mining.js"></script>
     <script src="js/city_enchants.js"></script>
     <script src="js/materials.js"></script>
+    <script src="js/ox_quiz.js"></script>
     <script src="js/app.js"></script>
 </body>
 

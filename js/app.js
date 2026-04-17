@@ -24,6 +24,7 @@ const App = {
         document.getElementById('view-gardening').classList.toggle('hidden', viewName !== 'gardening');
         document.getElementById('view-mining').classList.toggle('hidden', viewName !== 'mining');
         document.getElementById('view-materials').classList.toggle('hidden', viewName !== 'materials');
+        document.getElementById('view-ox-quiz').classList.toggle('hidden', viewName !== 'ox-quiz');
 
         document.querySelectorAll('.nav-tab').forEach(tab => {
             tab.classList.toggle('active', tab.dataset.view === viewName);
@@ -43,6 +44,9 @@ const App = {
         }
         if (viewName === 'materials') {
             this.updateMaterials();
+        }
+        if (viewName === 'ox-quiz') {
+            this.updateOxQuiz();
         }
     },
 
@@ -107,6 +111,16 @@ const App = {
         }
     },
 
+    updateOxQuiz() {
+        const container = document.getElementById('ox-quiz-results');
+        if (!container.classList.contains('initialized')) {
+            OxQuizCalc.setData(this.oxQuizData);
+            container.innerHTML = OxQuizCalc.render();
+            OxQuizCalc.bindEvents(container);
+            container.classList.add('initialized');
+        }
+    },
+
     captureMiningQtyState(container) {
         const state = {};
         container.querySelectorAll('.mining-qty-input').forEach(input => {
@@ -125,17 +139,19 @@ const App = {
     },
 
     async loadData() {
-        const [resourcesRes, recipesRes, pricesRes, cityEnchantsRes] = await Promise.all([
+        const [resourcesRes, recipesRes, pricesRes, cityEnchantsRes, oxQuizRes] = await Promise.all([
             fetch('data/resources.json'),
             fetch('data/recipes.json'),
             fetch('data/prices.json'),
-            fetch('data/city_enchants.json')
+            fetch('data/city_enchants.json'),
+            fetch('data/ox_quiz.json')
         ]);
 
         const resourcesData = await resourcesRes.json();
         const recipesData = await recipesRes.json();
         const defaultPricesData = await pricesRes.json();
         this.cityEnchantsData = await cityEnchantsRes.json();
+        this.oxQuizData = await oxQuizRes.json();
 
         this.resources = resourcesData.resources;
         this.recipes = recipesData.recipes;
