@@ -25,6 +25,7 @@ const App = {
         document.getElementById('view-mining').classList.toggle('hidden', viewName !== 'mining');
         document.getElementById('view-materials').classList.toggle('hidden', viewName !== 'materials');
         document.getElementById('view-ox-quiz').classList.toggle('hidden', viewName !== 'ox-quiz');
+        document.getElementById('view-ore-timers').classList.toggle('hidden', viewName !== 'ore-timers');
 
         document.querySelectorAll('.nav-tab').forEach(tab => {
             tab.classList.toggle('active', tab.dataset.view === viewName);
@@ -47,6 +48,9 @@ const App = {
         }
         if (viewName === 'ox-quiz') {
             this.updateOxQuiz();
+        }
+        if (viewName === 'ore-timers') {
+            OreTimers.init(document.getElementById('view-ore-timers'));
         }
     },
 

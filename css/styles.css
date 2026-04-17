@@ -1710,3 +1710,35 @@ html.light .ce-slot-header {
         font-size: 0.8rem;
     }
 }
+/* ===== Ore Timers ===== */
+.timer-card {
+    cursor: default !important;
+    text-align: center;
+}
+
+.mining-flash {
+    animation: flash 1s ease-in-out infinite;
+    color: var(--profit) !important;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+.timer-warning {
+    color: var(--loss) !important;
+}
+
+.timer-display {
+    color: #3b82f6;
+    transition: color 0.3s;
+}
+
+html.light .timer-display {
+    color: #2563eb;
+}
+
+.timer-warning {
+    color: var(--loss) !important;
+}
