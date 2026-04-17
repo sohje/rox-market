@@ -16,10 +16,12 @@ const OxQuizCalc = {
         }
 
         let html = `
-            <div class="ox-search-wrapper" style="margin-bottom: 20px;">
-                <input type="text" id="ox-search-input" class="search-input" placeholder="Поиск вопросов или ответов..." value="${this.searchQuery}" style="width: 100%;">
+            <div class="ce-search-wrapper" style="margin-bottom: 20px;">
+                <input type="text" id="ox-search-input" class="ce-search-input" placeholder="Поиск вопросов или ответов..." value="${this.searchQuery}">
             </div>
             <div class="ox-questions-list">
+                <table class="enchant-table">
+                    <tbody>
         `;
 
         for (const item of this.data) {
@@ -33,21 +35,25 @@ const OxQuizCalc = {
 
             const answerText = item.answer ? 'O True' : 'X False';
 
-            // Custom styles applied inline for easy injection into the theme
-            // Uses CSS variables for light/dark mode compatibility where possible
             html += `
-                <div class="ox-content-card" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; margin-bottom: 8px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: var(--border-radius); transition: border-color 0.2s;">
-                    <div class="ox-question pr-4" style="flex: 1; color: var(--text-color); font-size: 0.95rem; line-height: 1.5;">
-                        ${this.highlight(item.question, this.searchQuery)}
-                    </div>
-                    <div class="ox-answer-badge" style="flex-shrink: 0; font-weight: normal; border-radius: 0.5rem; padding: 0.25rem 0.75rem; font-size: 0.875rem; ${item.answer ? 'background: rgba(76, 175, 80, 0.15); border: 1px solid rgba(76, 175, 80, 0.5); color: #4caf50;' : 'background: rgba(244, 67, 54, 0.15); border: 1px solid rgba(244, 67, 54, 0.5); color: #f44336;'}">
-                        ${this.highlight(answerText, this.searchQuery)}
-                    </div>
-                </div>
+                        <tr>
+                            <td class="ox-question" style="color: var(--text-color); font-size: 0.95rem; line-height: 1.5; vertical-align: middle;">
+                                ${this.highlight(item.question, this.searchQuery)}
+                            </td>
+                            <td style="width: 120px; vertical-align: middle;">
+                                <div class="ox-answer-badge" style="display: inline-block; font-weight: normal; border-radius: 0.5rem; padding: 0.25rem 0.75rem; font-size: 0.875rem; white-space: nowrap; ${item.answer ? 'background: rgba(76, 175, 80, 0.15); border: 1px solid rgba(76, 175, 80, 0.5); color: #4caf50;' : 'background: rgba(244, 67, 54, 0.15); border: 1px solid rgba(244, 67, 54, 0.5); color: #f44336;'}">
+                                    ${this.highlight(answerText, this.searchQuery)}
+                                </div>
+                            </td>
+                        </tr>
             `;
         }
 
-        html += `</div>`;
+        html += `
+                    </tbody>
+                </table>
+            </div>
+        `;
         return html;
     },
 
