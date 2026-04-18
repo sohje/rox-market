@@ -40,155 +40,275 @@
         "armor": null,
         "accessory": null
       },
+      "enchants": {
+        "weapon": [
+          "STR, AGI, VIT, INT, DEX, LUK"
+        ],
+        "armor": [
+          "STR, AGI, VIT, INT, DEX, LUK"
+        ],
+        "accessory": [
+          "STR, AGI, VIT, INT, DEX, LUK"
+        ]
+      },
       "levels": {
         "1": {
           "weapon": {
-            "white": [
-              "STR, AGI, VIT, INT, DEX, LUK = +2"
-            ],
-            "blue": [
-              "STR, AGI, VIT, INT, DEX, LUK = +2.5"
-            ],
-            "purple": [
-              "STR, AGI, VIT, INT, DEX, LUK = +3"
-            ],
-            "gold": [
-              "STR, AGI, VIT, INT, DEX, LUK = +4"
-            ]
+            "mainhand": {
+              "white": [
+                "+2"
+              ],
+              "blue": [
+                "+2.5"
+              ],
+              "purple": [
+                "+3"
+              ],
+              "gold": [
+                "+4"
+              ]
+            },
+            "offhand": {
+              "white": [
+                "+1"
+              ],
+              "blue": [
+                "+1.3"
+              ],
+              "purple": [
+                "+1.5"
+              ],
+              "gold": [
+                "+2"
+              ]
+            }
           },
           "armor": {
             "white": [
-              "STR, AGI, VIT, INT, DEX, LUK = +1"
+              "+1"
             ],
             "blue": [
-              "STR, AGI, VIT, INT, DEX, LUK = +1.3"
+              "+1.3"
             ],
             "purple": [
-              "STR, AGI, VIT, INT, DEX, LUK = +2.3"
+              "+2.3"
             ],
             "gold": [
-              "STR, AGI, VIT, INT, DEX, LUK = +3"
+              "+3"
             ]
           },
           "accessory": {
             "white": [
-              "STR, AGI, VIT, INT, DEX, LUK = +1"
+              "+1"
             ],
             "blue": [
-              "STR, AGI, VIT, INT, DEX, LUK = +1.3"
+              "+1.3"
             ],
             "purple": [
-              "STR, AGI, VIT, INT, DEX, LUK = +2.3"
+              "+2.3"
             ],
             "gold": [
-              "STR, AGI, VIT, INT, DEX, LUK = +3"
+              "+3"
             ]
           }
         },
         "2": {
+          "weapon": {
+            "mainhand": {
+              "white": [
+                "+3"
+              ],
+              "blue": [
+                "+3.8"
+              ],
+              "purple": [
+                "+4.5"
+              ],
+              "gold": [
+                "+6"
+              ]
+            },
+            "offhand": {
+              "white": [
+                "+1.5"
+              ],
+              "blue": [
+                "+1.9"
+              ],
+              "purple": [
+                "+2.3"
+              ],
+              "gold": [
+                "+3"
+              ]
+            }
+          },
           "armor": {
             "white": [
-              "STR, AGI, VIT, INT, DEX, LUK = +1.5"
+              "+1.5"
             ],
             "blue": [
-              "STR, AGI, VIT, INT, DEX, LUK = +1.9"
+              "+1.9"
             ],
             "purple": [
-              "STR, AGI, VIT, INT, DEX, LUK = +2.3"
+              "+2.3"
             ],
             "gold": [
-              "STR, AGI, VIT, INT, DEX, LUK = +3"
+              "+3"
             ]
           },
           "accessory": {
             "white": [
-              "STR, AGI, VIT, INT, DEX, LUK = +1.5"
+              "+1.5"
             ],
             "blue": [
-              "STR, AGI, VIT, INT, DEX, LUK = +1.9"
+              "+1.9"
             ],
             "purple": [
-              "STR, AGI, VIT, INT, DEX, LUK = +2.3"
+              "+2.3"
             ],
             "gold": [
-              "STR, AGI, VIT, INT, DEX, LUK = +3"
+              "+3"
+            ]
+          }
+        },
+        "3": {
+          "weapon": {
+            "mainhand": {
+              "white": [
+                "+4"
+              ],
+              "blue": [
+                "+5"
+              ],
+              "purple": [
+                "+6"
+              ],
+              "gold": [
+                "+8"
+              ]
+            },
+            "offhand": {
+              "white": [
+                "+2"
+              ],
+              "blue": [
+                "+2.5"
+              ],
+              "purple": [
+                "+3"
+              ],
+              "gold": [
+                "+4"
+              ]
+            }
+          },
+          "armor": {
+            "white": [
+              "+2"
+            ],
+            "blue": [
+              "+2.5"
+            ],
+            "purple": [
+              "+3"
+            ],
+            "gold": [
+              "+4"
+            ]
+          },
+          "accessory": {
+            "white": [
+              "+2"
+            ],
+            "blue": [
+              "+2.5"
+            ],
+            "purple": [
+              "+3"
+            ],
+            "gold": [
+              "+4"
             ]
           }
         },
         "7": {
           "weapon": {
-            "white": [
-              "STR, AGI, VIT, INT, DEX, LUK = +10"
-            ],
-            "blue": [
-              "STR, AGI, VIT, INT, DEX, LUK = +12.5"
-            ],
-            "purple": [
-              "STR, AGI, VIT, INT, DEX, LUK = +15"
-            ],
-            "gold": [
-              "STR, AGI, VIT, INT, DEX, LUK = +20"
-            ]
+            "mainhand": {
+              "white": [
+                "+10"
+              ],
+              "blue": [
+                "+12.5"
+              ],
+              "purple": [
+                "+15"
+              ],
+              "gold": [
+                "+20"
+              ]
+            }
           },
           "accessory": {
             "white": [
-              "STR, AGI, VIT, INT, DEX, LUK = +5"
+              "+5"
             ],
             "blue": [
-              "STR, AGI, VIT, INT, DEX, LUK = +6.3"
+              "+6.3"
             ],
             "purple": [
-              "STR, AGI, VIT, INT, DEX, LUK = +7.5"
+              "+7.5"
             ],
             "gold": [
-              "STR, AGI, VIT, INT, DEX, LUK = +10"
+              "+10"
             ]
           }
         },
         "8": {
           "weapon": {
-            "white": [
-              "STR, AGI, VIT, INT, DEX, LUK = +12"
-            ],
-            "blue": [
-              "STR, AGI, VIT, INT, DEX, LUK = +15"
-            ],
-            "purple": [
-              "STR, AGI, VIT, INT, DEX, LUK = +18"
-            ],
-            "gold": [
-              "STR, AGI, VIT, INT, DEX, LUK = +24"
-            ]
+            "mainhand": {
+              "white": [
+                "+12"
+              ],
+              "blue": [
+                "+15"
+              ],
+              "purple": [
+                "+18"
+              ],
+              "gold": [
+                "+24"
+              ]
+            }
           },
           "accessory": {
             "white": [
-              "STR, AGI, VIT, INT, DEX, LUK = +6"
+              "+6"
             ],
             "blue": [
-              "STR, AGI, VIT, INT, DEX, LUK = +7.5"
+              "+7.5"
             ],
             "purple": [
-              "STR, AGI, VIT, INT, DEX, LUK = +9"
+              "+9"
             ],
             "gold": [
-              "STR, AGI, VIT, INT, DEX, LUK = +12"
+              "+12"
             ]
           }
         },
-        "9": {},
         "10": {
           "armor": {
             "white": [
-              "STR, AGI, VIT, INT, DEX, LUK = +8"
+              "+8"
             ],
             "blue": [
-              "STR, AGI, VIT, INT, DEX, LUK = +10"
+              "+10"
             ],
             "purple": [
-              "STR, AGI, VIT, INT, DEX, LUK = +12"
+              "+12"
             ],
             "gold": [
-              "STR, AGI, VIT, INT, DEX, LUK = +16"
+              "+16"
             ]
           }
         }
@@ -202,188 +322,369 @@
         "armor": null,
         "accessory": null
       },
+      "enchants": {
+        "weapon": [
+          "P.ATK, M.ATK, P.PEN, M.PEN",
+          "P.DMG Bonus, M.DMG Bonus",
+          "P.DMG Bonus, M.DMG Bonus"
+        ],
+        "armor": [
+          "P.DEF, M.DEF",
+          "Max HP",
+          "Max SP",
+          "P.DMG RED, M.DMG RED",
+          "P.DMG Reduction, M.DMG Reduction"
+        ],
+        "accessory": [
+          "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit"
+        ]
+      },
       "levels": {
         "1": {
           "weapon": {
-            "white": [
-              "P.ATK, M.ATK, P.PEN, M.PEN = +20",
-              "P.DMG Bonus, M.DMG Bonus = +40",
-              "P.DMG Bonus, M.DMG Bonus = +1%"
-            ],
-            "blue": [
-              "P.ATK, M.ATK, P.PEN, M.PEN = +25",
-              "P.DMG Bonus, M.DMG Bonus = +50",
-              "P.DMG Bonus, M.DMG Bonus = +1.25%"
-            ],
-            "purple": [
-              "P.ATK, M.ATK, P.PEN, M.PEN = +30",
-              "P.DMG Bonus, M.DMG Bonus = +60",
-              "P.DMG Bonus, M.DMG Bonus = +1.5%"
-            ],
-            "gold": [
-              "P.ATK, M.ATK, P.PEN, M.PEN = +40",
-              "P.DMG Bonus, M.DMG Bonus = +80",
-              "P.DMG Bonus, M.DMG Bonus = +2%"
-            ]
+            "mainhand": {
+              "white": [
+                "+20",
+                "+40",
+                "+1%"
+              ],
+              "blue": [
+                "+25",
+                "+50",
+                "+1.25%"
+              ],
+              "purple": [
+                "+30",
+                "+60",
+                "+1.5%"
+              ],
+              "gold": [
+                "+40",
+                "+80",
+                "+2%"
+              ]
+            },
+            "offhand": {
+              "white": [
+                "+10",
+                "+20",
+                "+0.5%"
+              ],
+              "blue": [
+                "+12.5",
+                "+25",
+                "+0.63%"
+              ],
+              "purple": [
+                "+15",
+                "+30",
+                "+0.75%"
+              ],
+              "gold": [
+                "+20",
+                "+40",
+                "+1%"
+              ]
+            }
           },
           "armor": {
             "white": [
-              "P.DEF, M.DEF = +10",
-              "Max HP = +500",
-              "Max SP = +50",
-              "P.DMG RED, M.DMG RED = +20",
-              "P.DMG Reduction, M.DMG Reduction = +0.5%"
+              "+10",
+              "+500",
+              "+50",
+              "+20",
+              "+0.5%"
             ],
             "blue": [
-              "P.DEF, M.DEF = +12.5",
-              "Max HP = +625",
-              "Max SP = +62.5",
-              "P.DMG RED, M.DMG RED = +25",
-              "P.DMG Reduction, M.DMG Reduction = +0.63%"
+              "+12.5",
+              "+625",
+              "+62.5",
+              "+25",
+              "+0.63%"
             ],
             "purple": [
-              "P.DEF, M.DEF = +15",
-              "Max HP = +750",
-              "Max SP = +75",
-              "P.DMG RED, M.DMG RED = +30",
-              "P.DMG Reduction, M.DMG Reduction = +0.75%"
+              "+15",
+              "+750",
+              "+75",
+              "+30",
+              "+0.75%"
             ],
             "gold": [
-              "P.DEF, M.DEF = +20",
-              "Max HP = +1000",
-              "Max SP = +100",
-              "P.DMG RED, M.DMG RED = +40",
-              "P.DMG Reduction, M.DMG Reduction = +1%"
+              "+20",
+              "+1000",
+              "+100",
+              "+40",
+              "+1%"
             ]
           },
           "accessory": {
             "white": [
-              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +10"
+              "+10"
             ],
             "blue": [
-              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +12.5"
+              "+12.5"
             ],
             "purple": [
-              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +15"
+              "+15"
             ],
             "gold": [
-              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +20"
+              "+20"
             ]
           }
         },
         "2": {
+          "weapon": {
+            "mainhand": {
+              "white": [
+                "+30",
+                "+60",
+                "+1.5%"
+              ],
+              "blue": [
+                "+37.5",
+                "+75",
+                "+1.88%"
+              ],
+              "purple": [
+                "+45",
+                "+90",
+                "+2.25%"
+              ],
+              "gold": [
+                "+60",
+                "+120",
+                "+3%"
+              ]
+            },
+            "offhand": {
+              "white": [
+                "+15",
+                "+30",
+                "+0.75%"
+              ],
+              "blue": [
+                "+18.8",
+                "+37.5",
+                "+0.94%"
+              ],
+              "purple": [
+                "+22.5",
+                "+45",
+                "+1.13%"
+              ],
+              "gold": [
+                "+30",
+                "+60",
+                "+1.5%"
+              ]
+            }
+          },
           "armor": {
             "white": [
-              "P.DEF, M.DEF = +15",
-              "Max HP = +750",
-              "Max SP = +75",
-              "P.DMG RED, M.DMG RED = +30",
-              "P.DMG Reduction, M.DMG Reduction = +0.75%"
+              "+15",
+              "+750",
+              "+75",
+              "+30",
+              "+0.75%"
             ],
             "blue": [
-              "P.DEF, M.DEF = +18.8",
-              "Max HP = +937.5",
-              "Max SP = +93.8",
-              "P.DMG RED, M.DMG RED = +37.5",
-              "P.DMG Reduction, M.DMG Reduction = +0.94%"
+              "+18.8",
+              "+937.5",
+              "+93.8",
+              "+37.5",
+              "+0.94%"
             ],
             "purple": [
-              "P.DEF, M.DEF = +22.5",
-              "Max HP = +1125",
-              "Max SP = +112.5",
-              "P.DMG RED, M.DMG RED = +45",
-              "P.DMG Reduction, M.DMG Reduction = +1.13%"
+              "+22.5",
+              "+1125",
+              "+112.5",
+              "+45",
+              "+1.13%"
             ],
             "gold": [
-              "P.DEF, M.DEF = +30",
-              "Max HP = +1500",
-              "Max SP = +150",
-              "P.DMG RED, M.DMG RED = +60",
-              "P.DMG Reduction, M.DMG Reduction = +1.5%"
+              "+30",
+              "+1500",
+              "+150",
+              "+60",
+              "+1.5%"
             ]
           },
           "accessory": {
             "white": [
-              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +15"
+              "+15"
             ],
             "blue": [
-              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +18.8"
+              "+18.8"
             ],
             "purple": [
-              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +22.5"
+              "+22.5"
             ],
             "gold": [
-              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +30"
+              "+30"
+            ]
+          }
+        },
+        "3": {
+          "weapon": {
+            "mainhand": {
+              "white": [
+                "+40",
+                "+80",
+                "+2%"
+              ],
+              "blue": [
+                "+50",
+                "+100",
+                "+2.5%"
+              ],
+              "purple": [
+                "+60",
+                "+120",
+                "+3%"
+              ],
+              "gold": [
+                "+80",
+                "+160",
+                "+4%"
+              ]
+            },
+            "offhand": {
+              "white": [
+                "+20",
+                "+40",
+                "+1%"
+              ],
+              "blue": [
+                "+25",
+                "+50",
+                "+1.25%"
+              ],
+              "purple": [
+                "+30",
+                "+60",
+                "+1.5%"
+              ],
+              "gold": [
+                "+40",
+                "+80",
+                "+2%"
+              ]
+            }
+          },
+          "armor": {
+            "white": [
+              "+20",
+              "+1000",
+              "+100",
+              "+40",
+              "+1%"
+            ],
+            "blue": [
+              "+25",
+              "+1250",
+              "+125",
+              "+50",
+              "+1.25%"
+            ],
+            "purple": [
+              "+30",
+              "+1500",
+              "+150",
+              "+60",
+              "+1.5%"
+            ],
+            "gold": [
+              "+40",
+              "+2000",
+              "+200",
+              "+80",
+              "+2%"
+            ]
+          },
+          "accessory": {
+            "white": [
+              "+20"
+            ],
+            "blue": [
+              "+25"
+            ],
+            "purple": [
+              "+30"
+            ],
+            "gold": [
+              "+40"
             ]
           }
         },
         "8": {
           "weapon": {
-            "white": [
-              "P.ATK, M.ATK, P.PEN, M.PEN = +120",
-              "P.DMG Bonus, M.DMG Bonus = +240",
-              "P.DMG Bonus, M.DMG Bonus = +6%"
-            ],
-            "blue": [
-              "P.ATK, M.ATK, P.PEN, M.PEN = +150",
-              "P.DMG Bonus, M.DMG Bonus = +300",
-              "P.DMG Bonus, M.DMG Bonus = +7.5%"
-            ],
-            "purple": [
-              "P.ATK, M.ATK, P.PEN, M.PEN = +180",
-              "P.DMG Bonus, M.DMG Bonus = +360",
-              "P.DMG Bonus, M.DMG Bonus = +9%"
-            ],
-            "gold": [
-              "P.ATK, M.ATK, P.PEN, M.PEN = +240",
-              "P.DMG Bonus, M.DMG Bonus = +480",
-              "P.DMG Bonus, M.DMG Bonus = +12%"
-            ]
+            "mainhand": {
+              "white": [
+                "+120",
+                "+240",
+                "+6%"
+              ],
+              "blue": [
+                "+150",
+                "+300",
+                "+7.5%"
+              ],
+              "purple": [
+                "+180",
+                "+360",
+                "+9%"
+              ],
+              "gold": [
+                "+240",
+                "+480",
+                "+12%"
+              ]
+            }
           },
           "accessory": {
             "white": [
-              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +60"
+              "+60"
             ],
             "blue": [
-              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +75"
+              "+75"
             ],
             "purple": [
-              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +90"
+              "+90"
             ],
             "gold": [
-              "ASPD, Haste, Hit, Crit, Dodge, Anti-Crit = +120"
+              "+120"
             ]
           }
         },
         "10": {
           "armor": {
             "white": [
-              "P.DEF, M.DEF = +80",
-              "Max HP = +4000",
-              "Max SP = +400",
-              "P.DMG RED, M.DMG RED = +160",
-              "P.DMG Reduction, M.DMG Reduction = +4%"
+              "+80",
+              "+4000",
+              "+400",
+              "+160",
+              "+4%"
             ],
             "blue": [
-              "P.DEF, M.DEF = +100",
-              "Max HP = +5000",
-              "Max SP = +500",
-              "P.DMG RED, M.DMG RED = +200",
-              "P.DMG Reduction, M.DMG Reduction = +5%"
+              "+100",
+              "+5000",
+              "+500",
+              "+200",
+              "+5%"
             ],
             "purple": [
-              "P.DEF, M.DEF = +120",
-              "Max HP = +6000",
-              "Max SP = +600",
-              "P.DMG RED, M.DMG RED = +240",
-              "P.DMG Reduction, M.DMG Reduction = +6%"
+              "+120",
+              "+6000",
+              "+600",
+              "+240",
+              "+6%"
             ],
             "gold": [
-              "P.DEF, M.DEF = +160",
-              "Max HP = +8000",
-              "Max SP = +800",
-              "P.DMG RED, M.DMG RED = +320",
-              "P.DMG Reduction, M.DMG Reduction = +8%"
+              "+160",
+              "+8000",
+              "+800",
+              "+320",
+              "+8%"
             ]
           }
         }
@@ -397,222 +698,417 @@
         "armor": null,
         "accessory": null
       },
+      "enchants": {
+        "weapon": [
+          "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN",
+          "Debuff Penetration, Debuff Enhancement"
+        ],
+        "armor": [
+          "Max HP",
+          "Max SP",
+          "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF",
+          "Debuff Duration RED, Debuff Resistance",
+          "% Max HP/s, % Max SP/s"
+        ],
+        "accessory": [
+          "Final ASPD",
+          "Final Haste",
+          "Final Crit",
+          "Crit DMG",
+          "Final Dodge",
+          "Final Anti-Crit",
+          "Final Hit",
+          "Crit DMG RED"
+        ]
+      },
       "levels": {
         "1": {
           "weapon": {
-            "white": [
-              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +0.4%",
-              "Debuff Penetration, Debuff Enhancement = +1%"
-            ],
-            "blue": [
-              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +0.5%",
-              "Debuff Penetration, Debuff Enhancement = +1.25%"
-            ],
-            "purple": [
-              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +0.6%",
-              "Debuff Penetration, Debuff Enhancement = +1.5%"
-            ],
-            "gold": [
-              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +0.8%",
-              "Debuff Penetration, Debuff Enhancement = +2%"
-            ]
+            "mainhand": {
+              "white": [
+                "+0.4%",
+                "+1%"
+              ],
+              "blue": [
+                "+0.5%",
+                "+1.25%"
+              ],
+              "purple": [
+                "+0.6%",
+                "+1.5%"
+              ],
+              "gold": [
+                "+0.8%",
+                "+2%"
+              ]
+            },
+            "offhand": {
+              "white": [
+                "+0.2%",
+                "+0.5%"
+              ],
+              "blue": [
+                "+0.25%",
+                "+0.63%"
+              ],
+              "purple": [
+                "+0.3%",
+                "+0.75%"
+              ],
+              "gold": [
+                "+0.4%",
+                "+1%"
+              ]
+            }
           },
           "armor": {
             "white": [
-              "Max HP = +0.33%",
-              "Max SP = +0.67%",
-              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +0.33%",
-              "Debuff Duration RED, Debuff Resistance = +0.5%",
-              "% Max HP/s, % Max SP/s = +0.17%"
+              "+0.33%",
+              "+0.67%",
+              "+0.33%",
+              "+0.5%",
+              "+0.17%"
             ],
             "blue": [
-              "Max HP = +0.42%",
-              "Max SP = +0.83%",
-              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +0.42%",
-              "Debuff Duration RED, Debuff Resistance = +0.63%",
-              "% Max HP/s, % Max SP/s = +0.21%"
+              "+0.42%",
+              "+0.83%",
+              "+0.42%",
+              "+0.63%",
+              "+0.21%"
             ],
             "purple": [
-              "Max HP = +0.5%",
-              "Max SP = +1%",
-              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +0.5%",
-              "Debuff Duration RED, Debuff Resistance = +0.75%",
-              "% Max HP/s, % Max SP/s = +0.25%"
+              "+0.5%",
+              "+1%",
+              "+0.5%",
+              "+0.75%",
+              "+0.25%"
             ],
             "gold": [
-              "Max HP = +0.67%",
-              "Max SP = +1.33%",
-              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +0.67%",
-              "Debuff Duration RED, Debuff Resistance = +1%",
-              "% Max HP/s, % Max SP/s = +0.33%"
+              "+0.67%",
+              "+1.33%",
+              "+0.67%",
+              "+1%",
+              "+0.33%"
             ]
           }
         },
         "2": {
+          "weapon": {
+            "mainhand": {
+              "white": [
+                "+0.6%",
+                "+1.5%"
+              ],
+              "blue": [
+                "+0.75%",
+                "+1.88%"
+              ],
+              "purple": [
+                "+0.9%",
+                "+2.25%"
+              ],
+              "gold": [
+                "+1.2%",
+                "+3%"
+              ]
+            },
+            "offhand": {
+              "white": [
+                "+0.3%",
+                "+0.75%"
+              ],
+              "blue": [
+                "+0.38%",
+                "+0.94%"
+              ],
+              "purple": [
+                "+0.45%",
+                "+1.13%"
+              ],
+              "gold": [
+                "+0.6%",
+                "+1.5%"
+              ]
+            }
+          },
           "armor": {
             "white": [
-              "Max HP = +0.5%",
-              "Max SP = +1%",
-              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +0.5%",
-              "Debuff Duration RED, Debuff Resistance = +0.75%",
-              "% Max HP/s, % Max SP/s = +0.25%"
+              "+0.5%",
+              "+1%",
+              "+0.5%",
+              "+0.75%",
+              "+0.25%"
             ],
             "blue": [
-              "Max HP = +0.64%",
-              "Max SP = +1.25%",
-              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +0.63%",
-              "Debuff Duration RED, Debuff Resistance = +0.94%",
-              "% Max HP/s, % Max SP/s = +0.31%"
+              "+0.64%",
+              "+1.25%",
+              "+0.63%",
+              "+0.94%",
+              "+0.31%"
             ],
             "purple": [
-              "Max HP = +0.75%",
-              "Max SP = +1.5%",
-              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +0.75%",
-              "Debuff Duration RED, Debuff Resistance = +1.13%",
-              "% Max HP/s, % Max SP/s = +0.38%"
+              "+0.75%",
+              "+1.5%",
+              "+0.75%",
+              "+1.13%",
+              "+0.38%"
             ],
             "gold": [
-              "Max HP = +1%",
-              "Max SP = +2%",
-              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +1%",
-              "Debuff Duration RED, Debuff Resistance = +1.5%",
-              "% Max HP/s, % Max SP/s = +0.5%"
+              "+1%",
+              "+2%",
+              "+1%",
+              "+1.5%",
+              "+0.5%"
             ]
           },
           "accessory": {
             "white": [
-              "Final ASPD = +2.5%",
-              "Final Haste = +0.25%",
-              "Final Crit = +0.5%",
-              "Crit DMG = +0.6%",
-              "Final Dodge = +0.5%",
-              "Final Anti-Crit = +0.5%",
-              "Final Hit = +0.5%",
-              "Crit DMG RED = +1%"
+              "+2.5%",
+              "+0.25%",
+              "+0.5%",
+              "+0.6%",
+              "+0.5%",
+              "+0.5%",
+              "+0.5%",
+              "+1%"
             ],
             "blue": [
-              "Final ASPD = +3.13%",
-              "Final Haste = +0.31%",
-              "Final Crit = +0.63%",
-              "Crit DMG = +0.75%",
-              "Final Dodge = +0.63%",
-              "Final Anti-Crit = +0.63%",
-              "Final Hit = +0.63%",
-              "Crit DMG RED = +1.25%"
+              "+3.13%",
+              "+0.31%",
+              "+0.63%",
+              "+0.75%",
+              "+0.63%",
+              "+0.63%",
+              "+0.63%",
+              "+1.25%"
             ],
             "purple": [
-              "Final ASPD = +3.75%",
-              "Final Haste = +0.38%",
-              "Final Crit = +0.75%",
-              "Crit DMG = +0.9%",
-              "Final Dodge = +0.75%",
-              "Final Anti-Crit = +0.75%",
-              "Final Hit = +0.75%",
-              "Crit DMG RED = +1.5%"
+              "+3.75%",
+              "+0.38%",
+              "+0.75%",
+              "+0.9%",
+              "+0.75%",
+              "+0.75%",
+              "+0.75%",
+              "+1.5%"
             ],
             "gold": [
-              "Final ASPD = +5%",
-              "Final Haste = +0.5%",
-              "Final Crit = +1%",
-              "Crit DMG = +1.2%",
-              "Final Dodge = +1%",
-              "Final Anti-Crit = +1%",
-              "Final Hit = +1%",
-              "Crit DMG RED = +2%"
+              "+5%",
+              "+0.5%",
+              "+1%",
+              "+1.2%",
+              "+1%",
+              "+1%",
+              "+1%",
+              "+2%"
+            ]
+          }
+        },
+        "3": {
+          "weapon": {
+            "mainhand": {
+              "white": [
+                "+0.8%",
+                "+2%"
+              ],
+              "blue": [
+                "+1%",
+                "+2.5%"
+              ],
+              "purple": [
+                "+1.2%",
+                "+3%"
+              ],
+              "gold": [
+                "+1.6%",
+                "+4%"
+              ]
+            },
+            "offhand": {
+              "white": [
+                "+0.4%",
+                "+1%"
+              ],
+              "blue": [
+                "+0.5%",
+                "+1.25%"
+              ],
+              "purple": [
+                "+0.6%",
+                "+1.5%"
+              ],
+              "gold": [
+                "+0.8%",
+                "+2%"
+              ]
+            }
+          },
+          "armor": {
+            "white": [
+              "+0.67%",
+              "+1.33%",
+              "+0.67%",
+              "+1%",
+              "+0.34%"
+            ],
+            "blue": [
+              "+0.83%",
+              "+1.67%",
+              "+0.83%",
+              "+1.25%",
+              "+0.42%"
+            ],
+            "purple": [
+              "+1%",
+              "+2%",
+              "+1%",
+              "+1.5%",
+              "+0.5%"
+            ],
+            "gold": [
+              "+1.33%",
+              "+2.67%",
+              "+1.33%",
+              "+2%",
+              "+0.67%"
+            ]
+          },
+          "accessory": {
+            "white": [
+              "+3.33%",
+              "+0.33%",
+              "+0.67%",
+              "+0.8%",
+              "+0.67%",
+              "+0.67%",
+              "+0.67%",
+              "+1.33%"
+            ],
+            "blue": [
+              "+4.17%",
+              "+0.42%",
+              "+0.83%",
+              "+1%",
+              "+0.83%",
+              "+0.83%",
+              "+0.83%",
+              "+1.67%"
+            ],
+            "purple": [
+              "+5%",
+              "+0.5%",
+              "+1%",
+              "+1.2%",
+              "+1%",
+              "+1%",
+              "+1%",
+              "+2%"
+            ],
+            "gold": [
+              "+6.67%",
+              "+0.67%",
+              "+1.33%",
+              "+1.6%",
+              "+1.33%",
+              "+1.33%",
+              "+1.33%",
+              "+2.67%"
             ]
           }
         },
         "8": {
           "weapon": {
-            "white": [
-              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +2.4%",
-              "Debuff Penetration, Debuff Enhancement = +6%"
-            ],
-            "blue": [
-              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +3%",
-              "Debuff Penetration, Debuff Enhancement = +7.5%"
-            ],
-            "purple": [
-              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +3.6%",
-              "Debuff Penetration, Debuff Enhancement = +9%"
-            ],
-            "gold": [
-              "P.ATK, M.ATK, Final P.DMG Bonus, Final M.DMG Bonus, Final P.PEN, Final M.PEN = +4.8%",
-              "Debuff Penetration, Debuff Enhancement = +12%"
-            ]
+            "mainhand": {
+              "white": [
+                "+2.4%",
+                "+6%"
+              ],
+              "blue": [
+                "+3%",
+                "+7.5%"
+              ],
+              "purple": [
+                "+3.6%",
+                "+9%"
+              ],
+              "gold": [
+                "+4.8%",
+                "+12%"
+              ]
+            }
           },
           "accessory": {
             "white": [
-              "Final ASPD = +10%",
-              "Final Haste = +1%",
-              "Final Crit = +2%",
-              "Crit DMG = +2.4%",
-              "Final Dodge = +2%",
-              "Final Anti-Crit = +2%",
-              "Final Hit = +2%",
-              "Crit DMG RED = +4%"
+              "+10%",
+              "+1%",
+              "+2%",
+              "+2.4%",
+              "+2%",
+              "+2%",
+              "+2%",
+              "+4%"
             ],
             "blue": [
-              "Final ASPD = +12.5%",
-              "Final Haste = +1.25%",
-              "Final Crit = +2.5%",
-              "Crit DMG = +3%",
-              "Final Dodge = +2.5%",
-              "Final Anti-Crit = +2.5%",
-              "Final Hit = +2.5%",
-              "Crit DMG RED = +5%"
+              "+12.5%",
+              "+1.25%",
+              "+2.5%",
+              "+3%",
+              "+2.5%",
+              "+2.5%",
+              "+2.5%",
+              "+5%"
             ],
             "purple": [
-              "Final ASPD = +15%",
-              "Final Haste = +1.5%",
-              "Final Crit = +3%",
-              "Crit DMG = +3.6%",
-              "Final Dodge = +3%",
-              "Final Anti-Crit = +3%",
-              "Final Hit = +3%",
-              "Crit DMG RED = +6%"
+              "+15%",
+              "+1.5%",
+              "+3%",
+              "+3.6%",
+              "+3%",
+              "+3%",
+              "+3%",
+              "+6%"
             ],
             "gold": [
-              "Final ASPD = +20%",
-              "Final Haste = +2%",
-              "Final Crit = +4%",
-              "Crit DMG = +4.8%",
-              "Final Dodge = +4%",
-              "Final Anti-Crit = +4%",
-              "Final Hit = +4%",
-              "Crit DMG RED = +8%"
+              "+20%",
+              "+2%",
+              "+4%",
+              "+4.8%",
+              "+4%",
+              "+4%",
+              "+4%",
+              "+8%"
             ]
           }
         },
         "10": {
           "armor": {
             "white": [
-              "Max HP = +2.67%",
-              "Max SP = +5.33%",
-              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +2.67%",
-              "Debuff Duration RED, Debuff Resistance = +4%",
-              "% Max HP/s, % Max SP/s = +1.34%"
+              "+2.67%",
+              "+5.33%",
+              "+2.67%",
+              "+4%",
+              "+1.34%"
             ],
             "blue": [
-              "Max HP = +3.33%",
-              "Max SP = +6.67%",
-              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +3.33%",
-              "Debuff Duration RED, Debuff Resistance = +5%",
-              "% Max HP/s, % Max SP/s = +1.67%"
+              "+3.33%",
+              "+6.67%",
+              "+3.33%",
+              "+5%",
+              "+1.67%"
             ],
             "purple": [
-              "Max HP = +4%",
-              "Max SP = +8%",
-              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +4%",
-              "Debuff Duration RED, Debuff Resistance = +6%",
-              "% Max HP/s, % Max SP/s = +2%"
+              "+4%",
+              "+8%",
+              "+4%",
+              "+6%",
+              "+2%"
             ],
             "gold": [
-              "Max HP = +5.33%",
-              "Max SP = +10.67%",
-              "Final P.DMG RED, Final M.DMG RED, Final P.DEF, Final M.DEF = +5.33%",
-              "Debuff Duration RED, Debuff Resistance = +8%",
-              "% Max HP/s, % Max SP/s = +2.67%"
+              "+5.33%",
+              "+10.67%",
+              "+5.33%",
+              "+8%",
+              "+2.67%"
             ]
           }
         }
@@ -626,324 +1122,655 @@
         "armor": null,
         "accessory": null
       },
+      "enchants": {
+        "weapon": [
+          "Neutral Attr. Enhance",
+          "Fire Attr. Enhance",
+          "Water Attr. Enhance",
+          "Earth Attr. Enhance",
+          "Wind Attr. Enhance",
+          "Poison Attr. Enhance",
+          "Holy Attr. Enhance",
+          "Ghost Attr. Enhance"
+        ],
+        "armor": [
+          "Neutral Attr. RES",
+          "Fire Attr. RES",
+          "Water Attr. RES",
+          "Earth Attr. RES",
+          "Wind Attr. RES",
+          "Poison Attr. RES",
+          "Holy Attr. RES",
+          "Shadow Attr. RES",
+          "Ghost Attr. RES"
+        ],
+        "accessory": [
+          "Bonus DMG to Neutral Mon.",
+          "Bonus DMG to Water Mon.",
+          "Bonus DMG to Earth Mon.",
+          "Bonus DMG to Shadow Mon.",
+          "Neutral DMG RED",
+          "Water DMG RED",
+          "Earth DMG RED",
+          "Shadow DMG RED"
+        ]
+      },
       "levels": {
         "1": {
           "weapon": {
-            "white": [
-              "Neutral Attr. Enhance = +0.48%",
-              "Fire Attr. Enhance = +0.48%",
-              "Water Attr. Enhance = +0.48%",
-              "Earth Attr. Enhance = +0.48%",
-              "Wind Attr. Enhance = +0.48%",
-              "Poison Attr. Enhance = +0.48%",
-              "Holy Attr. Enhance = +0.48%",
-              "Ghost Attr. Enhance = +0.48%"
-            ],
-            "blue": [
-              "Neutral Attr. Enhance = +0.6%",
-              "Fire Attr. Enhance = +0.6%",
-              "Water Attr. Enhance = +0.6%",
-              "Earth Attr. Enhance = +0.6%",
-              "Wind Attr. Enhance = +0.6%",
-              "Poison Attr. Enhance = +0.6%",
-              "Holy Attr. Enhance = +0.6%",
-              "Ghost Attr. Enhance = +0.6%"
-            ],
-            "purple": [
-              "Neutral Attr. Enhance = +0.72%",
-              "Fire Attr. Enhance = +0.72%",
-              "Water Attr. Enhance = +0.72%",
-              "Earth Attr. Enhance = +0.72%",
-              "Wind Attr. Enhance = +0.72%",
-              "Poison Attr. Enhance = +0.72%",
-              "Holy Attr. Enhance = +0.72%",
-              "Ghost Attr. Enhance = +0.72%"
-            ],
-            "gold": [
-              "Neutral Attr. Enhance = +0.96%",
-              "Fire Attr. Enhance = +0.96%",
-              "Water Attr. Enhance = +0.96%",
-              "Earth Attr. Enhance = +0.96%",
-              "Wind Attr. Enhance = +0.96%",
-              "Poison Attr. Enhance = +0.96%",
-              "Holy Attr. Enhance = +0.96%",
-              "Ghost Attr. Enhance = +0.96%"
-            ]
+            "mainhand": {
+              "white": [
+                "+0.48%",
+                "+0.48%",
+                "+0.48%",
+                "+0.48%",
+                "+0.48%",
+                "+0.48%",
+                "+0.48%",
+                "+0.48%"
+              ],
+              "blue": [
+                "+0.6%",
+                "+0.6%",
+                "+0.6%",
+                "+0.6%",
+                "+0.6%",
+                "+0.6%",
+                "+0.6%",
+                "+0.6%"
+              ],
+              "purple": [
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%"
+              ],
+              "gold": [
+                "+0.96%",
+                "+0.96%",
+                "+0.96%",
+                "+0.96%",
+                "+0.96%",
+                "+0.96%",
+                "+0.96%",
+                "+0.96%"
+              ]
+            },
+            "offhand": {
+              "white": [
+                "+0.24%",
+                "+0.24%",
+                "+0.24%",
+                "+0.24%",
+                "+0.24%",
+                "+0.24%",
+                "+0.24%",
+                "+0.24%"
+              ],
+              "blue": [
+                "+0.3%",
+                "+0.3%",
+                "+0.3%",
+                "+0.3%",
+                "+0.3%",
+                "+0.3%",
+                "+0.3%",
+                "+0.3%"
+              ],
+              "purple": [
+                "+0.36%",
+                "+0.36%",
+                "+0.36%",
+                "+0.36%",
+                "+0.36%",
+                "+0.36%",
+                "+0.36%",
+                "+0.36%"
+              ],
+              "gold": [
+                "+0.48%",
+                "+0.48%",
+                "+0.48%",
+                "+0.48%",
+                "+0.48%",
+                "+0.48%",
+                "+0.48%",
+                "+0.48%"
+              ]
+            }
           },
           "armor": {
             "white": [
-              "Neutral Attr. RES = +0.5%",
-              "Fire Attr. RES = +0.5%",
-              "Water Attr. RES = +0.5%",
-              "Earth Attr. RES = +0.5%",
-              "Wind Attr. RES = +0.5%",
-              "Poison Attr. RES = +0.5%",
-              "Holy Attr. RES = +0.5%",
-              "Shadow Attr. RES = +0.5%",
-              "Ghost Attr. RES = +0.5%"
+              "+0.5%",
+              "+0.5%",
+              "+0.5%",
+              "+0.5%",
+              "+0.5%",
+              "+0.5%",
+              "+0.5%",
+              "+0.5%",
+              "+0.5%"
             ],
             "blue": [
-              "Neutral Attr. RES = +0.63%",
-              "Fire Attr. RES = +0.63%",
-              "Water Attr. RES = +0.63%",
-              "Earth Attr. RES = +0.63%",
-              "Wind Attr. RES = +0.63%",
-              "Poison Attr. RES = +0.63%",
-              "Holy Attr. RES = +0.63%",
-              "Shadow Attr. RES = +0.63%",
-              "Ghost Attr. RES = +0.63%"
+              "+0.63%",
+              "+0.63%",
+              "+0.63%",
+              "+0.63%",
+              "+0.63%",
+              "+0.63%",
+              "+0.63%",
+              "+0.63%",
+              "+0.63%"
             ],
             "purple": [
-              "Neutral Attr. RES = +0.75%",
-              "Fire Attr. RES = +0.75%",
-              "Water Attr. RES = +0.75%",
-              "Earth Attr. RES = +0.75%",
-              "Wind Attr. RES = +0.75%",
-              "Poison Attr. RES = +0.75%",
-              "Holy Attr. RES = +0.75%",
-              "Shadow Attr. RES = +0.75%",
-              "Ghost Attr. RES = +0.75%"
+              "+0.75%",
+              "+0.75%",
+              "+0.75%",
+              "+0.75%",
+              "+0.75%",
+              "+0.75%",
+              "+0.75%",
+              "+0.75%",
+              "+0.75%"
             ],
             "gold": [
-              "Neutral Attr. RES = +1%",
-              "Fire Attr. RES = +1%",
-              "Water Attr. RES = +1%",
-              "Earth Attr. RES = +1%",
-              "Wind Attr. RES = +1%",
-              "Poison Attr. RES = +1%",
-              "Holy Attr. RES = +1%",
-              "Shadow Attr. RES = +1%",
-              "Ghost Attr. RES = +1%"
+              "+1%",
+              "+1%",
+              "+1%",
+              "+1%",
+              "+1%",
+              "+1%",
+              "+1%",
+              "+1%",
+              "+1%"
             ]
-          },
-          "accessory": {
-            "white": [],
-            "blue": [],
-            "purple": [],
-            "gold": []
           }
         },
         "2": {
+          "weapon": {
+            "mainhand": {
+              "white": [
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%"
+              ],
+              "blue": [
+                "+0.9%",
+                "+0.9%",
+                "+0.9%",
+                "+0.9%",
+                "+0.9%",
+                "+0.9%",
+                "+0.9%",
+                "+0.9%"
+              ],
+              "purple": [
+                "+1.08%",
+                "+1.08%",
+                "+1.08%",
+                "+1.08%",
+                "+1.08%",
+                "+1.08%",
+                "+1.08%",
+                "+1.08%"
+              ],
+              "gold": [
+                "+1.44%",
+                "+1.44%",
+                "+1.44%",
+                "+1.44%",
+                "+1.44%",
+                "+1.44%",
+                "+1.44%",
+                "+1.44%"
+              ]
+            },
+            "offhand": {
+              "white": [
+                "+0.36%",
+                "+0.36%",
+                "+0.36%",
+                "+0.36%",
+                "+0.36%",
+                "+0.36%",
+                "+0.36%",
+                "+0.36%"
+              ],
+              "blue": [
+                "+0.45%",
+                "+0.45%",
+                "+0.45%",
+                "+0.45%",
+                "+0.45%",
+                "+0.45%",
+                "+0.45%",
+                "+0.45%"
+              ],
+              "purple": [
+                "+0.54%",
+                "+0.54%",
+                "+0.54%",
+                "+0.54%",
+                "+0.54%",
+                "+0.54%",
+                "+0.54%",
+                "+0.54%"
+              ],
+              "gold": [
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%"
+              ]
+            }
+          },
           "armor": {
             "white": [
-              "Neutral Attr. RES = +0.75%",
-              "Fire Attr. RES = +0.75%",
-              "Water Attr. RES = +0.75%",
-              "Earth Attr. RES = +0.75%",
-              "Wind Attr. RES = +0.75%",
-              "Poison Attr. RES = +0.75%",
-              "Holy Attr. RES = +0.75%",
-              "Shadow Attr. RES = +0.75%",
-              "Ghost Attr. RES = +0.75%"
+              "+0.75%",
+              "+0.75%",
+              "+0.75%",
+              "+0.75%",
+              "+0.75%",
+              "+0.75%",
+              "+0.75%",
+              "+0.75%",
+              "+0.75%"
             ],
             "blue": [
-              "Neutral Attr. RES = +0.94%",
-              "Fire Attr. RES = +0.94%",
-              "Water Attr. RES = +0.94%",
-              "Earth Attr. RES = +0.94%",
-              "Wind Attr. RES = +0.94%",
-              "Poison Attr. RES = +0.94%",
-              "Holy Attr. RES = +0.94%",
-              "Shadow Attr. RES = +0.94%",
-              "Ghost Attr. RES = +0.94%"
+              "+0.94%",
+              "+0.94%",
+              "+0.94%",
+              "+0.94%",
+              "+0.94%",
+              "+0.94%",
+              "+0.94%",
+              "+0.94%",
+              "+0.94%"
             ],
             "purple": [
-              "Neutral Attr. RES = +1.13%",
-              "Fire Attr. RES = +1.13%",
-              "Water Attr. RES = +1.13%",
-              "Earth Attr. RES = +1.13%",
-              "Wind Attr. RES = +1.13%",
-              "Poison Attr. RES = +1.13%",
-              "Holy Attr. RES = +1.13%",
-              "Shadow Attr. RES = +1.13%",
-              "Ghost Attr. RES = +1.13%"
+              "+1.13%",
+              "+1.13%",
+              "+1.13%",
+              "+1.13%",
+              "+1.13%",
+              "+1.13%",
+              "+1.13%",
+              "+1.13%",
+              "+1.13%"
             ],
             "gold": [
-              "Neutral Attr. RES = +1.5%",
-              "Fire Attr. RES = +1.5%",
-              "Water Attr. RES = +1.5%",
-              "Earth Attr. RES = +1.5%",
-              "Wind Attr. RES = +1.5%",
-              "Poison Attr. RES = +1.5%",
-              "Holy Attr. RES = +1.5%",
-              "Shadow Attr. RES = +1.5%",
-              "Ghost Attr. RES = +1.5%"
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%"
             ]
           },
           "accessory": {
             "white": [
-              "Bonus DMG to Neutral Mon. = +0.75%",
-              "Bonus DMG to Water Mon. = +0.75%",
-              "Bonus DMG to Earth Mon. = +0.75%",
-              "Bonus DMG to Shadow Mon. = +0.75%",
-              "Neutral DMG RED = +0.75%",
-              "Water DMG RED = +0.75%",
-              "Earth DMG RED = +0.75%",
-              "Shadow DMG RED = +0.75%"
+              "+0.75%",
+              "+0.75%",
+              "+0.75%",
+              "+0.75%",
+              "+0.75%",
+              "+0.75%",
+              "+0.75%",
+              "+0.75%"
             ],
             "blue": [
-              "Bonus DMG to Neutral Mon. = +0.94%",
-              "Bonus DMG to Water Mon. = +0.94%",
-              "Bonus DMG to Earth Mon. = +0.94%",
-              "Bonus DMG to Shadow Mon. = +0.94%",
-              "Neutral DMG RED = +0.94%",
-              "Water DMG RED = +0.94%",
-              "Earth DMG RED = +0.94%",
-              "Shadow DMG RED = +0.94%"
+              "+0.94%",
+              "+0.94%",
+              "+0.94%",
+              "+0.94%",
+              "+0.94%",
+              "+0.94%",
+              "+0.94%",
+              "+0.94%"
             ],
             "purple": [
-              "Bonus DMG to Neutral Mon. = +1.13%",
-              "Bonus DMG to Water Mon. = +1.13%",
-              "Bonus DMG to Earth Mon. = +1.13%",
-              "Bonus DMG to Shadow Mon. = +1.13%",
-              "Neutral DMG RED = +1.13%",
-              "Water DMG RED = +1.13%",
-              "Earth DMG RED = +1.13%",
-              "Shadow DMG RED = +1.13%"
+              "+1.13%",
+              "+1.13%",
+              "+1.13%",
+              "+1.13%",
+              "+1.13%",
+              "+1.13%",
+              "+1.13%",
+              "+1.13%"
             ],
             "gold": [
-              "Bonus DMG to Neutral Mon. = +1.5%",
-              "Bonus DMG to Water Mon. = +1.5%",
-              "Bonus DMG to Earth Mon. = +1.5%",
-              "Bonus DMG to Shadow Mon. = +1.5%",
-              "Neutral DMG RED = +1.5%",
-              "Water DMG RED = +1.5%",
-              "Earth DMG RED = +1.5%",
-              "Shadow DMG RED = +1.5%"
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%"
+            ]
+          }
+        },
+        "3": {
+          "weapon": {
+            "mainhand": {
+              "white": [
+                "+0.96%",
+                "+0.96%",
+                "+0.96%",
+                "+0.96%",
+                "+0.96%",
+                "+0.96%",
+                "+0.96%",
+                "+0.96%"
+              ],
+              "blue": [
+                "+1.2%",
+                "+1.2%",
+                "+1.2%",
+                "+1.2%",
+                "+1.2%",
+                "+1.2%",
+                "+1.2%",
+                "+1.2%"
+              ],
+              "purple": [
+                "+1.44%",
+                "+1.44%",
+                "+1.44%",
+                "+1.44%",
+                "+1.44%",
+                "+1.44%",
+                "+1.44%",
+                "+1.44%"
+              ],
+              "gold": [
+                "+1.92%",
+                "+1.92%",
+                "+1.92%",
+                "+1.92%",
+                "+1.92%",
+                "+1.92%",
+                "+1.92%",
+                "+1.92%"
+              ]
+            },
+            "offhand": {
+              "white": [
+                "+0.48%",
+                "+0.48%",
+                "+0.48%",
+                "+0.48%",
+                "+0.48%",
+                "+0.48%",
+                "+0.48%",
+                "+0.48%"
+              ],
+              "blue": [
+                "+0.6%",
+                "+0.6%",
+                "+0.6%",
+                "+0.6%",
+                "+0.6%",
+                "+0.6%",
+                "+0.6%",
+                "+0.6%"
+              ],
+              "purple": [
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%",
+                "+0.72%"
+              ],
+              "gold": [
+                "+0.96%",
+                "+0.96%",
+                "+0.96%",
+                "+0.96%",
+                "+0.96%",
+                "+0.96%",
+                "+0.96%",
+                "+0.96%"
+              ]
+            }
+          },
+          "armor": {
+            "white": [
+              "+1%",
+              "+1%",
+              "+1%",
+              "+1%",
+              "+1%",
+              "+1%",
+              "+1%",
+              "+1%"
+            ],
+            "blue": [
+              "+1.25%",
+              "+1.25%",
+              "+1.25%",
+              "+1.25%",
+              "+1.25%",
+              "+1.25%",
+              "+1.25%",
+              "+1.25%"
+            ],
+            "purple": [
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%"
+            ],
+            "gold": [
+              "+2%",
+              "+2%",
+              "+2%",
+              "+2%",
+              "+2%",
+              "+2%",
+              "+2%",
+              "+2%"
+            ]
+          },
+          "accessory": {
+            "white": [
+              "+1%",
+              "+1%",
+              "+1%",
+              "+1%",
+              "+1%",
+              "+1%",
+              "+1%",
+              "+1%"
+            ],
+            "blue": [
+              "+1.25%",
+              "+1.25%",
+              "+1.25%",
+              "+1.25%",
+              "+1.25%",
+              "+1.25%",
+              "+1.25%",
+              "+1.25%"
+            ],
+            "purple": [
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%",
+              "+1.5%"
+            ],
+            "gold": [
+              "+2%",
+              "+2%",
+              "+2%",
+              "+2%",
+              "+2%",
+              "+2%",
+              "+2%",
+              "+2%"
             ]
           }
         },
         "8": {
           "weapon": {
-            "white": [
-              "Neutral Attr. Enhance = +2.88%",
-              "Fire Attr. Enhance = +2.88%",
-              "Water Attr. Enhance = +2.88%",
-              "Earth Attr. Enhance = +2.88%",
-              "Wind Attr. Enhance = +2.88%",
-              "Poison Attr. Enhance = +2.88%",
-              "Holy Attr. Enhance = + 2.88%",
-              "Ghost Attr. Enhance = +2.88%"
-            ],
-            "blue": [
-              "Neutral Attr. Enhance = +3.6%",
-              "Fire Attr. Enhance = +3.6%",
-              "Water Attr. Enhance = +3.6%",
-              "Earth Attr. Enhance = +3.6%",
-              "Wind Attr. Enhance = +3.6%",
-              "Poison Attr. Enhance = +3.6%",
-              "Holy Attr. Enhance = +3.6%",
-              "Ghost Attr. Enhance = +3.6%"
-            ],
-            "purple": [
-              "Neutral Attr. Enhance = +4.32%",
-              "Fire Attr. Enhance = +4.32%",
-              "Water Attr. Enhance = +4.32%",
-              "Earth Attr. Enhance = +4.32%",
-              "Wind Attr. Enhance = +4.32%",
-              "Poison Attr. Enhance = +4.32%",
-              "Holy Attr. Enhance = +4.32%",
-              "Ghost Attr. Enhance = +4.32%"
-            ],
-            "gold": [
-              "Neutral Attr. Enhance = +5.76%",
-              "Fire Attr. Enhance = +5.76%",
-              "Water Attr. Enhance = +5.76%",
-              "Earth Attr. Enhance = +5.76%",
-              "Wind Attr. Enhance = +5.76%",
-              "Poison Attr. Enhance = +5.76%",
-              "Holy Attr. Enhance = +5.76%",
-              "Ghost Attr. Enhance = +5.76%"
-            ]
+            "mainhand": {
+              "white": [
+                "+2.88%",
+                "+2.88%",
+                "+2.88%",
+                "+2.88%",
+                "+2.88%",
+                "+2.88%",
+                "+ 2.88%",
+                "+2.88%"
+              ],
+              "blue": [
+                "+3.6%",
+                "+3.6%",
+                "+3.6%",
+                "+3.6%",
+                "+3.6%",
+                "+3.6%",
+                "+3.6%",
+                "+3.6%"
+              ],
+              "purple": [
+                "+4.32%",
+                "+4.32%",
+                "+4.32%",
+                "+4.32%",
+                "+4.32%",
+                "+4.32%",
+                "+4.32%",
+                "+4.32%"
+              ],
+              "gold": [
+                "+5.76%",
+                "+5.76%",
+                "+5.76%",
+                "+5.76%",
+                "+5.76%",
+                "+5.76%",
+                "+5.76%",
+                "+5.76%"
+              ]
+            }
           },
           "accessory": {
             "white": [
-              "Bonus DMG to Neutral Mon. = +3%",
-              "Bonus DMG to Water Mon. = +3%",
-              "Bonus DMG to Earth Mon. = +3%",
-              "Bonus DMG to Shadow Mon. = +3%",
-              "Neutral DMG RED = +3%",
-              "Water DMG RED = +3%",
-              "Earth DMG RED = +3%",
-              "Shadow DMG RED = +3%"
+              "+3%",
+              "+3%",
+              "+3%",
+              "+3%",
+              "+3%",
+              "+3%",
+              "+3%",
+              "+3%"
             ],
             "blue": [
-              "Bonus DMG to Neutral Mon. = +3.75%",
-              "Bonus DMG to Water Mon. = +3.75%",
-              "Bonus DMG to Earth Mon. = +3.75%",
-              "Bonus DMG to Shadow Mon. = +3.75%",
-              "Neutral DMG RED = +3.75%",
-              "Water DMG RED = +3.75%",
-              "Earth DMG RED = +3.75%",
-              "Shadow DMG RED = +3.75%"
+              "+3.75%",
+              "+3.75%",
+              "+3.75%",
+              "+3.75%",
+              "+3.75%",
+              "+3.75%",
+              "+3.75%",
+              "+3.75%"
             ],
             "purple": [
-              "Bonus DMG to Neutral Mon. = +4.5%",
-              "Bonus DMG to Water Mon. = +4.5%",
-              "Bonus DMG to Earth Mon. = +4.5%",
-              "Bonus DMG to Shadow Mon. = +4.5%",
-              "Neutral DMG RED = +4.5%",
-              "Water DMG RED = +4.5%",
-              "Earth DMG RED = +4.5%",
-              "Shadow DMG RED = +4.5%"
+              "+4.5%",
+              "+4.5%",
+              "+4.5%",
+              "+4.5%",
+              "+4.5%",
+              "+4.5%",
+              "+4.5%",
+              "+4.5%"
             ],
             "gold": [
-              "Bonus DMG to Neutral Mon. = +6%",
-              "Bonus DMG to Water Mon. = +6%",
-              "Bonus DMG to Earth Mon. = +6%",
-              "Bonus DMG to Shadow Mon. = +6%",
-              "Neutral DMG RED = +6%",
-              "Water DMG RED = +6%",
-              "Earth DMG RED = +6%",
-              "Shadow DMG RED = +6%"
+              "+6%",
+              "+6%",
+              "+6%",
+              "+6%",
+              "+6%",
+              "+6%",
+              "+6%",
+              "+6%"
             ]
           }
         },
         "10": {
           "armor": {
             "white": [
-              "Neutral Attr. RES = +4%",
-              "Fire Attr. RES = +4%",
-              "Water Attr. RES = +4%",
-              "Earth Attr. RES = +4%",
-              "Wind Attr. RES = +4%",
-              "Poison Attr. RES = +4%",
-              "Holy Attr. RES = +4%",
-              "Shadow Attr. RES = +4%",
-              "Ghost Attr. RES = +4%"
+              "+4%",
+              "+4%",
+              "+4%",
+              "+4%",
+              "+4%",
+              "+4%",
+              "+4%",
+              "+4%",
+              "+4%"
             ],
             "blue": [
-              "Neutral Attr. RES = +5%",
-              "Fire Attr. RES = +5%",
-              "Water Attr. RES = +5%",
-              "Earth Attr. RES = +5%",
-              "Wind Attr. RES = +5%",
-              "Poison Attr. RES = +5%",
-              "Holy Attr. RES = +5%",
-              "Shadow Attr. RES = +5%",
-              "Ghost Attr. RES = +5%"
+              "+5%",
+              "+5%",
+              "+5%",
+              "+5%",
+              "+5%",
+              "+5%",
+              "+5%",
+              "+5%",
+              "+5%"
             ],
             "purple": [
-              "Neutral Attr. RES = +6%",
-              "Fire Attr. RES = +6%",
-              "Water Attr. RES = +6%",
-              "Earth Attr. RES = +6%",
-              "Wind Attr. RES = +6%",
-              "Poison Attr. RES = +6%",
-              "Holy Attr. RES = +6%",
-              "Shadow Attr. RES = +6%",
-              "Ghost Attr. RES = +6%"
+              "+6%",
+              "+6%",
+              "+6%",
+              "+6%",
+              "+6%",
+              "+6%",
+              "+6%",
+              "+6%",
+              "+6%"
             ],
             "gold": [
-              "Neutral Attr. RES = +8%",
-              "Fire Attr. RES = +8%",
-              "Water Attr. RES = +8%",
-              "Earth Attr. RES = +8%",
-              "Wind Attr. RES = +8%",
-              "Poison Attr. RES = +8%",
-              "Holy Attr. RES = +8%",
-              "Shadow Attr. RES = +8%",
-              "Ghost Attr. RES = +8%"
+              "+8%",
+              "+8%",
+              "+8%",
+              "+8%",
+              "+8%",
+              "+8%",
+              "+8%",
+              "+8%",
+              "+8%"
             ]
           }
         }
@@ -957,298 +1784,616 @@
         "armor": null,
         "accessory": null
       },
+      "enchants": {
+        "weapon": [
+          "Bonus DMG to Demon",
+          "Bonus DMG to Insect",
+          "Bonus DMG to Fish",
+          "Bonus DMG to Demi-Human",
+          "Bonus DMG to Undead",
+          "Bonus DMG to Plant",
+          "Bonus DMG to Brute"
+        ],
+        "armor": [
+          "Demon DMG RED",
+          "Insect DMG RED",
+          "Fish DMG RED",
+          "Demi-Human DMG RED",
+          "Undead DMG RED",
+          "Plant DMG RED",
+          "Brute DMG RED"
+        ],
+        "accessory": [
+          "Bonus Heal",
+          "Bonus Heal Received",
+          "Bonus DMG to Large Mon.",
+          "Bonus DMG to Medium Mon.",
+          "Bonus DMG to Small Mon.",
+          "Large DMG RED",
+          "Medium DMG RED",
+          "Small DMG RED"
+        ]
+      },
       "levels": {
         "1": {
           "weapon": {
-            "white": [
-              "Bonus DMG to Demon = +1.08%",
-              "Bonus DMG to Insect = +1.08%",
-              "Bonus DMG to Fish = +1.08%",
-              "Bonus DMG to Demi-Human = +1.08%",
-              "Bonus DMG to Undead = +1.08%",
-              "Bonus DMG to Plant = +1.08%",
-              "Bonus DMG to Brute = +1.08%"
-            ],
-            "blue": [
-              "Bonus DMG to Demon = +1.35%",
-              "Bonus DMG to Insect = +1.35%",
-              "Bonus DMG to Fish = +1.35%",
-              "Bonus DMG to Demi-Human = +1.35%",
-              "Bonus DMG to Undead = +1.35%",
-              "Bonus DMG to Plant = +1.35%",
-              "Bonus DMG to Brute = +1.35%"
-            ],
-            "purple": [
-              "Bonus DMG to Demon = +1.63%",
-              "Bonus DMG to Insect = +1.63%",
-              "Bonus DMG to Fish = +1.63%",
-              "Bonus DMG to Demi-Human = +1.63%",
-              "Bonus DMG to Undead = +1.63%",
-              "Bonus DMG to Plant = +1.63%",
-              "Bonus DMG to Brute = +1.63%"
-            ],
-            "gold": [
-              "Bonus DMG to Demon = +2.17%",
-              "Bonus DMG to Insect = +2.17%",
-              "Bonus DMG to Fish = +2.17%",
-              "Bonus DMG to Demi-Human = +2.17%",
-              "Bonus DMG to Undead = +2.17%",
-              "Bonus DMG to Plant = +2.17%",
-              "Bonus DMG to Brute = +2.17%"
-            ]
+            "mainhand": {
+              "white": [
+                "+1.08%",
+                "+1.08%",
+                "+1.08%",
+                "+1.08%",
+                "+1.08%",
+                "+1.08%",
+                "+1.08%"
+              ],
+              "blue": [
+                "+1.35%",
+                "+1.35%",
+                "+1.35%",
+                "+1.35%",
+                "+1.35%",
+                "+1.35%",
+                "+1.35%"
+              ],
+              "purple": [
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%"
+              ],
+              "gold": [
+                "+2.17%",
+                "+2.17%",
+                "+2.17%",
+                "+2.17%",
+                "+2.17%",
+                "+2.17%",
+                "+2.17%"
+              ]
+            },
+            "offhand": {
+              "white": [
+                "+0.54%",
+                "+0.54%",
+                "+0.54%",
+                "+0.54%",
+                "+0.54%",
+                "+0.54%",
+                "+0.54%"
+              ],
+              "blue": [
+                "+0.68%",
+                "+0.68%",
+                "+0.68%",
+                "+0.68%",
+                "+0.68%",
+                "+0.68%",
+                "+0.68%"
+              ],
+              "purple": [
+                "+0.81%",
+                "+0.81%",
+                "+0.81%",
+                "+0.81%",
+                "+0.81%",
+                "+0.81%",
+                "+0.81%"
+              ],
+              "gold": [
+                "+1.08%",
+                "+1.08%",
+                "+1.08%",
+                "+1.08%",
+                "+1.08%",
+                "+1.08%",
+                "+1.08%"
+              ]
+            }
           },
           "armor": {
             "white": [
-              "Demon DMG RED = +0.54%",
-              "Insect DMG RED = +0.54%",
-              "Fish DMG RED = +0.54%",
-              "Demi-Human DMG RED = +0.54%",
-              "Undead DMG RED = +0.54%",
-              "Plant DMG RED = +0.54%",
-              "Brute DMG RED = +0.54%"
+              "+0.54%",
+              "+0.54%",
+              "+0.54%",
+              "+0.54%",
+              "+0.54%",
+              "+0.54%",
+              "+0.54%"
             ],
             "blue": [
-              "Demon DMG RED = +0.68%",
-              "Insect DMG RED = +0.68%",
-              "Fish DMG RED = +0.68%",
-              "Demi-Human DMG RED = +0.68%",
-              "Undead DMG RED = +0.68%",
-              "Plant DMG RED = +0.68%",
-              "Brute DMG RED = +0.68%"
+              "+0.68%",
+              "+0.68%",
+              "+0.68%",
+              "+0.68%",
+              "+0.68%",
+              "+0.68%",
+              "+0.68%"
             ],
             "purple": [
-              "Demon DMG RED = +0.81%",
-              "Insect DMG RED = +0.81%",
-              "Fish DMG RED = +0.81%",
-              "Demi-Human DMG RED = +0.81%",
-              "Undead DMG RED = +0.81%",
-              "Plant DMG RED = +0.81%",
-              "Brute DMG RED = +0.81%"
+              "+0.81%",
+              "+0.81%",
+              "+0.81%",
+              "+0.81%",
+              "+0.81%",
+              "+0.81%",
+              "+0.81%"
             ],
             "gold": [
-              "Demon DMG RED = +1.08%",
-              "Insect DMG RED = +1.08%",
-              "Fish DMG RED = +1.08%",
-              "Demi-Human DMG RED = +1.08%",
-              "Undead DMG RED = +1.08%",
-              "Plant DMG RED = +1.08%",
-              "Brute DMG RED = +1.08%"
+              "+1.08%",
+              "+1.08%",
+              "+1.08%",
+              "+1.08%",
+              "+1.08%",
+              "+1.08%",
+              "+1.08%"
             ]
-          },
-          "accessory": {
-            "white": [],
-            "blue": [],
-            "purple": [],
-            "gold": []
           }
         },
         "2": {
           "weapon": {
-            "white": [],
-            "blue": [],
-            "purple": [],
-            "gold": []
+            "mainhand": {
+              "white": [
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%"
+              ],
+              "blue": [
+                "+2.03%",
+                "+2.03%",
+                "+2.03%",
+                "+2.03%",
+                "+2.03%",
+                "+2.03%",
+                "+2.03%",
+                "+2.03%"
+              ],
+              "purple": [
+                "+2.44%",
+                "+2.44%",
+                "+2.44%",
+                "+2.44%",
+                "+2.44%",
+                "+2.44%",
+                "+2.44%",
+                "+2.44%"
+              ],
+              "gold": [
+                "+3.25%",
+                "+3.25%",
+                "+3.25%",
+                "+3.25%",
+                "+3.25%",
+                "+3.25%",
+                "+3.25%",
+                "+3.25%"
+              ]
+            },
+            "offhand": {
+              "white": [
+                "+0.81%",
+                "+0.81%",
+                "+0.81%",
+                "+0.81%",
+                "+0.81%",
+                "+0.81%",
+                "+0.81%",
+                "+0.81%"
+              ],
+              "blue": [
+                "+1.02%",
+                "+1.02%",
+                "+1.02%",
+                "+1.02%",
+                "+1.02%",
+                "+1.02%",
+                "+1.02%",
+                "+1.02%"
+              ],
+              "purple": [
+                "+1.22%",
+                "+1.22%",
+                "+1.22%",
+                "+1.22%",
+                "+1.22%",
+                "+1.22%",
+                "+1.22%",
+                "+1.22%"
+              ],
+              "gold": [
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%"
+              ]
+            }
           },
           "armor": {
             "white": [
-              "Demon DMG RED = +0.81%",
-              "Insect DMG RED = +0.81%",
-              "Fish DMG RED = +0.81%",
-              "Demi-Human DMG RED = +0.81%",
-              "Undead DMG RED = +0.81%",
-              "Plant DMG RED = +0.81%",
-              "Brute DMG RED = +0.81%"
+              "+0.81%",
+              "+0.81%",
+              "+0.81%",
+              "+0.81%",
+              "+0.81%",
+              "+0.81%",
+              "+0.81%"
             ],
             "blue": [
-              "Demon DMG RED = +1.02%",
-              "Insect DMG RED = +1.02%",
-              "Fish DMG RED = +1.02%",
-              "Demi-Human DMG RED = +1.02%",
-              "Undead DMG RED = +1.02%",
-              "Plant DMG RED = +1.02%",
-              "Brute DMG RED = +1.02%"
+              "+1.02%",
+              "+1.02%",
+              "+1.02%",
+              "+1.02%",
+              "+1.02%",
+              "+1.02%",
+              "+1.02%"
             ],
             "purple": [
-              "Demon DMG RED = +1.22%",
-              "Insect DMG RED = +1.22%",
-              "Fish DMG RED = +1.22%",
-              "Demi-Human DMG RED = +1.22%",
-              "Undead DMG RED = +1.22%",
-              "Plant DMG RED = +1.22%",
-              "Brute DMG RED = +1.22%"
+              "+1.22%",
+              "+1.22%",
+              "+1.22%",
+              "+1.22%",
+              "+1.22%",
+              "+1.22%",
+              "+1.22%"
             ],
             "gold": [
-              "Demon DMG RED = +1.63%",
-              "Insect DMG RED = +1.63%",
-              "Fish DMG RED = +1.63%",
-              "Demi-Human DMG RED = +1.63%",
-              "Undead DMG RED = +1.63%",
-              "Plant DMG RED = +1.63%",
-              "Brute DMG RED = +1.63%"
+              "+1.63%",
+              "+1.63%",
+              "+1.63%",
+              "+1.63%",
+              "+1.63%",
+              "+1.63%",
+              "+1.63%"
             ]
           },
           "accessory": {
             "white": [
-              "Bonus Heal = +0.65%",
-              "Bonus Heal Received = +0.65%",
-              "Bonus DMG to Large Mon. = +0.81%",
-              "Bonus DMG to Medium Mon. = +0.81%",
-              "Bonus DMG to Small Mon. = +0.81%",
-              "Large DMG RED = +0.81%",
-              "Medium DMG RED = +0.81%",
-              "Small DMG RED = +0.81%"
+              "+0.65%",
+              "+0.65%",
+              "+0.81%",
+              "+0.81%",
+              "+0.81%",
+              "+0.81%",
+              "+0.81%",
+              "+0.81%"
             ],
             "blue": [
-              "Bonus Heal = +0.81%",
-              "Bonus Heal Received = +0.81%",
-              "Bonus DMG to Large Mon. = +1.02%",
-              "Bonus DMG to Medium Mon. = +1.02%",
-              "Bonus DMG to Small Mon. = +1.02%",
-              "Large DMG RED = +1.02%",
-              "Medium DMG RED = +1.02%",
-              "Small DMG RED = +1.02%"
+              "+0.81%",
+              "+0.81%",
+              "+1.02%",
+              "+1.02%",
+              "+1.02%",
+              "+1.02%",
+              "+1.02%",
+              "+1.02%"
             ],
             "purple": [
-              "Bonus Heal = +0.98%",
-              "Bonus Heal Received = +0.98%",
-              "Bonus DMG to Large Mon. = +1.22%",
-              "Bonus DMG to Medium Mon. = +1.22%",
-              "Bonus DMG to Small Mon. = +1.22%",
-              "Large DMG RED = +1.22%",
-              "Medium DMG RED = +1.22%",
-              "Small DMG RED = +1.22%"
+              "+0.98%",
+              "+0.98%",
+              "+1.22%",
+              "+1.22%",
+              "+1.22%",
+              "+1.22%",
+              "+1.22%",
+              "+1.22%"
             ],
             "gold": [
-              "Bonus Heal = +1.3%",
-              "Bonus Heal Received = +1.3%",
-              "Bonus DMG to Large Mon. = +1.63%",
-              "Bonus DMG to Medium Mon. = +1.63%",
-              "Bonus DMG to Small Mon. = +1.63%",
-              "Large DMG RED = +1.63%",
-              "Medium DMG RED = +1.63%",
-              "Small DMG RED = +1.63%"
+              "+1.3%",
+              "+1.3%",
+              "+1.63%",
+              "+1.63%",
+              "+1.63%",
+              "+1.63%",
+              "+1.63%",
+              "+1.63%"
+            ]
+          }
+        },
+        "3": {
+          "weapon": {
+            "mainhand": {
+              "white": [
+                "+2.17%",
+                "+2.17%",
+                "+2.17%",
+                "+2.17%",
+                "+2.17%",
+                "+2.17%",
+                "+2.17%",
+                "+2.17%"
+              ],
+              "blue": [
+                "+2.71%",
+                "+2.71%",
+                "+2.71%",
+                "+2.71%",
+                "+2.71%",
+                "+2.71%",
+                "+2.71%",
+                "+2.71%"
+              ],
+              "purple": [
+                "+3.25%",
+                "+3.25%",
+                "+3.25%",
+                "+3.25%",
+                "+3.25%",
+                "+3.25%",
+                "+3.25%",
+                "+3.25%"
+              ],
+              "gold": [
+                "+4.33%",
+                "+4.33%",
+                "+4.33%",
+                "+4.33%",
+                "+4.33%",
+                "+4.33%",
+                "+4.33%",
+                "+4.33%"
+              ]
+            },
+            "offhand": {
+              "white": [
+                "+1.08%",
+                "+1.08%",
+                "+1.08%",
+                "+1.08%",
+                "+1.08%",
+                "+1.08%",
+                "+1.08%",
+                "+1.08%"
+              ],
+              "blue": [
+                "+1.35%",
+                "+1.35%",
+                "+1.35%",
+                "+1.35%",
+                "+1.35%",
+                "+1.35%",
+                "+1.35%",
+                "+1.35%"
+              ],
+              "purple": [
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%",
+                "+1.63%"
+              ],
+              "gold": [
+                "+2.17%",
+                "+2.17%",
+                "+2.17%",
+                "+2.17%",
+                "+2.17%",
+                "+2.17%",
+                "+2.17%",
+                "+2.17%"
+              ]
+            }
+          },
+          "armor": {
+            "white": [
+              "+1.08%",
+              "+1.08%",
+              "+1.08%",
+              "+1.08%",
+              "+1.08%",
+              "+1.08%",
+              "+1.08%",
+              "+1.08%"
+            ],
+            "blue": [
+              "+1.35%",
+              "+1.35%",
+              "+1.35%",
+              "+1.35%",
+              "+1.35%",
+              "+1.35%",
+              "+1.35%",
+              "+1.35%"
+            ],
+            "purple": [
+              "+1.63%",
+              "+1.63%",
+              "+1.63%",
+              "+1.63%",
+              "+1.63%",
+              "+1.63%",
+              "+1.63%",
+              "+1.63%"
+            ],
+            "gold": [
+              "+2.17%",
+              "+2.17%",
+              "+2.17%",
+              "+2.17%",
+              "+2.17%",
+              "+2.17%",
+              "+2.17%",
+              "+2.17%"
+            ]
+          },
+          "accessory": {
+            "white": [
+              "+0.87%",
+              "+0.87%",
+              "+1.08%",
+              "+1.08%",
+              "+1.08%",
+              "+1.08%",
+              "+1.08%",
+              "+1.08%"
+            ],
+            "blue": [
+              "+1.08%",
+              "+1.08%",
+              "+1.35%",
+              "+1.35%",
+              "+1.35%",
+              "+1.35%",
+              "+1.35%",
+              "+1.35%"
+            ],
+            "purple": [
+              "+1.3%",
+              "+1.3%",
+              "+1.63%",
+              "+1.63%",
+              "+1.63%",
+              "+1.63%",
+              "+1.63%",
+              "+1.63%"
+            ],
+            "gold": [
+              "+1.73%",
+              "+1.73%",
+              "+2.17%",
+              "+2.17%",
+              "+2.17%",
+              "+2.17%",
+              "+2.17%",
+              "+2.17%"
             ]
           }
         },
         "8": {
           "weapon": {
-            "white": [
-              "Bonus DMG to Demon = +6.5%",
-              "Bonus DMG to Insect = +6.5%",
-              "Bonus DMG to Fish = +6.5%",
-              "Bonus DMG to Demi-Human = +6.5%",
-              "Bonus DMG to Undead = +6.5%",
-              "Bonus DMG to Plant = +6.5%",
-              "Bonus DMG to Brute = +6.5%"
-            ],
-            "blue": [
-              "Bonus DMG to Demon = +8.13%",
-              "Bonus DMG to Insect = +8.13%",
-              "Bonus DMG to Fish = +8.13%",
-              "Bonus DMG to Demi-Human = +8.13%",
-              "Bonus DMG to Undead = +8.13%",
-              "Bonus DMG to Plant = +8.13%",
-              "Bonus DMG to Brute = +8.13%"
-            ],
-            "purple": [
-              "Bonus DMG to Demon = +9.75%",
-              "Bonus DMG to Insect = +9.75%",
-              "Bonus DMG to Fish = +9.75%",
-              "Bonus DMG to Demi-Human = +9.75%",
-              "Bonus DMG to Undead = +9.75%",
-              "Bonus DMG to Plant = +9.75%",
-              "Bonus DMG to Brute = +9.75%"
-            ],
-            "gold": [
-              "Bonus DMG to Demon = +13%",
-              "Bonus DMG to Insect = +13%",
-              "Bonus DMG to Fish = +13%",
-              "Bonus DMG to Demi-Human = +13%",
-              "Bonus DMG to Undead = +13%",
-              "Bonus DMG to Plant = +13%",
-              "Bonus DMG to Brute = +13%"
-            ]
+            "mainhand": {
+              "white": [
+                "+6.5%",
+                "+6.5%",
+                "+6.5%",
+                "+6.5%",
+                "+6.5%",
+                "+6.5%",
+                "+6.5%"
+              ],
+              "blue": [
+                "+8.13%",
+                "+8.13%",
+                "+8.13%",
+                "+8.13%",
+                "+8.13%",
+                "+8.13%",
+                "+8.13%"
+              ],
+              "purple": [
+                "+9.75%",
+                "+9.75%",
+                "+9.75%",
+                "+9.75%",
+                "+9.75%",
+                "+9.75%",
+                "+9.75%"
+              ],
+              "gold": [
+                "+13%",
+                "+13%",
+                "+13%",
+                "+13%",
+                "+13%",
+                "+13%",
+                "+13%"
+              ]
+            }
           },
           "accessory": {
             "white": [
-              "Bonus Heal = +2.6%",
-              "Bonus Heal Received = +2.6%",
-              "Bonus DMG to Large Mon. = +3.25%",
-              "Bonus DMG to Medium Mon. = +3.25%",
-              "Bonus DMG to Small Mon. = +3.25%",
-              "Large DMG RED = +3.25%",
-              "Medium DMG RED = +3.25%",
-              "Small DMG RED = +3.25%"
+              "+2.6%",
+              "+2.6%",
+              "+3.25%",
+              "+3.25%",
+              "+3.25%",
+              "+3.25%",
+              "+3.25%",
+              "+3.25%"
             ],
             "blue": [
-              "Bonus Heal = +3.25%",
-              "Bonus Heal Received = +3.25%",
-              "Bonus DMG to Large Mon. = +4.06%",
-              "Bonus DMG to Medium Mon. = +4.06%",
-              "Bonus DMG to Small Mon. = +4.06%",
-              "Large DMG RED = +4.06%",
-              "Medium DMG RED = +4.06%",
-              "Small DMG RED = +4.06%"
+              "+3.25%",
+              "+3.25%",
+              "+4.06%",
+              "+4.06%",
+              "+4.06%",
+              "+4.06%",
+              "+4.06%",
+              "+4.06%"
             ],
             "purple": [
-              "Bonus Heal = +3.9%",
-              "Bonus Heal Received = +3.9%",
-              "Bonus DMG to Large Mon. = +4.88%",
-              "Bonus DMG to Medium Mon. = +4.88%",
-              "Bonus DMG to Small Mon. = +4.88%",
-              "Large DMG RED = +4.88%",
-              "Medium DMG RED = +4.88%",
-              "Small DMG RED = +4.88%"
+              "+3.9%",
+              "+3.9%",
+              "+4.88%",
+              "+4.88%",
+              "+4.88%",
+              "+4.88%",
+              "+4.88%",
+              "+4.88%"
             ],
             "gold": [
-              "Bonus Heal = +5.2%",
-              "Bonus Heal Received = +5.2%",
-              "Bonus DMG to Large Mon. = +6.5%",
-              "Bonus DMG to Medium Mon. = +6.5%",
-              "Bonus DMG to Small Mon. = +6.5%",
-              "Large DMG RED = +6.5%",
-              "Medium DMG RED = +6.5%",
-              "Small DMG RED = +6.5%"
+              "+5.2%",
+              "+5.2%",
+              "+6.5%",
+              "+6.5%",
+              "+6.5%",
+              "+6.5%",
+              "+6.5%",
+              "+6.5%"
             ]
           }
         },
         "10": {
           "armor": {
             "white": [
-              "Demon DMG RED = +4.33%",
-              "Insect DMG RED = +4.33%",
-              "Fish DMG RED = +4.33%",
-              "Demi-Human DMG RED = +4.33%",
-              "Undead DMG RED = +4.33%",
-              "Plant DMG RED = +4.33%",
-              "Brute DMG RED = +4.33%"
+              "+4.33%",
+              "+4.33%",
+              "+4.33%",
+              "+4.33%",
+              "+4.33%",
+              "+4.33%",
+              "+4.33%"
             ],
             "blue": [
-              "Demon DMG RED = +5.42%",
-              "Insect DMG RED = +5.42%",
-              "Fish DMG RED = +5.42%",
-              "Demi-Human DMG RED = +5.42%",
-              "Undead DMG RED = +5.42%",
-              "Plant DMG RED = +5.42%",
-              "Brute DMG RED = +5.42%"
+              "+5.42%",
+              "+5.42%",
+              "+5.42%",
+              "+5.42%",
+              "+5.42%",
+              "+5.42%",
+              "+5.42%"
             ],
             "purple": [
-              "Demon DMG RED = +6.5%",
-              "Insect DMG RED = +6.5%",
-              "Fish DMG RED = +6.5%",
-              "Demi-Human DMG RED = +6.5%",
-              "Undead DMG RED = +6.5%",
-              "Plant DMG RED = +6.5%",
-              "Brute DMG RED = +6.5%"
+              "+6.5%",
+              "+6.5%",
+              "+6.5%",
+              "+6.5%",
+              "+6.5%",
+              "+6.5%",
+              "+6.5%"
             ],
             "gold": [
-              "Demon DMG RED = +8.67%",
-              "Insect DMG RED = +8.67%",
-              "Fish DMG RED = +8.67%",
-              "Demi-Human DMG RED = +8.67%",
-              "Undead DMG RED = +8.67%",
-              "Plant DMG RED = +8.67%",
-              "Brute DMG RED = +8.67%"
+              "+8.67%",
+              "+8.67%",
+              "+8.67%",
+              "+8.67%",
+              "+8.67%",
+              "+8.67%",
+              "+8.67%"
             ]
           }
         }
@@ -1262,256 +2407,496 @@
         "armor": null,
         "accessory": null
       },
+      "enchants": {
+        "weapon": [
+          "PVP P.DMG Bonus",
+          "PVP M.DMG Bonus",
+          "PVP Final P.DMG Bonus",
+          "PVP Final M.DMG Bonus",
+          "PVP Debuff Penetration",
+          "PVP Debuff Enhancement"
+        ],
+        "armor": [
+          "PVP P.DMG RED",
+          "PVP M.DMG RED",
+          "PVP Final P.DMG RED",
+          "PVP Final M.DMG RED",
+          "PVP Debuff Duration RES",
+          "PVP Debuff RES"
+        ],
+        "accessory": [
+          "Increase STR",
+          "Increase INT",
+          "Increase VIT",
+          "Increase DEX",
+          "Increase LUK",
+          "Increase AGI"
+        ]
+      },
       "levels": {
         "1": {
           "weapon": {
-            "white": [
-              "PVP P.DMG Bonus = +28",
-              "PVP M.DMG Bonus = +28",
-              "PVP Final P.DMG Bonus = +0.93%",
-              "PVP Final M.DMG Bonus = +0.93%",
-              "PVP Debuff Penetration = +1.4%",
-              "PVP Debuff Enhancement = +1.4%"
-            ],
-            "blue": [
-              "PVP P.DMG Bonus = +35",
-              "PVP M.DMG Bonus = +35",
-              "PVP Final P.DMG Bonus = +1.17%",
-              "PVP Final M.DMG Bonus = +1.17%",
-              "PVP Debuff Penetration = +1.75%",
-              "PVP Debuff Enhancement = +1.75%"
-            ],
-            "purple": [
-              "PVP P.DMG Bonus = +42",
-              "PVP M.DMG Bonus = +42",
-              "PVP Final P.DMG Bonus = +1.4%",
-              "PVP Final M.DMG Bonus = +1.4%",
-              "PVP Debuff Penetration = +2.1%",
-              "PVP Debuff Enhancement = +2.1%"
-            ],
-            "gold": [
-              "PVP P.DMG Bonus = +56",
-              "PVP M.DMG Bonus = +56",
-              "PVP Final P.DMG Bonus = +1.87%",
-              "PVP Final M.DMG Bonus = +1.87%",
-              "PVP Debuff Penetration = +2.8%",
-              "PVP Debuff Enhancement = +2.8%"
-            ]
+            "mainhand": {
+              "white": [
+                "+28",
+                "+28",
+                "+0.93%",
+                "+0.93%",
+                "+1.4%",
+                "+1.4%"
+              ],
+              "blue": [
+                "+35",
+                "+35",
+                "+1.17%",
+                "+1.17%",
+                "+1.75%",
+                "+1.75%"
+              ],
+              "purple": [
+                "+42",
+                "+42",
+                "+1.4%",
+                "+1.4%",
+                "+2.1%",
+                "+2.1%"
+              ],
+              "gold": [
+                "+56",
+                "+56",
+                "+1.87%",
+                "+1.87%",
+                "+2.8%",
+                "+2.8%"
+              ]
+            },
+            "offhand": {
+              "white": [
+                "+14",
+                "+14",
+                "+0.47%",
+                "+0.47%",
+                "+0.7%",
+                "+0.7%"
+              ],
+              "blue": [
+                "+17.5",
+                "+17.5",
+                "+0.58%",
+                "+0.58%",
+                "+0.88%",
+                "+0.88%"
+              ],
+              "purple": [
+                "+21",
+                "+21",
+                "+0.7%",
+                "+0.7%",
+                "+1.05%",
+                "+1.05%"
+              ],
+              "gold": [
+                "+28",
+                "+28",
+                "+0.93%",
+                "+0.93%",
+                "+1.4%",
+                "+1.4%"
+              ]
+            }
           },
           "armor": {
             "white": [
-              "PVP P.DMG RED = +14",
-              "PVP M.DMG RED = +14",
-              "PVP Final P.DMG RED = +0.47%",
-              "PVP Final M.DMG RED = +0.47%",
-              "PVP Debuff Duration RES = +0.7%",
-              "PVP Debuff RES = +0.7%"
+              "+14",
+              "+14",
+              "+0.47%",
+              "+0.47%",
+              "+0.7%",
+              "+0.7%"
             ],
             "blue": [
-              "PVP P.DMG RED = +17.5",
-              "PVP M.DMG RED = +17.5",
-              "PVP Final P.DMG RED = +0.58%",
-              "PVP Final M.DMG RED = +0.58%",
-              "PVP Debuff Duration RES = +0.88%",
-              "PVP Debuff RES = +0.88%"
+              "+17.5",
+              "+17.5",
+              "+0.58%",
+              "+0.58%",
+              "+0.88%",
+              "+0.88%"
             ],
             "purple": [
-              "PVP P.DMG RED = +21",
-              "PVP M.DMG RED = +21",
-              "PVP Final P.DMG RED = +0.7%",
-              "PVP Final M.DMG RED = +0.7%",
-              "PVP Debuff Duration RES = +1.05%",
-              "PVP Debuff RES = +1.05%"
+              "+21",
+              "+21",
+              "+0.7%",
+              "+0.7%",
+              "+1.05%",
+              "+1.05%"
             ],
             "gold": [
-              "PVP P.DMG RED = +28",
-              "PVP M.DMG RED = +28",
-              "PVP Final P.DMG RED = +0.93%",
-              "PVP Final M.DMG RED = +0.93%",
-              "PVP Debuff Duration RES = +1.4%",
-              "PVP Debuff RES = +1.4%"
+              "+28",
+              "+28",
+              "+0.93%",
+              "+0.93%",
+              "+1.4%",
+              "+1.4%"
             ]
-          },
-          "accessory": {
-            "white": [],
-            "blue": [],
-            "purple": [],
-            "gold": []
           }
         },
         "2": {
+          "weapon": {
+            "mainhand": {
+              "white": [
+                "+42",
+                "+42",
+                "+1.4%",
+                "+1.4%",
+                "+2.1%",
+                "+2.1%"
+              ],
+              "blue": [
+                "+52.5",
+                "+52.5",
+                "+1.75%",
+                "+1.75%",
+                "+2.63%",
+                "+2.63%"
+              ],
+              "purple": [
+                "+63",
+                "+63",
+                "+2.1%",
+                "+2.1%",
+                "+3.15%",
+                "+3.15%"
+              ],
+              "gold": [
+                "+84",
+                "+84",
+                "+2.8%",
+                "+2.8%",
+                "+4.2%",
+                "+4.2%"
+              ]
+            },
+            "offhand": {
+              "white": [
+                "+21",
+                "+21",
+                "+0.7%",
+                "+0.7%",
+                "+1.05%",
+                "+1.05%"
+              ],
+              "blue": [
+                "+26.3",
+                "+26.3",
+                "+0.88%",
+                "+0.88%",
+                "+1.31%",
+                "+1.31%"
+              ],
+              "purple": [
+                "+31.5",
+                "+31.5",
+                "+1.05%",
+                "+1.05%",
+                "+1.58%",
+                "+1.58%"
+              ],
+              "gold": [
+                "+42",
+                "+42",
+                "+1.4%",
+                "+1.4%",
+                "+2.1%",
+                "+2.1%"
+              ]
+            }
+          },
           "armor": {
             "white": [
-              "PVP P.DMG RED = +21",
-              "PVP M.DMG RED = +21",
-              "PVP Final P.DMG RED = +0.7%",
-              "PVP Final M.DMG RED = +0.7%",
-              "PVP Debuff Duration RES = +1.05%",
-              "PVP Debuff RES = +1.05%"
+              "+21",
+              "+21",
+              "+0.7%",
+              "+0.7%",
+              "+1.05%",
+              "+1.05%"
             ],
             "blue": [
-              "PVP P.DMG RED = +26.3",
-              "PVP M.DMG RED = +26.3",
-              "PVP Final P.DMG RED = +0.88%",
-              "PVP Final M.DMG RED = +0.88%",
-              "PVP Debuff Duration RES = +1.31%",
-              "PVP Debuff RES = +1.31%"
+              "+2.63%",
+              "+2.63%",
+              "+2.63%",
+              "+2.63%",
+              "+2.63%",
+              "+2.63%",
+              "+2.63%",
+              "+2.63%"
             ],
             "purple": [
-              "PVP P.DMG RED = +31.5",
-              "PVP M.DMG RED = +31.5",
-              "PVP Final P.DMG RED = +1.05%",
-              "PVP Final M.DMG RED = +1.05%",
-              "PVP Debuff Duration RES = +1.58%",
-              "PVP Debuff RES = +1.58%"
+              "+3.15%",
+              "+3.15%",
+              "+3.15%",
+              "+3.15%",
+              "+3.15%",
+              "+3.15%",
+              "+3.15%",
+              "+3.15%"
             ],
             "gold": [
-              "PVP P.DMG RED = +42",
-              "PVP M.DMG RED = +42",
-              "PVP Final P.DMG RED = +1.4%",
-              "PVP Final M.DMG RED = +1.4%",
-              "PVP Debuff Duration RES = +2.1%",
-              "PVP Debuff RES = +2.1%"
+              "+4.2%",
+              "+4.2%",
+              "+4.2%",
+              "+4.2%",
+              "+4.2%",
+              "+4.2%",
+              "+4.2%",
+              "+4.2%"
+            ]
+          }
+        },
+        "3": {
+          "weapon": {
+            "mainhand": {
+              "white": [
+                "+56",
+                "+56",
+                "+1.87%",
+                "+1.87%",
+                "+2.8%",
+                "+2.8%"
+              ],
+              "blue": [
+                "+70",
+                "+70",
+                "+2.33%",
+                "+2.33%",
+                "+3.5%",
+                "+3.5%"
+              ],
+              "purple": [
+                "+84",
+                "+84",
+                "+2.8%",
+                "+2.8%",
+                "+4.2%",
+                "+4.2%"
+              ],
+              "gold": [
+                "+112",
+                "+112",
+                "+3.73%",
+                "+3.73%",
+                "+5.6%",
+                "+5.6%"
+              ]
+            },
+            "offhand": {
+              "white": [
+                "+28",
+                "+28",
+                "+0.93%",
+                "+0.93%",
+                "+1.4%",
+                "+1.4%"
+              ],
+              "blue": [
+                "+35",
+                "+35",
+                "+1.17%",
+                "+1.17%",
+                "+1.75%",
+                "+1.75%"
+              ],
+              "purple": [
+                "+42",
+                "+42",
+                "+1.4%",
+                "+1.4%",
+                "+2.1%",
+                "+2.1%"
+              ],
+              "gold": [
+                "+56",
+                "+56",
+                "+1.87%",
+                "+1.87%",
+                "+2.8%",
+                "+2.8%"
+              ]
+            }
+          },
+          "armor": {
+            "white": [
+              "+28",
+              "+28",
+              "+0.93%",
+              "+0.93%",
+              "+1.4%",
+              "+1.4%"
+            ],
+            "blue": [
+              "+35",
+              "+35",
+              "+1.17%",
+              "+1.17%",
+              "+1.75%",
+              "+1.75%"
+            ],
+            "purple": [
+              "+42",
+              "+42",
+              "+1.4%",
+              "+1.4%",
+              "+2.1%",
+              "+2.1%"
+            ],
+            "gold": [
+              "+56",
+              "+56",
+              "+1.87%",
+              "+1.87%",
+              "+2.8%",
+              "+2.8%"
             ]
           },
           "accessory": {
             "white": [
-              "Increase STR = +0.42%",
-              "Increase INT = +0.42%",
-              "Increase VIT = +0.42%",
-              "Increase DEX = +0.42%",
-              "Increase LUK = +0.42%",
-              "Increase AGI = +0.42%"
+              "+0.56%",
+              "+0.56%",
+              "+0.56%",
+              "+0.56%",
+              "+0.56%",
+              "+0.56%"
             ],
             "blue": [
-              "Increase STR = +0.53%",
-              "Increase INT = +0.53%",
-              "Increase VIT = +0.53%",
-              "Increase DEX = +0.53%",
-              "Increase LUK = +0.53%",
-              "Increase AGI = +0.53%"
+              "+0.7%",
+              "+0.7%",
+              "+0.7%",
+              "+0.7%",
+              "+0.7%",
+              "+0.7%"
             ],
             "purple": [
-              "Increase STR = +0.63%",
-              "Increase INT = +0.63%",
-              "Increase VIT = +0.63%",
-              "Increase DEX = +0.63%",
-              "Increase LUK = +0.63%",
-              "Increase AGI = +0.63%"
+              "+0.84%",
+              "+0.84%",
+              "+0.84%",
+              "+0.84%",
+              "+0.84%",
+              "+0.84%"
             ],
             "gold": [
-              "Increase STR = +0.84%",
-              "Increase INT = +0.84%",
-              "Increase VIT = +0.84%",
-              "Increase DEX = +0.84%",
-              "Increase LUK = +0.84%",
-              "Increase AGI = +0.84%"
+              "+1.12%",
+              "+1.12%",
+              "+1.12%",
+              "+1.12%",
+              "+1.12%",
+              "+1.12%"
             ]
           }
         },
         "8": {
           "weapon": {
-            "white": [
-              "PVP P.DMG Bonus = +168",
-              "PVP M.DMG Bonus = +168",
-              "PVP Final P.DMG Bonus = +5.6%",
-              "PVP Final M.DMG Bonus = +5.6%",
-              "PVP Debuff Penetration = +8.4%",
-              "PVP Debuff Enhancement = +8.4%"
-            ],
-            "blue": [
-              "PVP P.DMG Bonus = +210",
-              "PVP M.DMG Bonus = +210",
-              "PVP Final P.DMG Bonus = +7%",
-              "PVP Final M.DMG Bonus = +7%",
-              "PVP Debuff Penetration = +10.5%",
-              "PVP Debuff Enhancement = +10.5%"
-            ],
-            "purple": [
-              "PVP P.DMG Bonus = +252",
-              "PVP M.DMG Bonus = +252",
-              "PVP Final P.DMG Bonus = +8.4%",
-              "PVP Final M.DMG Bonus = +8.4%",
-              "PVP Debuff Penetration = +12.6%",
-              "PVP Debuff Enhancement = +12.6%"
-            ],
-            "gold": [
-              "PVP P.DMG Bonus = +336",
-              "PVP M.DMG Bonus = +336",
-              "PVP Final P.DMG Bonus = +11.2%",
-              "PVP Final M.DMG Bonus = +11.2%",
-              "PVP Debuff Penetration = +16.8%",
-              "PVP Debuff Enhancement = +16.8%"
-            ]
+            "mainhand": {
+              "white": [
+                "+168",
+                "+168",
+                "+5.6%",
+                "+5.6%",
+                "+8.4%",
+                "+8.4%"
+              ],
+              "blue": [
+                "+210",
+                "+210",
+                "+7%",
+                "+7%",
+                "+10.5%",
+                "+10.5%"
+              ],
+              "purple": [
+                "+252",
+                "+252",
+                "+8.4%",
+                "+8.4%",
+                "+12.6%",
+                "+12.6%"
+              ],
+              "gold": [
+                "+336",
+                "+336",
+                "+11.2%",
+                "+11.2%",
+                "+16.8%",
+                "+16.8%"
+              ]
+            }
           },
           "accessory": {
             "white": [
-              "Increase STR = +1.68%",
-              "Increase INT = +1.68%",
-              "Increase VIT = +1.68%",
-              "Increase DEX = +1.68%",
-              "Increase LUK = +1.68%",
-              "Increase AGI = +1.68%"
+              "+1.68%",
+              "+1.68%",
+              "+1.68%",
+              "+1.68%",
+              "+1.68%",
+              "+1.68%"
             ],
             "blue": [
-              "Increase STR = +2.1%",
-              "Increase INT = +2.1%",
-              "Increase VIT = +2.1%",
-              "Increase DEX = +2.1%",
-              "Increase LUK = +2.1%",
-              "Increase AGI = +2.1%"
+              "+2.1%",
+              "+2.1%",
+              "+2.1%",
+              "+2.1%",
+              "+2.1%",
+              "+2.1%"
             ],
             "purple": [
-              "Increase STR = +2.52%",
-              "Increase INT = +2.52%",
-              "Increase VIT = +2.52%",
-              "Increase DEX = +2.52%",
-              "Increase LUK = +2.52%",
-              "Increase AGI = +2.52%"
+              "+2.52%",
+              "+2.52%",
+              "+2.52%",
+              "+2.52%",
+              "+2.52%",
+              "+2.52%"
             ],
             "gold": [
-              "Increase STR = +3.36%",
-              "Increase INT = +3.36%",
-              "Increase VIT = +3.36%",
-              "Increase DEX = +3.36%",
-              "Increase LUK = +3.36%",
-              "Increase AGI = +3.36%"
+              "+3.36%",
+              "+3.36%",
+              "+3.36%",
+              "+3.36%",
+              "+3.36%",
+              "+3.36%"
             ]
           }
         },
         "10": {
           "armor": {
             "white": [
-              "PVP P.DMG RED = +112",
-              "PVP M.DMG RED = +112",
-              "PVP Final P.DMG RED = +3.73%",
-              "PVP Final M.DMG RED = +3.73%",
-              "PVP Debuff Duration RES = +5.6%",
-              "PVP Debuff RES = +5.6%"
+              "+112",
+              "+112",
+              "+3.73%",
+              "+3.73%",
+              "+5.6%",
+              "+5.6%"
             ],
             "blue": [
-              "PVP P.DMG RED = +140",
-              "PVP M.DMG RED = +140",
-              "PVP Final P.DMG RED = +4.67%",
-              "PVP Final M.DMG RED = +4.67%",
-              "PVP Debuff Duration RES = +7%",
-              "PVP Debuff RES = +7%"
+              "+140",
+              "+140",
+              "+4.67%",
+              "+4.67%",
+              "+7%",
+              "+7%"
             ],
             "purple": [
-              "PVP P.DMG RED = +168",
-              "PVP M.DMG RED = +168",
-              "PVP Final P.DMG RED = +5.6%",
-              "PVP Final M.DMG RED = +5.6%",
-              "PVP Debuff Duration RES = +8.4%",
-              "PVP Debuff RES = +8.4%"
+              "+168",
+              "+168",
+              "+5.6%",
+              "+5.6%",
+              "+8.4%",
+              "+8.4%"
             ],
             "gold": [
-              "PVP P.DMG RED = +224",
-              "PVP M.DMG RED = +224",
-              "PVP Final P.DMG RED = +7.47%",
-              "PVP Final M.DMG RED = +7.47%",
-              "PVP Debuff Duration RES = +11.2%",
-              "PVP Debuff RES = +11.2%"
+              "+224",
+              "+224",
+              "+7.47%",
+              "+7.47%",
+              "+11.2%",
+              "+11.2%"
             ]
           }
         }

@@ -6,6 +6,7 @@ const CityEnchantsCalc = {
     selectedLevel: 1,
     expandedCities: {},
     searchQuery: '',
+    weaponMode: '1h', // '1h' or '2h'
 
     setData(data) {
         this.data = data;
@@ -45,9 +46,9 @@ const CityEnchantsCalc = {
         return city.levels[String(level)] || null;
     },
 
-    matchesSearch(statLines) {
+    matchesSearch(enchantNames) {
         if (!this.searchQuery) return true;
-        return statLines.some(line => line.toLowerCase().includes(this.searchQuery));
+        return enchantNames.some(name => name.toLowerCase().includes(this.searchQuery));
     },
 
     renderLevelSelector() {
@@ -66,7 +67,15 @@ const CityEnchantsCalc = {
             html += `<button class="${classes.join(' ')}" data-level="${i}">${i}</button>`;
         }
 
-        html += '</div></div>';
+        html += '</div>';
+
+        // 1H/2H weapon toggle
+        html += '<div class="ce-weapon-toggle">';
+        html += `<button class="ce-weapon-btn${this.weaponMode === '1h' ? ' active' : ''}" data-weapon-mode="1h">1H</button>`;
+        html += `<button class="ce-weapon-btn${this.weaponMode === '2h' ? ' active' : ''}" data-weapon-mode="2h">2H</button>`;
+        html += '</div>';
+
+        html += '</div>';
         return html;
     },
 
@@ -82,25 +91,68 @@ const CityEnchantsCalc = {
         `;
     },
 
-    renderSlotCard(slotKey, slotData) {
+    /**
+     * Get weapon values for current mode from slot data.
+     * Returns { colorValues } or null if no data for this mode.
+     */
+    getWeaponValues(slotData) {
+        if (this.weaponMode === '2h') {
+            return slotData.twohand || null;
+        }
+        return slotData.mainhand || null;
+    },
+
+    getWeaponOffhandValues(slotData) {
+        if (this.weaponMode !== '1h') return null;
+        return slotData.offhand || null;
+    },
+
+    renderSlotCard(slotKey, slotData, city) {
         const colors = this.data.colors;
         const slotLabel = this.data.slotLabels[slotKey];
         const slotIcon = this.data.slotIcons[slotKey];
+        const enchantNames = city.enchants[slotKey];
+
+        if (!enchantNames) return this.renderEmptySlot(slotKey);
+
+        const isWeapon = slotKey === 'weapon';
+
+        // For weapon, resolve values based on weapon mode
+        let colorValues, offhandValues;
+        if (isWeapon) {
+            colorValues = this.getWeaponValues(slotData);
+            offhandValues = this.getWeaponOffhandValues(slotData);
+
+            if (!colorValues) {
+                // No data for this weapon mode
+                return this.renderNoWeaponModeSlot(slotKey);
+            }
+        } else {
+            colorValues = slotData;
+        }
+
+        // Search filter on names
+        if (this.searchQuery && !this.matchesSearch(enchantNames)) {
+            return '';
+        }
 
         let html = `<div class="ce-slot-card">`;
         html += `<div class="ce-slot-header">`;
         html += `<span class="ce-slot-icon">${slotIcon}</span>`;
         html += `<span class="ce-slot-title">${slotLabel}</span>`;
+        if (isWeapon) {
+            const modeLabel = this.weaponMode === '1h' ? 'Main Hand' : 'Two-Hand';
+            html += `<span class="ce-weapon-mode-badge">${modeLabel}</span>`;
+        }
         html += `</div>`;
         html += `<div class="ce-slot-body">`;
 
         for (const colorKey of COLOR_ORDER) {
             const colorMeta = colors[colorKey];
-            const lines = slotData[colorKey];
-            if (!lines || lines.length === 0) continue;
+            const values = colorValues[colorKey];
+            if (!values || values.length === 0) continue;
 
-            const hasMatch = this.matchesSearch(lines);
-            if (this.searchQuery && !hasMatch) continue;
+            const offValues = offhandValues ? offhandValues[colorKey] : null;
 
             html += `<div class="ce-color-group">`;
             html += `<div class="ce-color-badge" style="background: ${colorMeta.hex}; color: ${colorKey === 'white' ? '#333' : '#fff'}">`;
@@ -108,10 +160,21 @@ const CityEnchantsCalc = {
             html += `</div>`;
             html += `<div class="ce-stat-list">`;
 
-            for (const line of lines) {
-                const isHighlighted = this.searchQuery && line.toLowerCase().includes(this.searchQuery);
+            for (let i = 0; i < enchantNames.length; i++) {
+                const name = enchantNames[i];
+                const value = values[i] || '';
+                const offValue = offValues ? offValues[i] : null;
+
+                const isHighlighted = this.searchQuery && name.toLowerCase().includes(this.searchQuery);
                 const lineClass = isHighlighted ? 'ce-stat-line highlighted' : 'ce-stat-line';
-                html += `<div class="${lineClass}">${this.formatStatLine(line)}</div>`;
+
+                html += `<div class="${lineClass}">`;
+                html += `<span class="ce-stat-names">${name}</span> `;
+                html += `<span class="ce-stat-value">${value}</span>`;
+                if (offValue) {
+                    html += ` <span class="ce-offhand-value">(${offValue})</span>`;
+                }
+                html += `</div>`;
             }
 
             html += `</div></div>`;
@@ -121,14 +184,23 @@ const CityEnchantsCalc = {
         return html;
     },
 
-    formatStatLine(line) {
-        const eqIndex = line.indexOf('=');
-        if (eqIndex === -1) return line;
+    renderNoWeaponModeSlot(slotKey) {
+        const slotLabel = this.data.slotLabels[slotKey];
+        const slotIcon = this.data.slotIcons[slotKey];
+        const modeLabel = this.weaponMode === '2h' ? '2H' : '1H';
 
-        const stats = line.substring(0, eqIndex).trim();
-        const value = line.substring(eqIndex + 1).trim();
-
-        return `<span class="ce-stat-names">${stats}</span> <span class="ce-stat-value">${value}</span>`;
+        return `
+            <div class="ce-slot-card ce-slot-empty">
+                <div class="ce-slot-header">
+                    <span class="ce-slot-icon">${slotIcon}</span>
+                    <span class="ce-slot-title">${slotLabel}</span>
+                    <span class="ce-weapon-mode-badge">${modeLabel}</span>
+                </div>
+                <div class="ce-slot-body">
+                    <div class="ce-empty-slot-msg">Нет данных для ${modeLabel}</div>
+                </div>
+            </div>
+        `;
     },
 
     renderCity(city) {
@@ -159,7 +231,7 @@ const CityEnchantsCalc = {
 
                 for (const slotKey of SLOT_ORDER) {
                     if (levelData[slotKey]) {
-                        html += this.renderSlotCard(slotKey, levelData[slotKey]);
+                        html += this.renderSlotCard(slotKey, levelData[slotKey], city);
                     } else {
                         html += this.renderEmptySlot(slotKey);
                     }
@@ -213,6 +285,15 @@ const CityEnchantsCalc = {
         container.querySelectorAll('.ce-level-pill').forEach(pill => {
             pill.addEventListener('click', () => {
                 this.selectedLevel = parseInt(pill.dataset.level);
+                container.innerHTML = this.render();
+                this.bindEvents(container);
+            });
+        });
+
+        // Weapon mode toggle
+        container.querySelectorAll('.ce-weapon-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                this.weaponMode = btn.dataset.weaponMode;
                 container.innerHTML = this.render();
                 this.bindEvents(container);
             });

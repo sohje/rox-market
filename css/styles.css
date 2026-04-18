@@ -1666,6 +1666,66 @@ html.light .ce-slot-header {
     font-size: 0.88rem;
 }
 
+/* Weapon toggle 1H/2H */
+.ce-weapon-toggle {
+    display: flex;
+    gap: 2px;
+    margin-left: auto;
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    padding: 3px;
+    border: 1px solid var(--border);
+}
+
+.ce-weapon-btn {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.15s;
+    letter-spacing: 0.3px;
+}
+
+.ce-weapon-btn:hover {
+    color: var(--text-primary);
+    background: rgba(233, 69, 96, 0.08);
+}
+
+.ce-weapon-btn.active {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 1px 4px rgba(233, 69, 96, 0.3);
+}
+
+/* Weapon mode badge in slot header */
+.ce-weapon-mode-badge {
+    margin-left: auto;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: rgba(233, 69, 96, 0.15);
+    color: var(--accent);
+}
+
+/* Offhand values in parentheses */
+.ce-offhand-value {
+    color: #6ca6d4;
+    font-weight: 600;
+    font-size: 0.82rem;
+    font-style: italic;
+}
+
+html.light .ce-offhand-value {
+    color: #3b82a0;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
     .ce-slots-grid {
