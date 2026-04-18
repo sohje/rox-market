@@ -141,7 +141,7 @@ const CityEnchantsCalc = {
         html += `<span class="ce-slot-icon">${slotIcon}</span>`;
         html += `<span class="ce-slot-title">${slotLabel}</span>`;
         if (isWeapon) {
-            const modeLabel = this.weaponMode === '1h' ? 'Main Hand' : 'Two-Hand';
+            const modeLabel = this.weaponMode === '1h' ? 'Main Hand + OffHand' : 'Two-Hand';
             html += `<span class="ce-weapon-mode-badge">${modeLabel}</span>`;
         }
         html += `</div>`;
@@ -172,7 +172,7 @@ const CityEnchantsCalc = {
                 html += `<span class="ce-stat-names">${name}</span> `;
                 html += `<span class="ce-stat-value">${value}</span>`;
                 if (offValue) {
-                    html += ` <span class="ce-offhand-value">(${offValue})</span>`;
+                    html += ` <span class="ce-offhand-value">${offValue}</span>`;
                 }
                 html += `</div>`;
             }
