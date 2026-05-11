@@ -480,16 +480,19 @@ class MvpTimer {
         this.totalSeconds = totalSeconds;
         this.endTime = Date.now() + totalSeconds * 1000;
         this.state = 'running';
+        this.spawnFired = false;
         this.notify10Fired = false;
         this.notify5Fired = false;
-        this.spawnFired = false;
+        // Grace period: don't fire audio for 2s after reset to avoid
+        // overlapping with the spawn fanfare that may still be playing.
+        this.noNotifyUntil = Date.now() + 2000;
     }
 
     destroy() {
         // nothing to clean — global tick handles all
     }
 
-    // Returns: 'tick' | 'expired' | 'reset' | null
+    // Returns: 'tick' | 'expired' | null
     tick() {
         if (this.state === 'expired') return null;
 
@@ -504,17 +507,17 @@ class MvpTimer {
             return 'expired';
         }
 
-        const prevState = this.state;
+        const audioAllowed = !this.noNotifyUntil || Date.now() >= this.noNotifyUntil;
 
         if (secsLeft <= 300) {
             this.state = 'warning5';
-            if (!this.notify5Fired && this.parent.notifyAt5) {
+            if (!this.notify5Fired && this.parent.notifyAt5 && audioAllowed) {
                 this.notify5Fired = true;
                 this.parent.playWarningChime(true);
             }
         } else if (secsLeft <= 600) {
             this.state = 'warning10';
-            if (!this.notify10Fired && this.parent.notifyAt10) {
+            if (!this.notify10Fired && this.parent.notifyAt10 && audioAllowed) {
                 this.notify10Fired = true;
                 this.parent.playWarningChime(false);
             }
