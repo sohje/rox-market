@@ -1802,3 +1802,321 @@ html.light .timer-display {
 .timer-warning {
     color: var(--loss) !important;
 }
+
+/* ===== MVP Timers ===== */
+
+.mvp-timers-container {
+    max-width: 900px;
+}
+
+/* ── Form Panel ─────────────────────────────────────────────────────────── */
+
+.mvp-form-panel {
+    background: var(--bg-card);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border);
+}
+
+.mvp-form-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.mvp-name-input {
+    flex: 2;
+    min-width: 160px;
+}
+
+.mvp-time-input {
+    flex: 1;
+    min-width: 120px;
+    max-width: 160px;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.05em;
+}
+
+.btn-accent {
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    white-space: nowrap;
+}
+
+.btn-accent:hover {
+    opacity: 0.85;
+}
+
+.mvp-form-error {
+    background: rgba(248, 113, 113, 0.12);
+    border: 1px solid var(--loss);
+    border-radius: 8px;
+    color: var(--loss);
+    font-size: 0.88rem;
+    padding: 8px 14px;
+    margin-bottom: 12px;
+}
+
+.mvp-form-prefs {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.mvp-prefs-label {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.mvp-check-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    user-select: none;
+}
+
+.mvp-check-label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--accent);
+    cursor: pointer;
+}
+
+.mvp-volume-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.mvp-volume-slider {
+    width: 90px;
+    accent-color: var(--accent);
+}
+
+.mvp-volume-display {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    min-width: 34px;
+    text-align: right;
+}
+
+/* ── Timer cards ────────────────────────────────────────────────────────── */
+
+#mvp-timer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.mvp-timer-card {
+    background: var(--bg-card);
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: border-color 0.4s, box-shadow 0.4s;
+}
+
+/* Running state — default */
+.mvp-timer-card.mvp-state-running {
+    border-color: var(--border);
+}
+
+/* 10-min warning — amber */
+.mvp-timer-card.mvp-state-warning10 {
+    border-color: #f59e0b;
+    box-shadow: 0 0 0 1px rgba(245, 158, 11, 0.2);
+}
+
+/* 5-min warning — red */
+.mvp-timer-card.mvp-state-warning5 {
+    border-color: var(--loss);
+    box-shadow: 0 0 0 1px rgba(248, 113, 113, 0.25);
+}
+
+/* Expired — pulsing accent */
+.mvp-timer-card.mvp-state-expired {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(233, 69, 96, 0.25);
+    animation: mvp-expired-pulse 2s ease-in-out infinite;
+}
+
+@keyframes mvp-expired-pulse {
+    0%, 100% { box-shadow: 0 0 0 2px rgba(233, 69, 96, 0.25); }
+    50%       { box-shadow: 0 0 0 5px rgba(233, 69, 96, 0.08); }
+}
+
+/* ── Card header ─────────────────────────────────────────────────────────── */
+
+.mvp-card-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px 10px;
+    gap: 10px;
+}
+
+.mvp-card-name {
+    flex: 1;
+    font-weight: 700;
+    font-size: 1.05rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mvp-delete-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 4px;
+    border-radius: 4px;
+    transition: color 0.15s, background 0.15s;
+    flex-shrink: 0;
+}
+
+.mvp-delete-btn:hover {
+    color: var(--loss);
+    background: rgba(248, 113, 113, 0.1);
+}
+
+/* ── Progress bar ─────────────────────────────────────────────────────────── */
+
+.mvp-progress-wrap {
+    height: 4px;
+    background: var(--bg-secondary);
+    width: 100%;
+}
+
+.mvp-progress-bar {
+    height: 100%;
+    transition: width 0.5s linear, background 0.4s;
+    background: #3b82f6;
+    border-radius: 0 2px 2px 0;
+}
+
+.mvp-progress-bar.mvp-state-warning10 {
+    background: #f59e0b;
+}
+
+.mvp-progress-bar.mvp-state-warning5 {
+    background: var(--loss);
+}
+
+.mvp-progress-bar.mvp-state-expired {
+    background: var(--accent);
+    width: 0% !important;
+}
+
+/* ── Card body ───────────────────────────────────────────────────────────── */
+
+.mvp-card-body {
+    padding: 12px 16px 16px;
+    text-align: center;
+}
+
+/* Timer digits */
+.mvp-timer-display {
+    font-size: 2.6rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.04em;
+    color: #3b82f6;
+    transition: color 0.4s;
+    line-height: 1.1;
+}
+
+html.light .mvp-timer-display {
+    color: #2563eb;
+}
+
+.mvp-timer-display.mvp-state-warning10 {
+    color: #f59e0b !important;
+}
+
+.mvp-timer-display.mvp-state-warning5 {
+    color: var(--loss) !important;
+}
+
+/* Spawned / expired state */
+.mvp-spawned-label {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+    animation: mvp-spawn-flash 1.2s ease-in-out infinite;
+    margin-bottom: 12px;
+}
+
+@keyframes mvp-spawn-flash {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.5; }
+}
+
+.mvp-reset-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.mvp-reset-input {
+    width: 130px;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.05em;
+    padding: 9px 10px;
+    flex: none;
+}
+
+/* ── Empty state ─────────────────────────────────────────────────────────── */
+
+.mvp-empty-state {
+    text-align: center;
+    padding: 50px 20px;
+    color: var(--text-secondary);
+}
+
+.mvp-empty-icon {
+    font-size: 3rem;
+    margin-bottom: 14px;
+    opacity: 0.5;
+}
+
+.mvp-empty-state p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    opacity: 0.8;
+}
+
+/* ── Responsive ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+    .mvp-timer-display {
+        font-size: 2rem;
+    }
+
+    .mvp-form-prefs {
+        gap: 12px;
+    }
+
+    .mvp-volume-wrap {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .mvp-volume-slider {
+        flex: 1;
+    }
+}

@@ -59,6 +59,10 @@
                             alt="Ore Timers"></span>
                     <span class="nav-label">Ore Timers</span>
                 </button>
+                <button class="nav-tab" data-view="mvp-timers">
+                    <span class="nav-icon nav-icon-img"><img src="img/mvp_boss_icon.png" alt="MVP Timers"></span>
+                    <span class="nav-label">MVP Timers</span>
+                </button>
                 <a class="nav-tab nav-tab-link" href="https://guild.sohje.com" target="_blank" rel="noopener noreferrer"
                     title="Guild">
                     <span class="nav-icon nav-icon-img"><img src="img/guild_icon.png" alt="Guild"></span>
@@ -302,6 +306,18 @@
                 </div>
             </div>
 
+            <div id="view-mvp-timers" class="hidden">
+                <div class="container mvp-timers-container">
+                    <header class="header">
+                        <h1>MVP Timers</h1>
+                        <p class="subtitle">Таймеры спавна MVP и Mini боссов</p>
+                    </header>
+                    <div id="mvp-timers-results">
+                        <!-- Results rendered by JS -->
+                    </div>
+                </div>
+            </div>
+
             <div id="detail-modal" class="modal hidden">
                 <div class="modal-content">
                     <button class="modal-close" id="modal-close">&times;</button>
@@ -321,6 +337,7 @@
     <script src="js/materials.js"></script>
     <script src="js/ox_quiz.js"></script>
     <script src="js/ore_timers.js"></script>
+    <script src="js/mvp_timers.js"></script>
     <script src="js/app.js"></script>
 </body>
 
